@@ -1,0 +1,209 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.unity3d.player"
+5    android:installLocation="auto"
+6    android:versionCode="1"
+7    android:versionName="0.1" >
+8
+9    <uses-sdk
+10        android:minSdkVersion="24"
+10-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+11        android:targetSdkVersion="30" />
+11-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+12
+13    <uses-feature android:glEsVersion="0x00030000" />
+13-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:3-52
+13-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:17-49
+14
+15    <supports-gl-texture android:name="GL_KHR_texture_compression_astc_ldr" />
+15-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:3-77
+15-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:24-74
+16
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:3-65
+17-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:20-62
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:3-77
+18-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:20-74
+19    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+19-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:3-69
+19-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:20-66
+20    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+20-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:3-78
+20-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:20-75
+21
+22    <uses-feature
+22-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:3-87
+23        android:name="android.hardware.microphone"
+23-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:17-59
+24        android:required="false" />
+24-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:60-84
+25    <uses-feature
+25-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:33:3-88
+26        android:name="android.hardware.touchscreen"
+26-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:33:17-60
+27        android:required="false" />
+27-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:33:61-85
+28    <uses-feature
+28-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:34:3-99
+29        android:name="android.hardware.touchscreen.multitouch"
+29-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:34:17-71
+30        android:required="false" />
+30-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:34:72-96
+31    <uses-feature
+31-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:35:3-108
+32        android:name="android.hardware.touchscreen.multitouch.distinct"
+32-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:35:17-80
+33        android:required="false" />
+33-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:35:81-105
+34    <uses-feature
+34-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:36:3-111
+35        android:name="android.hardware.vr.headtracking"
+35-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:36:17-64
+36        android:required="true"
+36-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:36:85-108
+37        android:version="1" />
+37-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:36:65-84
+38    <uses-feature
+38-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:37:3-87
+39        android:name="oculus.software.handtracking"
+39-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:37:17-60
+40        android:required="true" />
+40-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:37:61-84
+41
+42    <uses-permission android:name="com.oculus.permission.HAND_TRACKING" />
+42-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:38:3-73
+42-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:38:20-70
+43
+44    <application
+44-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-25:17
+45        android:allowBackup="false"
+45-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:114-141
+46        android:extractNativeLibs="true"
+46-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
+47        android:icon="@mipmap/app_icon"
+47-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:82-113
+48        android:label="@string/app_name"
+48-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:49-81
+49        android:networkSecurityConfig="@xml/network_sec_config" >
+49-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:142-197
+50        <activity
+50-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-13:16
+51            android:name="com.unity3d.player.UnityPlayerActivity"
+51-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
+52            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|uiMode|density"
+52-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:204-313
+53            android:hardwareAccelerated="false"
+53-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:349-384
+54            android:launchMode="singleTask"
+54-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:172-203
+55            android:resizeableActivity="false"
+55-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:314-348
+56            android:screenOrientation="landscape"
+56-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:134-171
+57            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+57-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-133
+58            <intent-filter>
+58-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-9:23
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
+59-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
+61-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
+62                <category android:name="com.oculus.intent.category.VR" />
+62-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:9-66
+62-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:19-63
+63            </intent-filter>
+64
+65            <meta-data
+65-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-82
+66                android:name="unityplayer.UnityActivity"
+66-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-58
+67                android:value="true" />
+67-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:59-79
+68            <meta-data
+68-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:7-78
+69                android:name="android.notch_support"
+69-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:18-54
+70                android:value="true" />
+70-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:55-75
+71            <meta-data
+71-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:7-81
+72                android:name="com.oculus.vr.focusaware"
+72-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:18-57
+73                android:value="true" />
+73-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:58-78
+74        </activity>
+75
+76        <meta-data
+76-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-69
+77            android:name="unity.splash-mode"
+77-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-48
+78            android:value="0" />
+78-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:49-66
+79        <meta-data
+79-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-74
+80            android:name="unity.splash-enable"
+80-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-50
+81            android:value="True" />
+81-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:51-71
+82        <meta-data
+82-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-78
+83            android:name="unity.launch-fullscreen"
+83-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-54
+84            android:value="True" />
+84-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:55-75
+85        <meta-data
+85-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-84
+86            android:name="unity.allow-resizable-window"
+86-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-59
+87            android:value="False" />
+87-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:60-81
+88        <meta-data
+88-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:5-81
+89            android:name="notch.config"
+89-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:16-43
+90            android:value="portrait|landscape" />
+90-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:44-78
+91        <meta-data
+91-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:5-88
+92            android:name="com.oculus.handtracking.frequency"
+92-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:16-64
+93            android:value="HIGH" />
+93-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:65-85
+94        <meta-data
+94-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:5-97
+95            android:name="com.samsung.android.vr.application.mode"
+95-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:16-70
+96            android:value="vr_only" />
+96-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:71-94
+97        <meta-data
+97-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:5-91
+98            android:name="com.unity.xr.oculus.LowOverheadMode"
+98-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:16-66
+99            android:value="false" />
+99-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:67-88
+100        <meta-data
+100-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:5-88
+101            android:name="com.unity.xr.oculus.LateLatching"
+101-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:16-63
+102            android:value="false" />
+102-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:64-85
+103        <meta-data
+103-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:5-93
+104            android:name="com.unity.xr.oculus.LateLatchingDebug"
+104-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:16-68
+105            android:value="false" />
+105-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:69-90
+106        <meta-data
+106-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:5-90
+107            android:name="com.oculus.supportedDevices"
+107-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:16-58
+108            android:value="quest|quest2" />
+108-->C:\Users\user\Desktop\cap\capstone\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:59-87
+109    </application>
+110
+111</manifest>
