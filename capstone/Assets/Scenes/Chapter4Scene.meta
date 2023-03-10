@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: fe3833c4738635f4bbd3a981fa6113a7
+<<<<<<<< HEAD:capstone/Assets/Scenes/Chapter4Scene.meta
+guid: 09168735e7c45a4458e3303165c2abb0
+========
+guid: d20f588cd3dab884b86830c774feebb5
+>>>>>>>> main:capstone/Assets/Resources/FoodTrucks/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
