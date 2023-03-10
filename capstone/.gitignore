@@ -66,16 +66,3 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-
-# Packed Addressables
-/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
-
-# Temporary auto-generated Android Assets
-/[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
-
-# End of https://www.toptal.com/developers/gitignore/api/unity
-
-capstone/Assets/Cart/Textures/shopping car lowpoly_None_NormalOpenGL.png
-capstone/UserSettings/EditorUserSettings.asset
-capstone/UserSettings/Layouts/default-2021.dwlt
