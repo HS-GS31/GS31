@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 197
+  controlID: 93
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 65
+  controlID: 94
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Resources/mighty_handful/Low Poly Simple Cartoon City/Prefabs/Road Parts/Use
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Resources/mighty_handful/Low Poly Simple Cartoon City/Prefabs/Road Parts/Use
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\USER\Code\UnityCode\GS31\capstone
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4e6b0000
-    m_LastClickedID: 27470
-    m_ExpandedIDs: 000000004e6b0000226f0000286f000044a3000000ca9a3b
+    m_SelectedIDs: a47a0000
+    m_LastClickedID: 31396
+    m_ExpandedIDs: 00000000786b0000627a0000847a0000887a0000927a00009c7a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004e6b0000
+    m_ExpandedIDs: 00000000786b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: eaa00000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 54e6ffff88e9ffff72ebffffe2f6ffff30fbffff
+      m_ExpandedIDs: e868fffff86fffff8277ffffee9efffff49efffff89effffbaa0ffffc2a0ffffc8a0ffffa4a2ffffa6a2ffff30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -739,9 +739,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.98736393, y: 1.6263891, z: 1.6560843}
+    m_Target: {x: 152.11783, y: 72.31033, z: 13.09041}
     speed: 2
-    m_Value: {x: 0.9873637, y: 1.6263894, z: 1.6560842}
+    m_Value: {x: 152.11783, y: 72.31033, z: 13.09041}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -788,13 +788,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.3246534, y: 0.6184424, z: -0.31167033, w: 0.644209}
+    m_Target: {x: 0.25470382, y: 0.64705575, z: -0.24378046, w: 0.67603904}
     speed: 2
-    m_Value: {x: 0.32511818, y: 0.6174709, z: -0.31118074, w: 0.6451313}
+    m_Value: {x: 0.25571594, y: 0.6466852, z: -0.2447492, w: 0.6756519}
   m_Size:
-    m_Target: 2.5557292
+    m_Target: 248.48439
     speed: 2
-    m_Value: 2.6761563
+    m_Value: 237.7841
   m_Ortho:
     m_Target: 0
     speed: 2
