@@ -31,9 +31,9 @@ public class ButtonEvent : MonoBehaviour
     {
         SceneManager.LoadScene("Cartoon");
     }
-    public void GoChap1() //만화 씬으로 이동
+    public void GoChap1() //장보기 씬으로 이동
     {
-        SceneManager.LoadScene("Start");
+        SceneManager.LoadScene("Chap01");
     }
     public void Quit() //끝내기 누르면 재생 종료(빌드할 때 코드 수정 필요)
     {
