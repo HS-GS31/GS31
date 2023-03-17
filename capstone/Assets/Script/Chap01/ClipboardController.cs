@@ -17,6 +17,6 @@ public class ClipboardController : MonoBehaviour
     void ShowShoppingCart()
     {
         Debug.Log("Show ShoppingCart");
-        GameObject.Find("Main Camera").transform.Find("shopping cart").gameObject.SetActive(true);
+        GameObject.Find("GameManager").transform.Find("shopping cart").gameObject.SetActive(true);
     }
 }
