@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5.0f;
+    public float speed = 25.0f;
+    public float duringTime = 2f;
+
+    bool isDrive = false;
+    float driveTime = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +19,26 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && isDrive == false)
         {
-            Debug.Log("직진");
-            transform.Translate(new Vector3(0,0,1) * speed * Time.deltaTime);
+            driveTime = 0;
+            isDrive = true;
         }
+        if(isDrive)
+        {
+            driveTime += Time.deltaTime;
+            Drive_Straight();
+            if(duringTime <= driveTime)
+            {
+                isDrive = false;
+            }
+            
+        }
+    }
+
+    void Drive_Straight()
+    {
+        Debug.Log("직진");
+        transform.Translate(new Vector3(0, 0, 1) * speed * Time.deltaTime);
     }
 }
