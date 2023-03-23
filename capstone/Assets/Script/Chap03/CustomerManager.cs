@@ -7,43 +7,46 @@ public class CustomerManager : MonoBehaviour
     int cnt = 0;        //3명이 되면 챕터 종료
     public GameObject[] spawnPoint;
     Transform now_spawnPoint;
-    public GameObject now_customer;
+    public GameObject now_customer;     //현재 주문중인 사람.
     public GameObject[] customers;
-    private bool changeCustomer;
+    bool ordering;
     // Update is called once per frame
     private void Start()
     {
         spawnPoint[0].transform.position = new Vector3(-5, 0, -3.5f);
         spawnPoint[1].transform.position = new Vector3(-5, 0, 3);
-    }
-    void Update()
-    {
-       
+        ordering = false;
+        SpawnCustomer();        //시작하마자 손님 한분 소환.
     }
 
     public void Take(GameObject menu)
     {
         //음식을 손님 손에 넘기기
         menu.transform.position = now_customer.transform.GetChild(1).transform.GetChild(0).transform.position;
-        menu.GetComponent<MenuController>().setTaken(true);
-        cnt++;      //손님 받은 카운트 증가.
-
+        
         //넘기고 이동.
         if(now_customer.GetComponent<CustomerController>().getStat() == 2)
         {
             now_customer.GetComponent<CustomerController>().setStat(3);
+            now_customer = null;        //현재 손님이 없는 상태로 변경.
+            cnt++;      //손님 받은 카운트 증가.
         }
-        SpawnCustomer();
-    }
-    private void SpawnCustomer()
-    {
-        GameObject customer = Instantiate(customers[0]);
-        customer.transform.position = spawnPoint[0].transform.position;
+
+        //====================수정부분==================
+        if (now_customer == null && cnt < 3)       //손님이 없을때만 소환.
+        {
+            SpawnCustomer();
+            Debug.Log("손님 받은 수 : " + cnt);
+        }
     }
 
-    public void setCustomer(GameObject customer)
+    private void SpawnCustomer()
     {
+        int rndCus = Random.Range(0, 3);
+        int rndPos = Random.Range(0, 2);
+        GameObject customer = Instantiate(customers[rndCus]);
+        customer.transform.position = spawnPoint[rndPos].transform.position;
         now_customer = customer;
-        Debug.Log(customer.name);
+        Debug.Log("손님 온다");
     }
 }
