@@ -10,8 +10,8 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -1449430958102139615}
-    m_Position: {x: 460.12958, y: 42.187683, z: 0}
+    m_State: {fileID: -4131129347518376868}
+    m_Position: {x: 300, y: 160, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -21,15 +21,15 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -1449430958102139615}
---- !u!1102 &-1449430958102139615
+  m_DefaultState: {fileID: -4131129347518376868}
+--- !u!1102 &-4131129347518376868
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: char_000_a163_victory_dance_3
+  m_Name: Dance2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

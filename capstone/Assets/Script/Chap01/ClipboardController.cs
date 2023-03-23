@@ -9,7 +9,7 @@ public class ClipboardController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(clipboard, 5f); // 화면 앞에 보이던 클립보드 삭제
+        Invoke("HideClipboard", 5f); // 화면 앞에 보이던 클립보드 false 처리
         Invoke("ShowShoppingCart", 5f);
     }
 
@@ -17,6 +17,11 @@ public class ClipboardController : MonoBehaviour
     void ShowShoppingCart()
     {
         Debug.Log("Show ShoppingCart");
-        GameObject.Find("Main Camera").transform.Find("shopping cart").gameObject.SetActive(true);
+        GameObject.Find("GameManager").transform.Find("shopping cart").gameObject.SetActive(true);
+    }
+
+    void HideClipboard()
+    {
+        GameObject.Find("GameManager").transform.Find("ClipboardCenter").gameObject.SetActive(false);
     }
 }
