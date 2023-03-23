@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 25.0f;
-    public float duringTime = 2f;
+    [SerializeField] private float speed = 25.0f;
+    [SerializeField] private float duringTime = 2f;
 
     bool isDrive = false;
     float driveTime = 0;
