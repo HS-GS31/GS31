@@ -10,23 +10,15 @@ struct Food
 
 public class MenuManager : MonoBehaviour
 {
+    GameObject parent;
     Food[] f;
     public GameObject[] menus;
     // Start is called before the first frame update
-    void Start()
-    {
-               
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public GameObject getRandomFood()
     {
-        int rnd = Random.Range(0, 5);           //1~5 罚待蔼 积己.
+        int rnd = Random.Range(0, 2);           //1~5 罚待蔼 积己.
         GameObject order = Instantiate(menus[rnd]);
         return order;
     }
