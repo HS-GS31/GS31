@@ -19,7 +19,7 @@ public class Sender : MonoBehaviour
     {
         if(other.gameObject.tag == "STICK")
         {
-            customerManager.GetComponent<CustomerManager>().Take(other.gameObject.transform.parent.gameObject);
+            customerManager.GetComponent<CustomerManager>().Take(other.gameObject);
             Debug.Log("Á¢½Ã¶û Ãæµ¹!!");
         }
     }

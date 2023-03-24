@@ -22,8 +22,9 @@ public class CustomerManager : MonoBehaviour
     public void Take(GameObject menu)
     {
         //음식을 손님 손에 넘기기
-        menu.transform.position = now_customer.transform.GetChild(1).transform.GetChild(0).transform.position;
-        
+        //menu.transform.position = now_customer.transform.GetChild(1).transform.GetChild(0).transform.position;
+        Destroy(menu);
+
         //넘기고 이동.
         if(now_customer.GetComponent<CustomerController>().getStat() == 2)
         {

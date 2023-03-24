@@ -4,26 +4,39 @@ using UnityEngine;
 
 public class IngredientController : MonoBehaviour
 {
+    private Vector3 scale;
+    private void Start()
+    {
+        scale = gameObject.transform.localScale;
+    }
 
     private void Update()
     {
-        
+     
         //½ºÆ½¿¡ ²ÈÇô ÀÖÀ»¶§´Â Áß·Â ¿µÇâ X
-        if(gameObject.transform.parent.gameObject.tag == "Menu")
+        if(gameObject.transform.parent.gameObject.tag == "STICK")
         {
             gameObject.GetComponent<Rigidbody>().useGravity = false;
             gameObject.GetComponent<Rigidbody>().isKinematic = true;
         }
         
     }
-    // Start is called before the first frame update
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "STICk")
+        {
+            this.gameObject.GetComponent<Rigidbody>().useGravity = false;
+        }
+    }
+    
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "STICK")
         {
-            this.gameObject.transform.parent = other.gameObject.transform.parent.transform;
-            gameObject.GetComponent<Rigidbody>().useGravity = false;
-            //Debug.Log("ºÎÂø!");
+            this.gameObject.transform.parent = other.gameObject.transform;
+            this.gameObject.GetComponent<MeshCollider>().isTrigger = true;
+            this.gameObject.GetComponent<Rigidbody>().useGravity = false;
         }
     }
 
@@ -33,7 +46,15 @@ public class IngredientController : MonoBehaviour
         {
             this.gameObject.transform.parent = null;
             gameObject.GetComponent<Rigidbody>().useGravity = true;
-            //Debug.Log("Å»Ãâ!");
+            this.gameObject.GetComponent<MeshCollider>().isTrigger = false;
         }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "STICK")
+        {
+            Debug.Log("Ãæµ¹!!");
+            this.gameObject.GetComponent<MeshCollider>().isTrigger = true;
+        }   
     }
 }

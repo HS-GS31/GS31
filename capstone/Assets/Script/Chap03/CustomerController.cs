@@ -6,7 +6,7 @@ public class CustomerController : MonoBehaviour
 {
     int state;     //0: 대기, 11: walk, 22: order, 33은 음식대기(idle), 44 : take away, 55 : 인사후 퇴장.
     float speed = 0.7f;
-    public Vector3 orderPos = new Vector3(-2.8f, 0, -1);
+    Vector3 orderPos;
     private Vector3 truckPos;
     private Animator animator;
     private Vector3 desPos;
@@ -21,7 +21,7 @@ public class CustomerController : MonoBehaviour
         this.customerManager = GameObject.Find("CustomerManager");
         this.truckPos = new Vector3(0, 0, 0);
         this.desPos = new Vector3(-2.8f, 0, 4);
-
+        orderPos = new Vector3(-2.8f, 0, -1);
         //메뉴를 보여줄 말풍선 설정
         this.TextBubble = gameObject.transform.GetChild(7).gameObject;  //7번 인덱스의 자식오브젝트가 textBubble임.
         this.order = this.customerManager.GetComponent<MenuManager>().getRandomFood();
