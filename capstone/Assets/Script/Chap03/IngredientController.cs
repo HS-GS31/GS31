@@ -19,7 +19,6 @@ public class IngredientController : MonoBehaviour
             gameObject.GetComponent<Rigidbody>().useGravity = false;
             gameObject.GetComponent<Rigidbody>().isKinematic = true;
         }
-        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -53,8 +52,8 @@ public class IngredientController : MonoBehaviour
     {
         if (collision.gameObject.tag == "STICK")
         {
-            Debug.Log("충돌!!");
-            this.gameObject.GetComponent<MeshCollider>().isTrigger = true;
+            Debug.Log("탈출!!!! 트리거 무효");
+            this.gameObject.GetComponent<MeshCollider>().isTrigger = false;
         }   
     }
 }
