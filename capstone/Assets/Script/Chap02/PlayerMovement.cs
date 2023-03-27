@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 25.0f;
     [SerializeField] private float duringTime = 2f;
+    [SerializeField] private SoundManager gameManager;
 
     bool isDrive = false;
     float driveTime = 0;
@@ -23,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
         {
             driveTime = 0;
             isDrive = true;
+            gameManager.Play();
+
         }
         if(isDrive)
         {
@@ -31,14 +34,15 @@ public class PlayerMovement : MonoBehaviour
             if(duringTime <= driveTime)
             {
                 isDrive = false;
+                gameManager.DontPlay();
             }
-            
+
         }
     }
 
     void Drive_Straight()
     {
-        Debug.Log("직진");
+        //Debug.Log("직진");
         transform.Translate(new Vector3(0, 0, 1) * speed * Time.deltaTime);
     }
 }
