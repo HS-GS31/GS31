@@ -30,7 +30,7 @@ public class CustomerManager : MonoBehaviour
         {
             now_customer.GetComponent<CustomerController>().setStat(3);
             now_customer = null;        //현재 손님이 없는 상태로 변경.
-            cnt++;      //손님 받은 카운트 증가.
+            cnt++;                      //손님 받은 카운트 증가.
         }
 
         //====================수정부분==================

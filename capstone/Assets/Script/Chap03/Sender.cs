@@ -13,8 +13,6 @@ public class Sender : MonoBehaviour
         ordering = false;
     }
 
-    // Update is called once per frame
-
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "STICK")

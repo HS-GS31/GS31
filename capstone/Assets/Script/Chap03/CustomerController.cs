@@ -27,8 +27,6 @@ public class CustomerController : MonoBehaviour
         this.order = this.customerManager.GetComponent<MenuManager>().getRandomFood();
         this.order.SetActive(false);       //처음은 안보이게
         this.order.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
-        //this.orderPos.transform.localEulerAngles = new Vector3(0, 90, 0);
-        //this.orderPos.transform.position = new Vector3(-2.8f, 0, -1);
         this.state = 1;
     }
 
