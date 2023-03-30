@@ -17,6 +17,7 @@ public class Cartoon : MonoBehaviour
     public GameObject text3;
     public GameObject text4;
     public GameObject text5;
+    public GameObject text6;//대사불투명창
 
     public GameObject chap1Btn;
     // Start is called before the first frame update
@@ -92,5 +93,6 @@ public class Cartoon : MonoBehaviour
         cut5.SetActive(true);
         text5.SetActive(true);
         chap1Btn.SetActive(true);
+        text6.SetActive(false);
     }
 }
