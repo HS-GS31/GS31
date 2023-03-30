@@ -8,6 +8,7 @@ TagManager:
   - Saussage
   - Mushroom
   - Shrimp
+  - CheckCollision
   layers:
   - Default
   - TransparentFX

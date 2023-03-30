@@ -619,11 +619,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27882645}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &32268549 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8172022292588126079, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
-  m_PrefabInstance: {fileID: 565290750}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &33222830
 GameObject:
   m_ObjectHideFlags: 0
@@ -4080,10 +4075,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 271235bedf3d2054587cb383632e60c0, type: 3}
---- !u!1 &245248148 stripped
+--- !u!1 &241909659 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8429610905291158547, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
-  m_PrefabInstance: {fileID: 565290750}
+  m_CorrespondingSourceObject: {fileID: 8172022292588126079, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
+  m_PrefabInstance: {fileID: 1183594869}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &267199771
 GameObject:
@@ -9059,6 +9054,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716837610}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &724120438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8429610905291158547, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
+  m_PrefabInstance: {fileID: 1183594869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &728195003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10047,6 +10047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardcheck: {fileID: 565290755}
   foodcheck: {fileID: 755266748}
+  cart: {fileID: 1844848358}
 --- !u!1 &763542992 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6986441214458872419, guid: 291c48ee2e426cb498d145f35360167b, type: 3}
@@ -10347,8 +10348,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5598c084018ba6e4e91aa511b39cf801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boardcheck: {fileID: 245248148}
+  boardcheck: {fileID: 724120438}
   foodcheck: {fileID: 793339818}
+  cart: {fileID: 1844848358}
 --- !u!1001 &796254522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13022,6 +13024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardcheck: {fileID: 565290755}
   foodcheck: {fileID: 927840809}
+  cart: {fileID: 1844848358}
 --- !u!1001 &931548929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13500,11 +13503,6 @@ MonoBehaviour:
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &964640155 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2841349732960505047, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
-  m_PrefabInstance: {fileID: 565290750}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &981086588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16377,7 +16375,6 @@ GameObject:
   - component: {fileID: 1202769453}
   - component: {fileID: 1202769457}
   - component: {fileID: 1202769456}
-  - component: {fileID: 1202769455}
   - component: {fileID: 1202769454}
   - component: {fileID: 1202769458}
   m_Layer: 0
@@ -16394,14 +16391,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202769452}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 0.77, z: 0.03}
-  m_LocalScale: {x: 0.22000003, y: 0.10000001, z: 0.12999998}
+  m_LocalRotation: {x: -0, y: -0, z: 0.031230303, w: 0.99951226}
+  m_LocalPosition: {x: 0.0674, y: -0.1774, z: 0.029000193}
+  m_LocalScale: {x: 0.18382339, y: 0.10000001, z: 0.09866089}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 847273897}
   m_RootOrder: 41
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.579}
 --- !u!54 &1202769454
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16418,20 +16415,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1202769455
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202769452}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1202769456
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16490,7 +16473,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202769452}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 9.999999, y: 2.220446e-16, z: 9.999999}
@@ -16838,6 +16821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardcheck: {fileID: 565290755}
   foodcheck: {fileID: 1226063363}
+  cart: {fileID: 1844848358}
 --- !u!1001 &1229422858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18674,6 +18658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardcheck: {fileID: 565290755}
   foodcheck: {fileID: 1378028579}
+  cart: {fileID: 1844848358}
 --- !u!1001 &1388378627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19252,6 +19237,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec72b789b19d74c44811621850ee6b80, type: 3}
+--- !u!1 &1495412947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2841349732960505047, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
+  m_PrefabInstance: {fileID: 1183594869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1496638259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19458,8 +19448,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5598c084018ba6e4e91aa511b39cf801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boardcheck: {fileID: 32268549}
+  boardcheck: {fileID: 241909659}
   foodcheck: {fileID: 1551136154}
+  cart: {fileID: 1844848358}
 --- !u!1001 &1558339032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19735,8 +19726,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5598c084018ba6e4e91aa511b39cf801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boardcheck: {fileID: 964640155}
+  boardcheck: {fileID: 1495412947}
   foodcheck: {fileID: 1598127845}
+  cart: {fileID: 1844848358}
 --- !u!1001 &1599977334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22468,6 +22460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardcheck: {fileID: 565290755}
   foodcheck: {fileID: 1727033193}
+  cart: {fileID: 1844848358}
 --- !u!1 &1740477219
 GameObject:
   m_ObjectHideFlags: 0
@@ -23816,6 +23809,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f7acaa86be68af4e8c510f909f33089, type: 3}
+--- !u!1 &1844848358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1844848359}
+  m_Layer: 0
+  m_Name: vegetables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1844848359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844848358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 847273897}
+  m_RootOrder: 43
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1853425452
 PrefabInstance:
   m_ObjectHideFlags: 0
