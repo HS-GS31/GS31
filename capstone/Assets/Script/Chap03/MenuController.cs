@@ -5,27 +5,39 @@ using UnityEngine;
 public class MenuController : MonoBehaviour
 {
     GameObject customerManager;
-    GameObject[] ingredients;
+    private string[] ingredients;
     int top;
     private void Start()
     {
         customerManager = GameObject.Find("CustomerManager");
+        ingredients = new string[4];
         top = -1;
     }
 
     public void push(GameObject ingredient)
     {
         top++;
-        ingredients[top] = ingredient;
-        Debug.Log(ingredient + "가 들어왔다.");
-        Debug.Log("현재 꼬치 상태 " + ingredients);
+        ingredients[top] = ingredient.tag;
+        Debug.Log("top :" + ingredients[top]);
+
+        if (top == 3)
+        {
+            Debug.Log("꼬치들:");
+            foreach(string obj in ingredients)
+            {
+                Debug.Log(obj);
+            }
+        }
     }
 
-    public void pop(GameObject ingredient)
+    public void pop()
     {
-        Debug.Log(ingredient + "가 빠졌다.");
         ingredients[top] = null;
         top--;
-        Debug.Log("현재 꼬치 상태 " + ingredients);
+    }
+
+    public string[] getMenu()
+    {
+        return ingredients;
     }
 }

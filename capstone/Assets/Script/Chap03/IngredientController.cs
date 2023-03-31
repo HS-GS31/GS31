@@ -4,51 +4,45 @@ using UnityEngine;
 
 public class IngredientController : MonoBehaviour
 {
-    GameObject parent;
-    private void Update()
+    /*
+    private void OnCollisionEnter(Collision collision)
     {
-        //스틱에 꽂혀 있을때는 중력 영향 X
-        if(gameObject.transform.parent.gameObject.tag == "STICK")
+        if (collision.gameObject.tag == "STICK")
         {
-            gameObject.GetComponent<Rigidbody>().useGravity = false;
-           // gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            Debug.Log("접촉!! 트리거 on");
+            collision.gameObject.GetComponent<CapsuleCollider>().isTrigger = true;      //꼬치 트리거 on
+            this.gameObject.GetComponent<MeshCollider>().isTrigger = true;              //음식 트리거 on
+            this.gameObject.GetComponent<Rigidbody>().useGravity = false;
+            Debug.Log(this.gameObject.transform.parent +"는 부모" + "\n" + gameObject +"는 자식");
+            
+            return;
+        }
+
+    }
+    */
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "STICK")
+        {
+            this.gameObject.transform.parent = other.gameObject.transform;
+            this.gameObject.transform.parent = other.gameObject.transform;
+            other.gameObject.GetComponent<MenuController>().push(this.gameObject);
         }
     }
-    
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "STICK")
         {
-            this.gameObject.transform.parent = other.gameObject.transform;
-            this.parent = other.gameObject;
-            this.gameObject.GetComponent<MeshCollider>().isTrigger = true;
             this.gameObject.GetComponent<Rigidbody>().useGravity = false;
+            this.gameObject.GetComponent<MeshCollider>().isTrigger = true;
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "STICK")
         {
-            //parent.GetComponent<MenuController>().pop(gameObject);
+            other.gameObject.GetComponent<MenuController>().pop();
             this.gameObject.transform.parent = null;
-            this.parent = null;
-            this.gameObject.GetComponent<MeshCollider>().isTrigger = false;
-            this.gameObject.GetComponent<Rigidbody>().useGravity = true;
         }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "STICK")
-        {
-            Debug.Log("접촉!! 트리거 on");
-            this.gameObject.GetComponent<MeshCollider>().isTrigger = true;
-            this.gameObject.GetComponent<Rigidbody>().useGravity = false;
-
-            //Stick의 스택형식으로...
-            //if (parent != null)
-            {
-                parent.GetComponent<MenuController>().push(gameObject);
-            }
-        }   
     }
 }

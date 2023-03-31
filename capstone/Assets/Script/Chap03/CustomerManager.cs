@@ -19,15 +19,16 @@ public class CustomerManager : MonoBehaviour
         SpawnCustomer();        //시작하마자 손님 한분 소환.
     }
 
-    public void Take(GameObject menu)
+    public void Take(GameObject menu, bool res)
     {
         //음식을 손님 손에 넘기기
         //menu.transform.position = now_customer.transform.GetChild(1).transform.GetChild(0).transform.position;
         Destroy(menu);
-
+        
         //넘기고 이동.
         if(now_customer.GetComponent<CustomerController>().getStat() == 2)
         {
+            now_customer.GetComponent<CustomerController>().setEmoji(res);
             now_customer.GetComponent<CustomerController>().setStat(3);
             now_customer = null;        //현재 손님이 없는 상태로 변경.
             cnt++;                      //손님 받은 카운트 증가.
