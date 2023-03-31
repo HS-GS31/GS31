@@ -92,15 +92,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3471364301952794785}
-  - component: {fileID: 3471364301952794814}
-  - component: {fileID: 3471364301952794815}
-  - component: {fileID: 3471364301952794810}
-  - component: {fileID: 3471364301952794813}
-  - component: {fileID: 3471364301952794812}
+  - component: {fileID: -757378621787720021}
   m_Layer: 0
   m_Name: Menu4
   m_TagString: STICK
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -119,42 +115,12 @@ Transform:
   - {fileID: 3471364301262607437}
   - {fileID: 4924823990594598135}
   - {fileID: 867203566316459782}
-  - {fileID: 7078242063370387066}
   - {fileID: 7078242063172165652}
+  - {fileID: 7078242063370387066}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &3471364301952794814
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3471364301952794784}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.005
-  m_Height: 0.34
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &3471364301952794815
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3471364301952794784}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &3471364301952794810
+--- !u!114 &-757378621787720021
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,65 +129,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3471364301952794784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _maxGrabPoints: -1
---- !u!114 &3471364301952794813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3471364301952794784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 3471364301952794810}
-  _rigidbody: {fileID: 3471364301952794815}
-  _resetGrabOnGrabsUpdated: 1
-  _physicsGrabbable: {fileID: 0}
-  _scoringModifier:
-    _positionRotationWeight: 0.8
-  _supportedGrabTypes: 3
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
---- !u!114 &3471364301952794812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3471364301952794784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea0594c68d6b0564ab0c47825eb14dfc, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b3945fe09c88b843a3e0ab1b2a00b11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1108619922186843529
@@ -287,6 +195,8 @@ PrefabInstance:
     - {fileID: 2921603037368752599, guid: fb0a222443475bf41adb8e9c3d520c99, type: 3}
     - {fileID: 6569581314637889268, guid: fb0a222443475bf41adb8e9c3d520c99, type: 3}
     - {fileID: 228276619633611102, guid: fb0a222443475bf41adb8e9c3d520c99, type: 3}
+    - {fileID: 497794047243284072, guid: fb0a222443475bf41adb8e9c3d520c99, type: 3}
+    - {fileID: -2478032048327767007, guid: fb0a222443475bf41adb8e9c3d520c99, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fb0a222443475bf41adb8e9c3d520c99, type: 3}
 --- !u!4 &4924823990594598135 stripped
 Transform:
@@ -304,13 +214,17 @@ PrefabInstance:
       propertyPath: _rigidbody
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 483746192, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
+      propertyPath: _pointableElement
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7879166663911572876, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
       propertyPath: m_Name
       value: Shrimp (8)
       objectReference: {fileID: 0}
     - target: {fileID: 7879166663911572884, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7879166663911572884, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -356,6 +270,8 @@ PrefabInstance:
     - {fileID: 7879166663911572883, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
     - {fileID: 7879166663911572881, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
     - {fileID: 7879166663911572880, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
+    - {fileID: 483746190, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
+    - {fileID: 483746192, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
 --- !u!4 &7078242063172165652 stripped
 Transform:
@@ -373,13 +289,17 @@ PrefabInstance:
       propertyPath: _rigidbody
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 483746192, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
+      propertyPath: _pointableElement
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7879166663911572876, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
       propertyPath: m_Name
       value: Shrimp (7)
       objectReference: {fileID: 0}
     - target: {fileID: 7879166663911572884, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7879166663911572884, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -425,6 +345,8 @@ PrefabInstance:
     - {fileID: 7879166663911572883, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
     - {fileID: 7879166663911572881, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
     - {fileID: 7879166663911572880, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
+    - {fileID: 483746190, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
+    - {fileID: 483746192, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fa0c23ff1b0fca448a63b43e159abbb1, type: 3}
 --- !u!4 &7078242063370387066 stripped
 Transform:
@@ -502,6 +424,8 @@ PrefabInstance:
     - {fileID: 4608289591593128807, guid: 298d4524ab65b7d43a210284be4c69e5, type: 3}
     - {fileID: -5575730910971117628, guid: 298d4524ab65b7d43a210284be4c69e5, type: 3}
     - {fileID: -5347005733927544509, guid: 298d4524ab65b7d43a210284be4c69e5, type: 3}
+    - {fileID: 239658899063601011, guid: 298d4524ab65b7d43a210284be4c69e5, type: 3}
+    - {fileID: 1433988342047211344, guid: 298d4524ab65b7d43a210284be4c69e5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 298d4524ab65b7d43a210284be4c69e5, type: 3}
 --- !u!4 &867203566316459782 stripped
 Transform:
