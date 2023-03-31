@@ -10,7 +10,10 @@ public class CustomerController : MonoBehaviour
     private Vector3 truckPos;
     private Animator animator;
     private Vector3 desPos;
+    private GameObject sender;
     private GameObject order;
+    public GameObject emoji_smile;
+    public GameObject emoji_angry;
     GameObject customerManager;
     GameObject TextBubble;
 
@@ -19,20 +22,32 @@ public class CustomerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         this.customerManager = GameObject.Find("CustomerManager");
+        this.sender = GameObject.Find("SenderPlate");
         this.truckPos = new Vector3(0, 0, 0);
         this.desPos = new Vector3(-2.8f, 0, 4);
         orderPos = new Vector3(-2.8f, 0, -1);
+
         //메뉴를 보여줄 말풍선 설정
         this.TextBubble = gameObject.transform.GetChild(7).gameObject;  //7번 인덱스의 자식오브젝트가 textBubble임.
         this.order = this.customerManager.GetComponent<MenuManager>().getRandomFood();
         this.order.SetActive(false);       //처음은 안보이게
         this.order.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
         this.state = 1;
+
+        //이모티콘
+        this.emoji_angry = TextBubble.transform.GetChild(0).gameObject;
+        this.emoji_smile = TextBubble.transform.GetChild(1).gameObject;
+        this.emoji_angry.SetActive(false);
+        this.emoji_smile.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        // 이모티콘 위치 조정
+        this.emoji_angry.transform.position = TextBubble.transform.position;
+        this.emoji_smile.transform.position = TextBubble.transform.position;
+
         //음식 말풍선 위치 수시로 조정
         this.order.transform.position = TextBubble.transform.position;
         this.order.transform.Rotate(new Vector3(0, 15 * Time.deltaTime, 0));
@@ -73,5 +88,22 @@ public class CustomerController : MonoBehaviour
     public int getStat()
     {
         return state;
+    }
+
+
+    public void setEmoji(bool res)
+    {
+        if (res)
+        {
+            this.emoji_smile.SetActive(true);
+        }
+        else
+        {
+            this.emoji_angry.SetActive(true);
+        }
+    }
+    public GameObject getOrder()
+    {
+        return order;
     }
 }

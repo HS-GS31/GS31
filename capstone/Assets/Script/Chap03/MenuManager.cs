@@ -3,21 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 public class MenuManager : MonoBehaviour
 {
-    GameObject parent;
-    int now_menu_code;
     public GameObject[] menus;
-    // Start is called before the first frame update
+    private GameObject sender;
 
+    private void Start()
+    {
+        sender = GameObject.Find("SenderPlate");
+    }
     public GameObject getRandomFood()
     {
-        int rnd = Random.Range(0, 2);               //1~5 罚待蔼 积己.
-        now_menu_code = rnd;
-        GameObject order = Instantiate(menus[rnd]);
+        int rnd = Random.Range(0, 5);               //1~5 罚待蔼 积己.
+        GameObject order = Instantiate(menus[4]);
+        sender.GetComponent<Sender>().setMenu(order);
         return order;
-    }
-
-    public bool checkMenu()
-    {
-        return false;
     }
 }

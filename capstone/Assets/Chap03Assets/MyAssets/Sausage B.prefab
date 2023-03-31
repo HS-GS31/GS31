@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 1433988342047211344}
   m_Layer: 0
   m_Name: Sausage B
-  m_TagString: Saussage
+  m_TagString: Sausage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
