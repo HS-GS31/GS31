@@ -29,7 +29,7 @@ public class CustomerManager : MonoBehaviour
         if(now_customer.GetComponent<CustomerController>().getStat() == 2)
         {
             now_customer.GetComponent<CustomerController>().setEmoji(res);
-            now_customer.GetComponent<CustomerController>().setStat(3);
+            Invoke("setCusomState", 2f);
             now_customer = null;        //현재 손님이 없는 상태로 변경.
             cnt++;                      //손님 받은 카운트 증가.
         }
@@ -50,5 +50,9 @@ public class CustomerManager : MonoBehaviour
         customer.transform.position = spawnPoint[rndPos].transform.position;
         now_customer = customer;
         Debug.Log("손님 온다");
+    }
+    private void setCusomState()
+    {
+        now_customer.GetComponent<CustomerController>().setStat(3);
     }
 }
