@@ -5,76 +5,106 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 25.0f;
+
     [SerializeField] private float duringTime = 2f;
-    [SerializeField] private float rotateTime = 2.2f;
+    [SerializeField] private float rotateTime = 3f;
+
     [SerializeField] private SoundManager gameManager;
-    [SerializeField] private Transform leftObject;
-    [SerializeField] private Transform rightObject;
     [SerializeField] private Transform handle;
 
+    bool isHandle = false;
+
     bool isDrive = false;
+    bool isRotate = false;
+
     bool driveAble = true;
     bool rotateAble = true;
-    bool isRotate = false;
-    bool isHandle = false;
+
     bool isLeft = false;
+
     float driveTime = 0;
-    bool[] roadRight = new bool[] { false, true, false};
+    bool[] roadRight = new bool[] { false, true, false}; //스택
+
+    Drive[] drives = new Drive[2];
 
     //왼쪽은 false, 오른쪽은 true
 
     // Start is called before the first frame update
     void Start()
     {
+        StraightDrive straightDrive = new StraightDrive();
+        HorizontalDrive horizontalDrive = new HorizontalDrive();
+        drives[0] = straightDrive;
+        drives[1] = horizontalDrive;
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayDrive();
-        
-        if (isDrive)
-        {
-            driveTime += Time.deltaTime;
-            Drive_Straight();
-
-            //멈춰
-            if(duringTime <= driveTime)
-            {
-                isDrive = false;
-                gameManager.DontPlay();
-            }
-        }
-
-        //
-        if(isRotate)
-        {
-            if(isLeft)
-            {
-                Handle_Left();
-            }
-            else
-            {
-                Handle_Right();
-            }
-
-            //시간 더하는 함수를 최적화 할수있지않을까
-            driveTime += Time.deltaTime;
-
-            if (rotateTime <= driveTime)
-            {
-                isRotate = false;
-                gameManager.DontPlay();
-            }
-        }
-
+        StartDrive();
+        Driving();
     }
 
     void FixedUpdate()
     {
-        if(handle.rotation.y <= -0.69 || 0.69 <= handle.rotation.y)
-            Debug.Log(handle.rotation.y);
+        //if(handle.rotation.y <= -0.69 || 0.69 <= handle.rotation.y)
+            //Debug.Log(handle.rotation.y);
     }
+
+    private void StartDrive()
+    {
+        foreach (Drive drive in drives)
+        {
+            bool isCheck = drive.StartDrive(isHandle, handle.rotation.y);
+            if (isCheck)
+            {
+                driveTime = 0;
+                gameManager.Play();
+            }
+            if (drive.isDrive)
+            {
+                break;
+            }
+        }
+    }
+    void Driving()
+    {
+        driveTime += Time.deltaTime;
+        for(int i = 0; i < drives.Length; i++)
+        {
+            Drive drive = drives[i];
+            if(drive.isDrive)
+            {
+                if(i == 1)
+                {
+                    HorizontalDrive hd = drive as HorizontalDrive;
+                    if (hd.GetIsLeft())
+                    {
+                        Handle_Left();
+                    }
+                    else
+                    {
+                        Handle_Right();
+                    }
+                }
+                else
+                {
+                    Drive_Straight();
+                }
+
+                if(drive.Action(driveTime))
+                {
+                    gameManager.DontPlay();
+                }
+                //일단 if로 0, 1이면 isLeft로 트럭 이동 함수 판별
+                //매개변수가 driveTime, 비교후 bool 타입
+                //DontPlay
+            }
+        }
+
+
+    }
+
 
     void Drive_Straight()
     {
@@ -83,36 +113,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    private void PlayDrive()
-    {
-        //직진하고 핸들 돌리지 않는 이상 실행 X
-        if (isDrive == false && driveAble && isHandle)
-        {
-            driveTime = 0;
-            isDrive = true;
-            driveAble = false;
-            gameManager.Play();
-        }
-        //
-        else if(!isRotate && rotateAble && !isDrive && isHandle && (handle.rotation.y <= -0.69 || 0.69 <= handle.rotation.y ))
-        {
-            isRotate = true;
-            driveTime = 0;
-            rotateAble = false;
-
-
-            //핸들을 잡은 상태 + -90 / 90 범주를 넘어서면rotate
-            if (handle.rotation.y <= -0.69)
-            {
-                isLeft = true;
-            }
-            else
-            {
-                isLeft = false;
-            }
-        }
-    }
-
+    //
     public void setIsHandle(bool isHandle)
     {
         this.isHandle = isHandle;
