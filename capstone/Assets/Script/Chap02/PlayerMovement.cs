@@ -63,14 +63,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    #if UNITY_EDITOR
         Debug_Handle();
+    #endif
         StartDrive();
         Driving();
-    }
-
-    void FixedUpdate()
-    {
-        //Debug.Log(handle.localRotation.y);
     }
 
     private void StartDrive()
@@ -117,16 +114,39 @@ public class PlayerMovement : MonoBehaviour
                 {
                     gameManager.DontPlay();
 
-                    //완료 되면 바로 큐 비교
-                    //맞으면 스택 제거 + 아래 for문
-                    //틀리면 스택 맨 앞 되돌리기
-
-                    for (int j = 0; j < drives.Length; j++)
+                    if (roadQueue.Count <= 0)
                     {
-                        if(i != j)
+                        Debug.Log("완료");
+                        return;
+                    }
+                    //완료 되면 바로 큐 비교 [물론 핸들 돌리는거 끝난 직후]
+                    if (i == 1)
+                    {
+                        HorizontalDrive hd = drive as HorizontalDrive;
+
+                        //경로 다 가면 씬 전환
+                        Route route = roadQueue.Peek();
+                        
+                        //방향이 맞다면
+                        if (hd.GetIsLeft() == route.GetIsLeft())
                         {
-                            drives[j].driveAble = true;
+                            roadQueue.Dequeue();
+                            drives[0].driveAble = true;
                         }
+
+                        //방향이 틀리다면
+                        else
+                        {
+                            transform.position = route.GetPosition();
+                            transform.localRotation = Quaternion.Euler(route.GetRotation());
+                            drives[1].driveAble = true;
+                            handle.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
+                        }
+                    }
+                    else
+                    {
+                        drives[1].driveAble = true;
+
                     }
                 }
             }

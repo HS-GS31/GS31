@@ -14,4 +14,18 @@ public class Route
         this.position = position;
         this.rotation = rotation;
     }
+
+    public bool GetIsLeft()
+    {
+        return isLeft;
+    }
+    public Vector3 GetPosition()
+    {
+        return position;
+    }
+    public Vector3 GetRotation()
+    {
+        return rotation;
+    }
+
 }
