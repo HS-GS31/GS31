@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private SoundManager gameManager;
     [SerializeField] private Transform handle;
 
+    [SerializeField] private Transform[] before_transforms;
+
     bool isHandle = false;
 
     bool isDrive = false;
@@ -23,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     bool isLeft = false;
 
     float driveTime = 0;
-    bool[] roadRight = new bool[] { false, true, false}; //스택
+    Queue<Route> roadQueue;
 
     Drive[] drives = new Drive[2];
 
@@ -32,30 +34,50 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        roadQueue = new Queue<Route>();
+
         StraightDrive straightDrive = new StraightDrive();
         HorizontalDrive horizontalDrive = new HorizontalDrive();
         drives[0] = straightDrive;
         drives[1] = horizontalDrive;
+
+        for(int i = 0; i < before_transforms.Length; i++)
+        {
+            bool isCheck;
+            if (i % 2 == 0) {
+                isCheck = true;
+            }
+            else {
+                isCheck = false;
+            }
+            //Debug.Log("dd : " + before_transforms[i].position + " " + before_transforms[i].rotation.eulerAngles);
+            roadQueue.Enqueue(new Route(isCheck,
+                before_transforms[i].position,
+                before_transforms[i].rotation.eulerAngles)
+            );
+            //Debug.Log("아아 : " + i);
+
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug_Handle();
         StartDrive();
         Driving();
     }
 
     void FixedUpdate()
     {
-        //if(handle.rotation.y <= -0.69 || 0.69 <= handle.rotation.y)
-            //Debug.Log(handle.rotation.y);
+        //Debug.Log(handle.localRotation.y);
     }
 
     private void StartDrive()
     {
         foreach (Drive drive in drives)
         {
-            bool isCheck = drive.StartDrive(isHandle, handle.rotation.y);
+            bool isCheck = drive.StartDrive(isHandle, handle.localRotation.y);
             if (isCheck)
             {
                 driveTime = 0;
@@ -78,12 +100,10 @@ public class PlayerMovement : MonoBehaviour
                 if(i == 1)
                 {
                     HorizontalDrive hd = drive as HorizontalDrive;
-                    if (hd.GetIsLeft())
-                    {
+                    if (hd.GetIsLeft()) {
                         Handle_Left();
                     }
-                    else
-                    {
+                    else {
                         Handle_Right();
                     }
                 }
@@ -92,13 +112,23 @@ public class PlayerMovement : MonoBehaviour
                     Drive_Straight();
                 }
 
+                //완료 되었는가
                 if(drive.Action(driveTime))
                 {
                     gameManager.DontPlay();
+
+                    //완료 되면 바로 큐 비교
+                    //맞으면 스택 제거 + 아래 for문
+                    //틀리면 스택 맨 앞 되돌리기
+
+                    for (int j = 0; j < drives.Length; j++)
+                    {
+                        if(i != j)
+                        {
+                            drives[j].driveAble = true;
+                        }
+                    }
                 }
-                //일단 if로 0, 1이면 isLeft로 트럭 이동 함수 판별
-                //매개변수가 driveTime, 비교후 bool 타입
-                //DontPlay
             }
         }
 
@@ -134,4 +164,28 @@ public class PlayerMovement : MonoBehaviour
         transform.Rotate(0, Time.deltaTime * 30, 0);
         transform.Translate(0, 0, 15 * Time.deltaTime);
     }
+
+    //핸들 안잡고 디버깅 하는 용도
+    #if UNITY_EDITOR
+    void Debug_Handle()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            setIsHandle(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            handle.localRotation = Quaternion.Euler(0.0f, -90f, 0.0f);
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            handle.localRotation = Quaternion.Euler(0.0f, 90f, 0.0f);
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            setIsHandle(false);
+        }
+    }
+
+    #endif
 }
