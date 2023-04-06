@@ -515,7 +515,19 @@ MonoBehaviour:
       m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1092931477}
+        m_TargetAssemblyTypeName: GrabFood, Assembly-CSharp
+        m_MethodName: UnGrabVegetable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenMove:
     m_PersistentCalls:
       m_Calls: []
@@ -4733,6 +4745,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a519ca44a1443a7449a7665c4684b11d, type: 3}
+--- !u!1 &322558154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3077687082837638172, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
+  m_PrefabInstance: {fileID: 1183594869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &330729145
 GameObject:
   m_ObjectHideFlags: 0
@@ -4830,6 +4847,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330729145}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &339413714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339413715}
+  m_Layer: 0
+  m_Name: P_Lobster_Stand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &339413715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339413714}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.8999996, y: 0.84, z: -0.1500001}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604788250}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &369291787
 GameObject:
   m_ObjectHideFlags: 0
@@ -4927,6 +4975,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369291787}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &393189553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8898652513232842476, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
+  m_PrefabInstance: {fileID: 1183594869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &395762532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6425,13 +6478,56 @@ MonoBehaviour:
       m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1454896154}
+        m_TargetAssemblyTypeName: GrabFood, Assembly-CSharp
+        m_MethodName: UnGrabVegetable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenMove:
     m_PersistentCalls:
       m_Calls: []
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &555547353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 555547354}
+  m_Layer: 0
+  m_Name: P_Shrimp_Stand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &555547354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555547353}
+  m_LocalRotation: {x: -0, y: -0.3420201, z: -0, w: 0.9396927}
+  m_LocalPosition: {x: -0.5867233, y: 1.616, z: -0.12902737}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604788250}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &556722717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7485,6 +7581,45 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4858009409061439646, guid: 7649866f2f6910d43b698368b665017e, type: 3}
   m_PrefabInstance: {fileID: 599408658}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &604788249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 604788250}
+  m_Layer: 0
+  m_Name: position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &604788250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604788249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1620900180}
+  - {fileID: 1521536443}
+  - {fileID: 339413715}
+  - {fileID: 685145255}
+  - {fileID: 1859819927}
+  - {fileID: 2097571968}
+  - {fileID: 641942093}
+  - {fileID: 555547354}
+  m_Father: {fileID: 2023550716}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &609434463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8721,6 +8856,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7769998774756451652, guid: faacf81496479264db30006478c6eb71, type: 3}
   m_PrefabInstance: {fileID: 632480059}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &641942092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 641942093}
+  m_Layer: 0
+  m_Name: P_Sausage_Stand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &641942093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641942092}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.8999996, y: 1.61, z: -0.119999886}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604788250}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &651858647
 GameObject:
   m_ObjectHideFlags: 0
@@ -8953,6 +9119,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec72b789b19d74c44811621850ee6b80, type: 3}
+--- !u!1 &685145254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 685145255}
+  m_Layer: 0
+  m_Name: P_Octopus_Stand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &685145255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685145254}
+  m_LocalRotation: {x: -0, y: -0.5, z: -0, w: 0.8660254}
+  m_LocalPosition: {x: -0.59044456, y: 0.84, z: -0.16135216}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604788250}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &695504709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9058,6 +9255,37 @@ Transform:
   - {fileID: 457332842}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &709334194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 709334195}
+  m_Layer: 0
+  m_Name: meetandfish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &709334195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709334194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 847273897}
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &716837610
 GameObject:
@@ -10247,7 +10475,19 @@ MonoBehaviour:
       m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1283732011}
+        m_TargetAssemblyTypeName: GrabFood, Assembly-CSharp
+        m_MethodName: UnGrabVegetable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenMove:
     m_PersistentCalls:
       m_Calls: []
@@ -11661,7 +11901,19 @@ MonoBehaviour:
       m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1817045182}
+        m_TargetAssemblyTypeName: GrabFood, Assembly-CSharp
+        m_MethodName: UnGrabVegetable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenMove:
     m_PersistentCalls:
       m_Calls: []
@@ -13673,7 +13925,19 @@ MonoBehaviour:
       m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2085641983}
+        m_TargetAssemblyTypeName: GrabFood, Assembly-CSharp
+        m_MethodName: UnGrabVegetable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenMove:
     m_PersistentCalls:
       m_Calls: []
@@ -14153,13 +14417,43 @@ MonoBehaviour:
       m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 994066400}
+        m_TargetAssemblyTypeName: GrabFood, Assembly-CSharp
+        m_MethodName: UnGrabVegetable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenMove:
     m_PersistentCalls:
       m_Calls: []
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &994066400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994066386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5598c084018ba6e4e91aa511b39cf801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardcheck: {fileID: 1098200247}
+  foodcheck: {fileID: 994066386}
+  originPosition: {fileID: 1620900180}
+  checkText: {fileID: 1344645440}
+  cart: {fileID: 709334194}
+  checkIt: 0
 --- !u!1001 &1006834040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14889,6 +15183,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3552162f158a9a24a96c068d95347761, type: 3}
+--- !u!1 &1080536976 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6469148042854812735, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
+  m_PrefabInstance: {fileID: 1183594869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1081717310
 GameObject:
   m_ObjectHideFlags: 0
@@ -15527,6 +15826,24 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 2303609773722403249, guid: cd5ea799d14f56e4ab524eb0106d151f, type: 3}
   m_PrefabInstance: {fileID: 1092931471}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1092931477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22553692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5598c084018ba6e4e91aa511b39cf801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardcheck: {fileID: 1098200247}
+  foodcheck: {fileID: 22553692}
+  originPosition: {fileID: 685145255}
+  checkText: {fileID: 1344645440}
+  cart: {fileID: 709334194}
+  checkIt: 0
 --- !u!1001 &1096308765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15596,6 +15913,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a519ca44a1443a7449a7665c4684b11d, type: 3}
+--- !u!1 &1098200247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4640729763303352797, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
+  m_PrefabInstance: {fileID: 1183594869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1100918681
 GameObject:
   m_ObjectHideFlags: 0
@@ -16556,13 +16878,43 @@ MonoBehaviour:
       m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1176410912}
+        m_TargetAssemblyTypeName: GrabFood, Assembly-CSharp
+        m_MethodName: UnGrabVegetable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenMove:
     m_PersistentCalls:
       m_Calls: []
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1176410912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176410898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5598c084018ba6e4e91aa511b39cf801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardcheck: {fileID: 322558154}
+  foodcheck: {fileID: 1176410898}
+  originPosition: {fileID: 641942093}
+  checkText: {fileID: 1344645440}
+  cart: {fileID: 709334194}
+  checkIt: 1
 --- !u!1001 &1183594869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16576,7 +16928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1685343955664076, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4795266759639050, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
       propertyPath: m_RootOrder
@@ -16629,6 +16981,14 @@ PrefabInstance:
     - target: {fileID: 4795266759639050, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077687082837638172, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7215608580587314499, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
@@ -17907,6 +18267,24 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4209026847405082981, guid: 291c48ee2e426cb498d145f35360167b, type: 3}
   m_PrefabInstance: {fileID: 1283732005}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1283732011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763542992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5598c084018ba6e4e91aa511b39cf801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardcheck: {fileID: 1080536976}
+  foodcheck: {fileID: 763542992}
+  originPosition: {fileID: 555547354}
+  checkText: {fileID: 1344645440}
+  cart: {fileID: 709334194}
+  checkIt: 1
 --- !u!1001 &1286313265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19555,6 +19933,24 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 7277741590703672319, guid: 0b43d524c1cdaee45bb2419c203c4852, type: 3}
   m_PrefabInstance: {fileID: 1454896148}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1454896154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552489553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5598c084018ba6e4e91aa511b39cf801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardcheck: {fileID: 393189553}
+  foodcheck: {fileID: 552489553}
+  originPosition: {fileID: 2097571968}
+  checkText: {fileID: 1344645440}
+  cart: {fileID: 709334194}
+  checkIt: 1
 --- !u!1 &1463799231
 GameObject:
   m_ObjectHideFlags: 0
@@ -19823,6 +20219,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f7acaa86be68af4e8c510f909f33089, type: 3}
+--- !u!1 &1521536442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1521536443}
+  m_Layer: 0
+  m_Name: P_Ham_Stand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1521536443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521536442}
+  m_LocalRotation: {x: -0, y: -0.5, z: -0, w: 0.8660254}
+  m_LocalPosition: {x: -0.59044456, y: 0.258, z: -0.16135216}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604788250}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1551136154 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7150740761040012874, guid: e2b391ffed0d90f4fb890516a0cd1da6, type: 3}
@@ -20762,6 +21189,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4858009409061439646, guid: 7649866f2f6910d43b698368b665017e, type: 3}
   m_PrefabInstance: {fileID: 1612280309}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1620900179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1620900180}
+  m_Layer: 0
+  m_Name: P_Rib_Stand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1620900180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620900179}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.8999996, y: 0.274, z: -0.1500001}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604788250}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1635932544 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4060222360349761567, guid: c94fe90fb46416345baa11e90b4e9075, type: 3}
@@ -20852,13 +21310,43 @@ MonoBehaviour:
       m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1635932558}
+        m_TargetAssemblyTypeName: GrabFood, Assembly-CSharp
+        m_MethodName: UnGrabVegetable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenMove:
     m_PersistentCalls:
       m_Calls: []
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1635932558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635932544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5598c084018ba6e4e91aa511b39cf801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardcheck: {fileID: 1098200247}
+  foodcheck: {fileID: 1635932544}
+  originPosition: {fileID: 1521536443}
+  checkText: {fileID: 1344645440}
+  cart: {fileID: 709334194}
+  checkIt: 0
 --- !u!1001 &1659826466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24270,6 +24758,24 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 2526523762190494115, guid: af80b555553362743ad2b8a59124b791, type: 3}
   m_PrefabInstance: {fileID: 1817045176}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1817045182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858581358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5598c084018ba6e4e91aa511b39cf801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardcheck: {fileID: 1098200247}
+  foodcheck: {fileID: 858581358}
+  originPosition: {fileID: 339413715}
+  checkText: {fileID: 1344645440}
+  cart: {fileID: 709334194}
+  checkIt: 0
 --- !u!1001 &1820536000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24852,6 +25358,37 @@ Transform:
   - {fileID: 1866137195}
   m_Father: {fileID: 0}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1859819926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1859819927}
+  m_Layer: 0
+  m_Name: P_Fish_Stand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1859819927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859819926}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.8999996, y: 1.23, z: -0.1500001}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604788250}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1863176106
 PrefabInstance:
@@ -26980,6 +27517,55 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 7722105348465698219, guid: f4fc4e17759e3004ca41f055a283cbfb, type: 3}
   m_PrefabInstance: {fileID: 2085641977}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2085641983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957117072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5598c084018ba6e4e91aa511b39cf801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardcheck: {fileID: 1098200247}
+  foodcheck: {fileID: 957117072}
+  originPosition: {fileID: 1859819927}
+  checkText: {fileID: 1344645440}
+  cart: {fileID: 709334194}
+  checkIt: 0
+--- !u!1 &2097571967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097571968}
+  m_Layer: 0
+  m_Name: P_Chicken_Stand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2097571968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097571967}
+  m_LocalRotation: {x: -0.0015997419, y: -0.64360076, z: -0.0015834068, w: 0.7653581}
+  m_LocalPosition: {x: -0.6000004, y: 1.25, z: -0.1500001}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604788250}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2098641549
 PrefabInstance:
   m_ObjectHideFlags: 0
