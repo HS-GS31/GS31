@@ -63,14 +63,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    #if UNITY_EDITOR
         Debug_Handle();
+    #endif
         StartDrive();
         Driving();
-    }
-
-    void FixedUpdate()
-    {
-        //Debug.Log(handle.localRotation.y);
     }
 
     private void StartDrive()
@@ -136,12 +133,14 @@ public class PlayerMovement : MonoBehaviour
                             roadQueue.Dequeue();
                             drives[0].driveAble = true;
                         }
+
                         //방향이 틀리다면
                         else
                         {
                             transform.position = route.GetPosition();
                             transform.localRotation = Quaternion.Euler(route.GetRotation());
                             drives[1].driveAble = true;
+                            handle.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
                         }
                     }
                     else
