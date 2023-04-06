@@ -3377,6 +3377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parma Ham
       objectReference: {fileID: 0}
+    - target: {fileID: 4060222360349761567, guid: c94fe90fb46416345baa11e90b4e9075, type: 3}
+      propertyPath: m_TagString
+      value: Meat
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c94fe90fb46416345baa11e90b4e9075, type: 3}
 --- !u!54 &159344231 stripped
@@ -5125,6 +5129,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sausage D
       objectReference: {fileID: 0}
+    - target: {fileID: 7771337566614707382, guid: 8ba9e5e290512bb438473ff81caf334e, type: 3}
+      propertyPath: m_TagString
+      value: Meat
+      objectReference: {fileID: 0}
     - target: {fileID: 8131717689243106659, guid: 8ba9e5e290512bb438473ff81caf334e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -5136,6 +5144,43 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 6045897123207938177, guid: 8ba9e5e290512bb438473ff81caf334e, type: 3}
   m_PrefabInstance: {fileID: 400376919}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &404614227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 404614228}
+  m_Layer: 0
+  m_Name: Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &404614228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404614227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 616850054}
+  - {fileID: 2084858090}
+  - {fileID: 1740477220}
+  - {fileID: 1795722196}
+  - {fileID: 716837611}
+  - {fileID: 1362068738}
+  m_Father: {fileID: 1856045703}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &406203847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6942,6 +6987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stand_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2159679207370317760, guid: ab54d0c84f5611647a1b341692969b12, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3708939183673963845, guid: ab54d0c84f5611647a1b341692969b12, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -8161,9 +8210,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616850053}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.4826773, z: -0.12500015}
-  m_LocalScale: {x: 1, y: 0.24999994, z: 1.0055773}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalPosition: {x: -25.1, y: 2.5000043, z: 10.4000025}
+  m_LocalScale: {x: 20, y: 5, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 330729146}
@@ -8171,7 +8220,7 @@ Transform:
   - {fileID: 1293252848}
   - {fileID: 1687845882}
   - {fileID: 1127762141}
-  m_Father: {fileID: 1123067123}
+  m_Father: {fileID: 404614228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!64 &616850055
@@ -9321,8 +9370,8 @@ Transform:
   - {fileID: 118524037}
   - {fileID: 1343850634}
   - {fileID: 1100918682}
-  m_Father: {fileID: 1856045703}
-  m_RootOrder: 2
+  m_Father: {fileID: 404614228}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 180, y: -90, z: 0}
 --- !u!64 &716837612
 MeshCollider:
@@ -11177,6 +11226,10 @@ PrefabInstance:
     - target: {fileID: 8044577438232577353, guid: 8ec1729601816234eab3ab2c440e1766, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044577438232577353, guid: 8ec1729601816234eab3ab2c440e1766, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ec1729601816234eab3ab2c440e1766, type: 3}
@@ -15763,6 +15816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Octopus Dead
       objectReference: {fileID: 0}
+    - target: {fileID: 3595621590388850351, guid: cd5ea799d14f56e4ab524eb0106d151f, type: 3}
+      propertyPath: m_TagString
+      value: Meat
+      objectReference: {fileID: 0}
     - target: {fileID: 4228288949378507797, guid: cd5ea799d14f56e4ab524eb0106d151f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -16099,7 +16156,7 @@ GameObject:
   - component: {fileID: 1123067124}
   m_Layer: 0
   m_Name: QuadBack
-  m_TagString: Untagged
+  m_TagString: CheckCollision_Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16115,10 +16172,7 @@ Transform:
   m_LocalPosition: {x: -25.1, y: 0, z: 3.2}
   m_LocalScale: {x: 20, y: 14.9168005, z: 20}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 616850054}
-  - {fileID: 2084858090}
-  - {fileID: 1740477220}
+  m_Children: []
   m_Father: {fileID: 1856045703}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
@@ -18200,6 +18254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shrimp A
       objectReference: {fileID: 0}
+    - target: {fileID: 6986441214458872419, guid: 291c48ee2e426cb498d145f35360167b, type: 3}
+      propertyPath: m_TagString
+      value: Meat
+      objectReference: {fileID: 0}
     - target: {fileID: 7763928579008108761, guid: 291c48ee2e426cb498d145f35360167b, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -19277,8 +19335,8 @@ Transform:
   - {fileID: 939267147}
   - {fileID: 1717496091}
   - {fileID: 1940681133}
-  m_Father: {fileID: 1856045703}
-  m_RootOrder: 3
+  m_Father: {fileID: 404614228}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 180, y: -180, z: 0}
 --- !u!64 &1362068739
 MeshCollider:
@@ -19913,6 +19971,10 @@ PrefabInstance:
     - target: {fileID: 1781236993053760306, guid: 0b43d524c1cdaee45bb2419c203c4852, type: 3}
       propertyPath: m_Name
       value: Chicken Leg with back bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781236993053760306, guid: 0b43d524c1cdaee45bb2419c203c4852, type: 3}
+      propertyPath: m_TagString
+      value: Meat
       objectReference: {fileID: 0}
     - target: {fileID: 7277741590703672319, guid: 0b43d524c1cdaee45bb2419c203c4852, type: 3}
       propertyPath: m_UseGravity
@@ -21698,7 +21760,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7268383015967606680, guid: e2b391ffed0d90f4fb890516a0cd1da6, type: 3}
       propertyPath: m_Name
-      value: Santd_3
+      value: VagetableStand
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268383015967606680, guid: e2b391ffed0d90f4fb890516a0cd1da6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7454332397774145691, guid: e2b391ffed0d90f4fb890516a0cd1da6, type: 3}
       propertyPath: m_Convex
@@ -23505,15 +23571,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740477219}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 0.46591774, z: -0.12500024}
-  m_LocalScale: {x: 1, y: 0.24999994, z: 1.0055773}
+  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
+  m_LocalPosition: {x: -25.1, y: 2.5000038, z: -3.7500026}
+  m_LocalScale: {x: 20, y: 5, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 957087233}
   - {fileID: 369291788}
   - {fileID: 1028218066}
-  m_Father: {fileID: 1123067123}
+  m_Father: {fileID: 404614228}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 180, y: -180, z: 0}
 --- !u!64 &1740477221
@@ -24299,8 +24365,8 @@ Transform:
   - {fileID: 33222831}
   - {fileID: 44899544}
   - {fileID: 518820420}
-  m_Father: {fileID: 1856045703}
-  m_RootOrder: 1
+  m_Father: {fileID: 404614228}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!64 &1795722197
 MeshCollider:
@@ -24694,6 +24760,10 @@ PrefabInstance:
     - target: {fileID: 5906788710815403145, guid: af80b555553362743ad2b8a59124b791, type: 3}
       propertyPath: m_Name
       value: Lobster
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906788710815403145, guid: af80b555553362743ad2b8a59124b791, type: 3}
+      propertyPath: m_TagString
+      value: Meat
       objectReference: {fileID: 0}
     - target: {fileID: 6535551704228746803, guid: af80b555553362743ad2b8a59124b791, type: 3}
       propertyPath: m_RootOrder
@@ -25351,11 +25421,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1123067123}
-  - {fileID: 1795722196}
-  - {fileID: 716837611}
-  - {fileID: 1362068738}
   - {fileID: 2030538090}
   - {fileID: 1866137195}
+  - {fileID: 404614228}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25536,7 +25604,7 @@ Transform:
   - {fileID: 1853425453}
   - {fileID: 1903323020}
   m_Father: {fileID: 1856045703}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1870822928
 PrefabInstance:
@@ -25630,6 +25698,10 @@ PrefabInstance:
     - target: {fileID: 8300177023764818948, guid: bc3a3d20aae775846b240243abd930a5, type: 3}
       propertyPath: m_Name
       value: Prime Rib
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300177023764818948, guid: bc3a3d20aae775846b240243abd930a5, type: 3}
+      propertyPath: m_TagString
+      value: Meat
       objectReference: {fileID: 0}
     - target: {fileID: 8681805018232010430, guid: bc3a3d20aae775846b240243abd930a5, type: 3}
       propertyPath: m_RootOrder
@@ -26836,7 +26908,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2159679207370317760, guid: ab54d0c84f5611647a1b341692969b12, type: 3}
       propertyPath: m_Name
-      value: Stand_1
+      value: MeatStand
       objectReference: {fileID: 0}
     - target: {fileID: 3708939183673963845, guid: ab54d0c84f5611647a1b341692969b12, type: 3}
       propertyPath: m_IsTrigger
@@ -26927,7 +26999,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1856045703}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!64 &2030538091
 MeshCollider:
@@ -27352,15 +27424,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084858089}
-  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0.5, y: -0.0006704164, z: -0.12500022}
-  m_LocalScale: {x: 0.94143146, y: 0.25000003, z: 0.7500001}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: -35.100002, y: 2.5000048, z: 3.2100008}
+  m_LocalScale: {x: 14.043145, y: 5, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2011945405}
   - {fileID: 301391485}
   - {fileID: 275113170}
-  m_Father: {fileID: 1123067123}
+  m_Father: {fileID: 404614228}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 180, y: -90, z: 0}
 --- !u!64 &2084858091
@@ -27497,6 +27569,10 @@ PrefabInstance:
     - target: {fileID: 1957079815920595584, guid: f4fc4e17759e3004ca41f055a283cbfb, type: 3}
       propertyPath: m_Name
       value: Cod fish
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957079815920595584, guid: f4fc4e17759e3004ca41f055a283cbfb, type: 3}
+      propertyPath: m_TagString
+      value: Meat
       objectReference: {fileID: 0}
     - target: {fileID: 7722105348465698219, guid: f4fc4e17759e3004ca41f055a283cbfb, type: 3}
       propertyPath: m_UseGravity

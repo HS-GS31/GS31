@@ -9,6 +9,9 @@ public class ClipboardController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameObject.Find("GameManager").transform.Find("shopping cart").gameObject.SetActive(false);
+        GameObject.Find("GameManager").transform.Find("ClipboardCenter").gameObject.SetActive(true);
+
         Invoke("HideClipboard", 5f); // 화면 앞에 보이던 클립보드 false 처리
         Invoke("ShowShoppingCart", 5f);
     }
