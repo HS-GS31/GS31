@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ButtonEvent : MonoBehaviour
 {
+    public GameObject conti;
+
     public void InvGoContinue() //이어하기 씬으로 이동
     {
         Invoke("GoContinue", 1.8f);
@@ -21,11 +23,13 @@ public class ButtonEvent : MonoBehaviour
 
     public void GoContinue() //이어하기 씬으로 이동
     {
-        SceneManager.LoadScene("Continue");
+        conti.SetActive(true);
+        //SceneManager.LoadScene("Continue");
     }
     public void GoMain() //메인화면 씬으로 이동
     {
-        SceneManager.LoadScene("Start");
+        conti.SetActive(false);
+        //SceneManager.LoadScene("Start");
     }
     public void GoCartoon() //만화 씬으로 이동
     {
