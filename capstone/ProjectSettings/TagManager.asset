@@ -9,6 +9,10 @@ TagManager:
   - Mushroom
   - Shrimp
   - CheckCollision
+  - Sausage
+  - Meat
+  - Vegetable
+  - CheckCollision_Floor
   layers:
   - Default
   - TransparentFX

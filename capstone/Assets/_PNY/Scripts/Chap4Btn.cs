@@ -17,6 +17,16 @@ public class Chap4Btn : MonoBehaviour
     public GameObject odap;//오답
     public GameObject dap;//답
 
+    //음식오브젝트
+    public GameObject food1;
+    public GameObject food2;
+    public GameObject food3;
+    public GameObject food4;
+    public GameObject food5;
+
+    //마무리 창
+    public GameObject final;
+    public GameObject san;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,5 +57,12 @@ public class Chap4Btn : MonoBehaviour
     public void dapfalse()
     {
         dap.SetActive(false);
+        food1.SetActive(false);
+        food2.SetActive(false);
+        food3.SetActive(false);
+        food4.SetActive(false);
+        food5.SetActive(false);
+        san.SetActive(false);
+        final.SetActive(true);
     }
 }

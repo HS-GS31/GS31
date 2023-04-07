@@ -19,13 +19,13 @@ public class HorizontalDrive : Drive
 
     public bool StartDrive(bool isHandle, float rotateY)
     {
-        if (!isDrive && driveAble && isHandle && (rotateY <= -0.69 || 0.69 <= rotateY))
+        if (!isDrive && driveAble && isHandle && (rotateY <= -0.56 || 0.56 <= rotateY))
         {
             isDrive = true;
             driveAble = false;
 
-            //핸들을 잡은 상태 + -90 / 90 범주를 넘어서면rotate [90 => 70으로 바꿔야함]
-            if (rotateY <= -0.69) {
+            //핸들을 잡은 상태 + -70 / 70 범주를 넘어서면rotate
+            if (rotateY <= -0.56) {
                 isLeft = true;
             }
             else {
@@ -33,7 +33,6 @@ public class HorizontalDrive : Drive
             }
 
             return true;
-
         }
         return false;
     }
