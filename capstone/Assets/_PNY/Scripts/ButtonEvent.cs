@@ -39,6 +39,10 @@ public class ButtonEvent : MonoBehaviour
     {
         SceneManager.LoadScene("Chap01");
     }
+    public void chap4GoMain()
+    {
+        SceneManager.LoadScene("Start");
+    }
     public void Quit() //끝내기 누르면 재생 종료(빌드할 때 코드 수정 필요)
     {
 #if UNITY_EDITOR
