@@ -19,12 +19,13 @@ public class GrabFood : MonoBehaviour
     void Start()
     {
         _rigid = GetComponent<Rigidbody>();
+        checkText.text = " ";
     }
 
     // Update is called once per frame
     void Update()
     {
-        checkText.text = " ";
+        
     }
 
 
