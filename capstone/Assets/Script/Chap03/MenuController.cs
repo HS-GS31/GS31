@@ -5,11 +5,16 @@ using UnityEngine;
 public class MenuController : MonoBehaviour
 {
     GameObject customerManager;
+    private GameObject stickTop;
+    //현재 꼬치 상태.
     private string[] ingredients;
-    int top;
+    //꼬치 스택 인덱스
+    int top;        
+
     private void Start()
     {
         customerManager = GameObject.Find("CustomerManager");
+        stickTop = gameObject.transform.GetChild(0).gameObject;             //자식의 0번째는 sticktop
         ingredients = new string[4];
         top = -1;
     }

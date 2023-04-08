@@ -24,7 +24,7 @@ public class CustomerController : MonoBehaviour
         this.customerManager = GameObject.Find("CustomerManager");
         this.sender = GameObject.Find("SenderPlate");
         this.truckPos = new Vector3(0, 0, 0);
-        this.desPos = new Vector3(-2.8f, 0, 4);
+        this.desPos = new Vector3(-2.8f, 0, 6);
         orderPos = new Vector3(-2.8f, 0, -1);
 
         //메뉴를 보여줄 말풍선 설정
@@ -53,21 +53,31 @@ public class CustomerController : MonoBehaviour
         this.order.transform.Rotate(new Vector3(0, 15 * Time.deltaTime, 0));
         Vector3 dir = orderPos - transform.position;
         Vector3 back_dir = desPos - transform.position;
-        
-        if (state == 1)  //음식 주문하러 가기
+
+        //음식 주문하러 가기
+        if (state == 1)
         {
             this.transform.position = Vector3.MoveTowards(transform.position, orderPos, speed * Time.deltaTime);
             this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * speed);
+
+            //도착 직전 미세 부분에서 메뉴 띄우기
+            if(this.transform.position.x > -2.85f && this.transform.position.x < orderPos.x)
+            {
+                this.order.SetActive(true);
+            }
         }
+
+        //이동 완료시 동작
         if ((transform.position == orderPos) && (state != 3)) {
             state = 2;        //이동 완료시 state 1로 갱신하여 주문하기
             this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(truckPos - orderPos), Time.deltaTime * 1.5f);
-            //도착하면 말풍선 보이기
-            this.order.SetActive(true);
+            
         }
-        if (state == 3)     //음식 받고 퇴장.
+
+        //음식 받고 퇴장.
+        if (state == 3)     
         {
-            this.order.SetActive(false);
+            //this.order.SetActive(false);
             this.transform.position = Vector3.MoveTowards(transform.position, desPos, speed * Time.deltaTime);
             this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(back_dir), Time.deltaTime * 2);
         }
@@ -77,6 +87,7 @@ public class CustomerController : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
         this.animator.SetInteger("State", state);
     }
 
@@ -89,18 +100,37 @@ public class CustomerController : MonoBehaviour
     {
         return state;
     }
-
-
+    public void goHome()
+    {
+        Invoke("backStart", 1.2f);
+    }
+    private void backStart()
+    {
+        this.state = 3;
+    }
     public void setEmoji(bool res)
     {
+        this.order.SetActive(false);
         if (res)
         {
             this.emoji_smile.SetActive(true);
+            Invoke("DesEmoji", 1);
         }
         else
         {
             this.emoji_angry.SetActive(true);
+            Invoke("showMenu", 1);
         }
+    }
+    private void showMenu()
+    {
+        this.order.SetActive(true);                 //메뉴 다시 보이기
+        this.emoji_smile.SetActive(false);          //이모지 다시 가리기
+        this.emoji_angry.SetActive(false);          //이모지 다시 가리기
+    }
+    private void DesEmoji()
+    {
+        Destroy(this.emoji_smile);
     }
     public GameObject getOrder()
     {
