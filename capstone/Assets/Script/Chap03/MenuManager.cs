@@ -13,7 +13,7 @@ public class MenuManager : MonoBehaviour
     public GameObject getRandomFood()
     {
         int rnd = Random.Range(0, 5);               //1~5 ·£´ý°ª »ý¼º.
-        GameObject order = Instantiate(menus[4]);
+        GameObject order = Instantiate(menus[rnd]);
         sender.GetComponent<Sender>().setMenu(order);
         return order;
     }

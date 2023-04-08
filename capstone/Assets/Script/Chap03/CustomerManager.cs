@@ -20,25 +20,27 @@ public class CustomerManager : MonoBehaviour
     }
 
     public void Take(GameObject menu, bool res)
-    {
-        //음식을 손님 손에 넘기기
-        //menu.transform.position = now_customer.transform.GetChild(1).transform.GetChild(0).transform.position;
-        Destroy(menu);
-        
+    {        
         //넘기고 이동.
         if(now_customer.GetComponent<CustomerController>().getStat() == 2)
         {
             now_customer.GetComponent<CustomerController>().setEmoji(res);
-            Invoke("setCusomState", 2f);
-            now_customer = null;        //현재 손님이 없는 상태로 변경.
-            cnt++;                      //손님 받은 카운트 증가.
-        }
+            if (res)            //올바른 음식을 받은경우.
+            {
+                Destroy(menu);
+                Debug.Log("음식 받음!!");
 
-        //====================수정부분==================
-        if (now_customer == null && cnt < 3)       //손님이 없을때만 소환.
-        {
-            SpawnCustomer();
-            Debug.Log("손님 받은 수 : " + cnt);
+                now_customer.GetComponent<CustomerController>().setStat(3);
+                Debug.Log("올바른 음식을 받았다!!");
+
+                now_customer = null;                //현재 손님이 없는 상태로 변경.
+                cnt++;                              //손님 받은 카운트 증가.
+                if (now_customer == null && cnt < 3)
+                {
+                    SpawnCustomer();
+                    Debug.Log("손님 받은 수 : " + cnt);
+                }
+            }
         }
     }
 
@@ -50,9 +52,5 @@ public class CustomerManager : MonoBehaviour
         customer.transform.position = spawnPoint[rndPos].transform.position;
         now_customer = customer;
         Debug.Log("손님 온다");
-    }
-    private void setCusomState()
-    {
-        now_customer.GetComponent<CustomerController>().setStat(3);
     }
 }
