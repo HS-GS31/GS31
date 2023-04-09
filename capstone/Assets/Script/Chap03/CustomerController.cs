@@ -61,23 +61,23 @@ public class CustomerController : MonoBehaviour
             this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * speed);
 
             //도착 직전 미세 부분에서 메뉴 띄우기
+            /*
             if(this.transform.position.x > -2.85f && this.transform.position.x < orderPos.x)
             {
                 this.order.SetActive(true);
-            }
+            }*/
         }
 
         //이동 완료시 동작
         if ((transform.position == orderPos) && (state != 3)) {
             state = 2;        //이동 완료시 state 1로 갱신하여 주문하기
             this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(truckPos - orderPos), Time.deltaTime * 1.5f);
-            
+            this.order.SetActive(true);
         }
 
         //음식 받고 퇴장.
         if (state == 3)     
         {
-            //this.order.SetActive(false);
             this.transform.position = Vector3.MoveTowards(transform.position, desPos, speed * Time.deltaTime);
             this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(back_dir), Time.deltaTime * 2);
         }
@@ -100,21 +100,14 @@ public class CustomerController : MonoBehaviour
     {
         return state;
     }
-    public void goHome()
-    {
-        Invoke("backStart", 1.2f);
-    }
-    private void backStart()
-    {
-        this.state = 3;
-    }
+
     public void setEmoji(bool res)
     {
         this.order.SetActive(false);
         if (res)
         {
             this.emoji_smile.SetActive(true);
-            Invoke("DesEmoji", 1);
+            Invoke("hideEmoji", 1);
         }
         else
         {
@@ -128,9 +121,9 @@ public class CustomerController : MonoBehaviour
         this.emoji_smile.SetActive(false);          //이모지 다시 가리기
         this.emoji_angry.SetActive(false);          //이모지 다시 가리기
     }
-    private void DesEmoji()
+    private void hidEmoji()
     {
-        Destroy(this.emoji_smile);
+        this.emoji_smile.SetActive(false);
     }
     public GameObject getOrder()
     {
