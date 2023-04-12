@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,7 +41,7 @@ public class GrabFood : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 
-        // 카트에 놓았을 경우
+        // 카트에 놓았을 경우(카트 바닥에 닿았는지 확인)
         if (collision.collider.gameObject.CompareTag("CheckCollision"))
         {
 
@@ -51,6 +52,9 @@ public class GrabFood : MonoBehaviour
             {
                 // 카트에 야채 상속
                 foodcheck.transform.parent = cart.transform;
+
+                // 카트에 옳게 들어간 음식의 개수 증가
+                GameObject.Find("GameManager").GetComponent<FoodCheck>().increaseCheckFood();
 
                 checkText.text = "잘하셨습니다!";
                 Invoke("HideText", 3f);
