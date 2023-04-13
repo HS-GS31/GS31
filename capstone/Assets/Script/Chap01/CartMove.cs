@@ -9,14 +9,18 @@ public class CartMove : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float moveTime;
     public bool isGrab;
+
     public GameObject player;
     public GameObject cart;
+    public GameObject clipboard;
+
     public TMP_Text reTryText; // 다시 고르라는 문구
     private int checkMove = 0; // 몇번 움직였는지 확인
 
     // Start is called before the first frame update
     void Start()
     {
+        reTryText.text = " ";
         isGrab = false;
         checkMove = 0;
     }
@@ -34,6 +38,7 @@ public class CartMove : MonoBehaviour
         {
             cart.transform.Translate(Vector3.right * speed * Time.deltaTime);
             player.transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            clipboard.transform.Translate(Vector3.down * speed * Time.deltaTime);
             timer += Time.deltaTime;
             yield return null;
         }
