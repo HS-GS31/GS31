@@ -44824,8 +44824,8 @@ MonoBehaviour:
   - {fileID: 641066525}
   - {fileID: 275726857}
   - {fileID: 795864493}
-  oneHand: {fileID: 0}
-  twoHand: {fileID: 0}
+  oneHand: {fileID: 1029042058}
+  twoHand: {fileID: 1029042059}
 --- !u!114 &1029042050
 MonoBehaviour:
   m_ObjectHideFlags: 0
