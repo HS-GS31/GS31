@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,23 +7,16 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 25.0f;
 
-    [SerializeField] private float duringTime = 2f;
-    [SerializeField] private float rotateTime = 3f;
-
     [SerializeField] private SoundManager gameManager;
     [SerializeField] private Transform handle;
 
     [SerializeField] private Transform[] before_transforms;
+    [SerializeField] private OneGrabRotateTransformer oneHand;
+    [SerializeField] private TwoGrabRotateTransformer twoHand;
+
 
     bool isHandle = false;
 
-    bool isDrive = false;
-    bool isRotate = false;
-
-    bool driveAble = true;
-    bool rotateAble = true;
-
-    bool isLeft = false;
 
     float driveTime = 0;
     Queue<Route> roadQueue;
@@ -140,7 +134,12 @@ public class PlayerMovement : MonoBehaviour
                             transform.position = route.GetPosition();
                             transform.localRotation = Quaternion.Euler(route.GetRotation());
                             drives[1].driveAble = true;
-                            handle.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
+                            handle.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+                            if(oneHand)
+                            {
+                                oneHand.SetRelativeAngle(0);
+                                twoHand.SetRelativeAngle(0);
+                            }
                         }
                     }
                     else
@@ -167,6 +166,11 @@ public class PlayerMovement : MonoBehaviour
     public void setIsHandle(bool isHandle)
     {
         this.isHandle = isHandle;
+        if(!isHandle)
+        {
+            //자연스럽게 밑으로 내려가는
+            //handle.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+        }
     }
 
     //get으로 가져온 rotate의 값에서 -90을 넘거나 90을 넘으면 왼쪽 오른쪽으로 가짐
