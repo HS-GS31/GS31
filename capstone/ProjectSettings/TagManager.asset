@@ -13,6 +13,7 @@ TagManager:
   - Meat
   - Vegetable
   - CheckCollision_Floor
+  - MinimapSprite
   layers:
   - Default
   - TransparentFX
@@ -21,9 +22,9 @@ TagManager:
   - Water
   - UI
   - PostPro
-  - 
-  - 
-  - 
+  - MinimapSprite
+  - Truck
+  - Environment
   - 
   - 
   - 

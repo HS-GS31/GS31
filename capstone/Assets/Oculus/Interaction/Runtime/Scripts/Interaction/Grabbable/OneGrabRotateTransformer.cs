@@ -183,6 +183,8 @@ namespace Oculus.Interaction
             _relativeAngle += signedAngle;
 
             _constrainedRelativeAngle = _relativeAngle;
+
+            //앵글이 최대치면
             if (Constraints.MinAngle.Constrain)
             {
                 _constrainedRelativeAngle = Mathf.Max(_constrainedRelativeAngle, Constraints.MinAngle.Value);
@@ -225,6 +227,15 @@ namespace Oculus.Interaction
         public void InjectOptionalConstraints(OneGrabRotateConstraints constraints)
         {
             _constraints = constraints;
+        }
+
+        #endregion
+
+        #region getset
+
+        public void SetRelativeAngle(float _relativeAngle)
+        {
+            this._relativeAngle = _relativeAngle;
         }
 
         #endregion

@@ -10,8 +10,8 @@ public class change : MonoBehaviour {
 
 	// Fonction Start se lance 1 fois au lancement du jeu
 	void Start () {
-		target1.SetActive (false);
-		target2.SetActive (true);
+		target1.SetActive (true);
+		target2.SetActive (false);
 	}
 
 	// Fonction Update s'execute à chaque frame (si tu tourne à 60FPS elles s'éxecute 60 fois en 1 seconde.

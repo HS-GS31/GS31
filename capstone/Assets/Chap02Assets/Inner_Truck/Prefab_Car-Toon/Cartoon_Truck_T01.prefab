@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 460492}
   - component: {fileID: 3382206}
   - component: {fileID: 2352804}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Steering_wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 412078}
   - component: {fileID: 10848472}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Front_light_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,13 +108,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101078}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6, y: 0.41, z: 1.65}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5999985, y: 0.41, z: 1.6499996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 425742}
-  m_RootOrder: 2
+  m_Father: {fileID: 5721807634533659555}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &10848472
 Light:
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 2393430}
   - component: {fileID: 9582588}
   - component: {fileID: 11485360}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 449804}
   - component: {fileID: 3356828}
   - component: {fileID: 2331842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elements
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 2340616}
   - component: {fileID: 9539956}
   - component: {fileID: 11412928}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: door_rear_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +516,7 @@ GameObject:
   - component: {fileID: 440122}
   - component: {fileID: 3382368}
   - component: {fileID: 2352488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire_Back_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -602,7 +602,7 @@ GameObject:
   - component: {fileID: 497974}
   - component: {fileID: 3327970}
   - component: {fileID: 2397460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire_Front_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -690,7 +690,7 @@ GameObject:
   - component: {fileID: 2360832}
   - component: {fileID: 9527746}
   - component: {fileID: 11430886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: door_rear_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -806,7 +806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 462210}
   - component: {fileID: 10847140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brake_light_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,13 +820,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130046}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.75, y: 0.501, z: -2.065}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 425742}
-  m_RootOrder: 4
+  m_Father: {fileID: 5721807634533659555}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &10847140
 Light:
@@ -901,7 +901,7 @@ GameObject:
   - component: {fileID: 471854}
   - component: {fileID: 3379044}
   - component: {fileID: 2347264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: straight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -984,7 +984,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 462304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: truck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,7 +1020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 480092}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: animatable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1057,7 +1057,7 @@ GameObject:
   - component: {fileID: 460536}
   - component: {fileID: 3361288}
   - component: {fileID: 2335354}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire_Back_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1142,7 +1142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 490386}
   - component: {fileID: 10839108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Front_light_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1156,13 +1156,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148928}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: 0.41, z: 1.65}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5999985, y: 0.41, z: 1.6499996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 425742}
-  m_RootOrder: 1
+  m_Father: {fileID: 5721807634533659555}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &10839108
 Light:
@@ -1237,7 +1237,7 @@ GameObject:
   - component: {fileID: 450962}
   - component: {fileID: 3374016}
   - component: {fileID: 2393878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1326,7 +1326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 478882}
   - component: {fileID: 10832984}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rear_light_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1340,13 +1340,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156868}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.63, y: 0.498, z: -2.057}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.62999725, y: 0.498, z: -2.0570002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 425742}
-  m_RootOrder: 6
+  m_Father: {fileID: 5721807634533659555}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &10832984
 Light:
@@ -1419,7 +1419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 486244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tires
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1455,7 +1455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 405856}
   - component: {fileID: 10813694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brake_light_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1469,13 +1469,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162438}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.75, y: 0.501, z: -2.065}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 425742}
-  m_RootOrder: 3
+  m_Father: {fileID: 5721807634533659555}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &10813694
 Light:
@@ -1552,7 +1552,7 @@ GameObject:
   - component: {fileID: 2308292}
   - component: {fileID: 9507232}
   - component: {fileID: 11438712}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1670,7 +1670,7 @@ GameObject:
   - component: {fileID: 2394668}
   - component: {fileID: 9562434}
   - component: {fileID: 11409570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1790,7 +1790,7 @@ GameObject:
   - component: {fileID: 11426654}
   - component: {fileID: 11431972}
   - component: {fileID: 11458178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cartoon_Truck_T01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1810,14 +1810,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 462304}
-  - {fileID: 490386}
-  - {fileID: 412078}
-  - {fileID: 405856}
-  - {fileID: 462210}
-  - {fileID: 407138}
-  - {fileID: 478882}
-  - {fileID: 1313409907553573592}
-  - {fileID: 4320579838890067023}
+  - {fileID: 5721807634533659555}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1882,7 +1875,7 @@ GameObject:
   - component: {fileID: 423090}
   - component: {fileID: 3372478}
   - component: {fileID: 2386284}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: door_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1966,7 +1959,7 @@ GameObject:
   - component: {fileID: 420038}
   - component: {fileID: 3309142}
   - component: {fileID: 2397630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire_Front_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2051,7 +2044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 407138}
   - component: {fileID: 10877774}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rear_light_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2065,13 +2058,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198472}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.63, y: 0.498, z: -2.057}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.62999725, y: 0.498, z: -2.0570002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 425742}
-  m_RootOrder: 5
+  m_Father: {fileID: 5721807634533659555}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &10877774
 Light:
@@ -2148,7 +2141,7 @@ GameObject:
   - component: {fileID: 2310178}
   - component: {fileID: 9589950}
   - component: {fileID: 11464366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2264,7 +2257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7561332278805358231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2287,7 +2280,7 @@ Transform:
   m_Father: {fileID: 480092}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5353027157522256982
+--- !u!1 &6598272255904037742
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2295,57 +2288,32 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1313409907553573592}
-  m_Layer: 0
-  m_Name: LeftObject
+  - component: {fileID: 5721807634533659555}
+  m_Layer: 8
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1313409907553573592
+--- !u!4 &5721807634533659555
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5353027157522256982}
+  m_GameObject: {fileID: 6598272255904037742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.9, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 490386}
+  - {fileID: 412078}
+  - {fileID: 405856}
+  - {fileID: 462210}
+  - {fileID: 407138}
+  - {fileID: 478882}
   m_Father: {fileID: 425742}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6361824899103122865
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4320579838890067023}
-  m_Layer: 0
-  m_Name: RightObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4320579838890067023
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6361824899103122865}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.88, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 425742}
-  m_RootOrder: 8
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

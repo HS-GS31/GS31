@@ -147,5 +147,15 @@ namespace Oculus.Interaction
         }
 
         #endregion
+
+
+        #region getset
+
+        public void SetRelativeAngle(float _relativeAngle)
+        {
+            this._relativeAngle = _relativeAngle;
+        }
+
+        #endregion
     }
 }
