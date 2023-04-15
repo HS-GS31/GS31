@@ -61,18 +61,16 @@ public class CustomerController : MonoBehaviour
             this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * speed);
 
             //도착 직전 미세 부분에서 메뉴 띄우기
-            /*
             if(this.transform.position.x > -2.85f && this.transform.position.x < orderPos.x)
             {
                 this.order.SetActive(true);
-            }*/
+            }
         }
 
         //이동 완료시 동작
         if ((transform.position == orderPos) && (state != 3)) {
             state = 2;        //이동 완료시 state 1로 갱신하여 주문하기
             this.transform.rotation = Quaternion.Lerp(this.transform.rotation, Quaternion.LookRotation(truckPos - orderPos), Time.deltaTime * 1.5f);
-            this.order.SetActive(true);
         }
 
         //음식 받고 퇴장.
@@ -110,7 +108,7 @@ public class CustomerController : MonoBehaviour
             Invoke("hideEmoji", 1);
         }
         else
-        {
+        {   
             this.emoji_angry.SetActive(true);
             Invoke("showMenu", 1);
         }
