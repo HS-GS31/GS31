@@ -237,6 +237,10 @@ namespace Oculus.Interaction
         {
             this._relativeAngle = _relativeAngle;
         }
+        public float GetRelativeAngle()
+        {
+            return _relativeAngle;
+        }
 
         #endregion
     }

@@ -135,11 +135,8 @@ public class PlayerMovement : MonoBehaviour
                             transform.localRotation = Quaternion.Euler(route.GetRotation());
                             drives[1].driveAble = true;
                             handle.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
-                            if(oneHand)
-                            {
-                                oneHand.SetRelativeAngle(0);
-                                twoHand.SetRelativeAngle(0);
-                            }
+
+                            
                         }
                     }
                     else
