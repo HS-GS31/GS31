@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CartMove : MonoBehaviour
 {
@@ -13,9 +14,11 @@ public class CartMove : MonoBehaviour
     public GameObject player;
     public GameObject cart;
     public GameObject clipboard;
+    public GameObject nextChapUI;
 
     public TMP_Text reTryText; // 다시 고르라는 문구
     private int checkMove = 0; // 몇번 움직였는지 확인
+
 
     // Start is called before the first frame update
     void Start()
@@ -63,7 +66,9 @@ public class CartMove : MonoBehaviour
                 else if(checkMove == 1)
                 {
                     // 고기 & 생선 코너가 끝났을 경우 다음 씬으로 가는 UI 등장
-
+                    GameObject.Find("GameManager").transform.Find("shopping cart").gameObject.SetActive(false);
+                    nextChapUI.transform.GetChild(0).gameObject.SetActive(true);
+                    Invoke("GoNextChap02", 5f);
                 }
             }
 
@@ -95,5 +100,10 @@ public class CartMove : MonoBehaviour
             return true;
         }
         else return false;
+    }
+
+    private void GoNextChap02()
+    {
+        SceneManager.LoadScene("Chap02");
     }
 }

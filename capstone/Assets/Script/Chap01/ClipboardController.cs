@@ -14,8 +14,8 @@ public class ClipboardController : MonoBehaviour
 
         GetComponent<GrabClipboard>().cantGrab();
 
-        Invoke("HideClipboard", 5f); // 화면 앞에 보이던 클립보드 false 처리
-        Invoke("ShowShoppingCart", 5f);
+        Invoke("HideClipboard", 12f); // 화면 앞에 보이던 클립보드 false 처리
+        Invoke("ShowShoppingCart", 12f);
     }
 
     // 쇼핑카트 보여지게 하기
