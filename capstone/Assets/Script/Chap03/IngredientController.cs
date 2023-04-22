@@ -8,6 +8,7 @@ public class IngredientController : MonoBehaviour
     private float constrainZ = 0.3f;
     private Vector3 spawnPos;                   //처음위치
     private Quaternion spawnRot;
+    private GameObject warnText;
     Rigidbody rigid;
     Collider coll;
 
@@ -16,7 +17,7 @@ public class IngredientController : MonoBehaviour
         spawnPos = transform.position;
         spawnRot = transform.rotation;
         rigid = gameObject.GetComponent<Rigidbody>();
-
+        warnText = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
         if (this.gameObject.tag == "Shrimp" || this.gameObject.tag == "Meat")
             coll = gameObject.GetComponent<BoxCollider>();
         else
@@ -29,27 +30,18 @@ public class IngredientController : MonoBehaviour
         //음식이 바닥으로 떨어졌을때.
         if(transform.position.y < 1.1f)
         {
-            //처음 상태 그대로 이동.
-            transform.position = spawnPos;                  
-            transform.rotation = spawnRot;                  
+            ResPawnIngredient();
+        }
+
+        //음식이 꼬치에 꽂혀있으면..
+        if (transform.parent != null)
             rigid.isKinematic = true;
-            rigid.isKinematic = false;
-        }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "StickTop")
-        {
-            this.coll.isTrigger = true;
-            this.rigid.useGravity = false;
-        }
+        else
+            rigid.isKinematic = true;
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "StickTop")
-            isStickTop = true;
-
-        if(other.gameObject.tag == "STICK" && isStickTop)
+        if(other.gameObject.tag == "STICK")
         {
             this.gameObject.transform.parent = other.gameObject.transform;
             other.gameObject.GetComponent<MenuController>().push(this.gameObject);
@@ -66,14 +58,13 @@ public class IngredientController : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "STICK" || isStickTop)
+        if (other.gameObject.tag == "STICK")
         {
             other.gameObject.GetComponent<MenuController>().pop();
             this.gameObject.transform.parent = null;
             isStickTop = false;
         }
     }
-
     public void warn()
     {
         //부모객체가 있는 상태에서 꼬치에 특정범위에서 꼬치가 빠지면.
@@ -85,8 +76,20 @@ public class IngredientController : MonoBehaviour
                 this.gameObject.GetComponent<Grabbable>().enabled = false;
                 this.gameObject.GetComponent<Grabbable>().enabled = true;
                 transform.localPosition = new Vector3(0, y, 0);
+
+                //경고문구 띄우기.
+                warnText.GetComponent<WarnText>().setActive();
             }
+
         }
+    }
+
+    private void ResPawnIngredient()
+    {
+        transform.position = spawnPos;
+        transform.rotation = spawnRot;
+        rigid.isKinematic = true;
+        rigid.isKinematic = false;
     }
 
     //음식을 잡았을때
