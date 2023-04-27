@@ -27846,6 +27846,10 @@ PrefabInstance:
       propertyPath: boardcheck
       value: 
       objectReference: {fileID: 1495412947}
+    - target: {fileID: 6856406687713267197, guid: 2153e9040bcb6c544a093d51ba1a8e19, type: 3}
+      propertyPath: m_Constraints
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6856406687766939319, guid: 2153e9040bcb6c544a093d51ba1a8e19, type: 3}
       propertyPath: cart
       value: 
