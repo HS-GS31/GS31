@@ -4,6 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.GraphicsBuffer;
 
 public class GrabFood : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class GrabFood : MonoBehaviour
     public GameObject cart;
     public bool checkIt; // 카트에 들어갈 재료가 맞는지 확인
     private bool once = true; // 카트에 들어간 한번만 체크
+
+    public GameObject vegetables; // 카트에 넣을 채소 위치 부모
+    public GameObject meetandfish; // 카트에 넣을 육류 위치 부모
+    public int foodNum;
+    public GameObject Target;
 
     // Start is called before the first frame update
     void Start()
@@ -53,14 +59,19 @@ public class GrabFood : MonoBehaviour
             if (checkIt) // 담아야할 재료를 담은 경우
             {
                 // 카트에 야채 상속
-                foodcheck.transform.parent = cart.transform;
-
-                if(once)
+                //foodcheck.transform.parent = cart.transform;
+                if(foodNum < 3)
+                    vegetables.gameObject.transform.GetChild(foodNum).gameObject.SetActive(true);
+                else if(foodNum < 6)
+                    meetandfish.gameObject.transform.GetChild(foodNum-3).gameObject.SetActive(true);
+                
+                if (once)
                 {
                     // 카트에 옳게 들어간 음식의 개수 증가
                     GameObject.Find("GameManager").GetComponent<FoodCheck>().increaseCheckFood();
                     once = false;
                     checkText.text = "잘하셨습니다!";
+                    Target.SetActive(false);
                     Invoke("HideText", 3f);
                 }
             }
@@ -74,7 +85,8 @@ public class GrabFood : MonoBehaviour
         }
 
         // 바닥에 떨어졌을 경우
-        if (collision.collider.gameObject.CompareTag("CheckCollision_Floor"))
+        else if (collision.collider.gameObject.CompareTag("CheckCollision_Floor") ||
+             collision.collider.gameObject.CompareTag("Cart"))
         {
             GoBackPosition();
         }
