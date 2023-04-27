@@ -8,6 +8,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     public void GoScene3()
     {
-        SceneManager.LoadScene("Chap03");
+        SceneManager.LoadScene("Chapter03Scene");
     }
 }
