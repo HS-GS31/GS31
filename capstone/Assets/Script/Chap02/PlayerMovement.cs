@@ -7,12 +7,13 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 25.0f;
 
-    [SerializeField] private SoundManager gameManager;
+    [SerializeField] private SoundManager soundManager;
     [SerializeField] private Transform handle;
 
     [SerializeField] private Transform[] before_transforms;
     [SerializeField] private OneGrabRotateTransformer oneHand;
     [SerializeField] private TwoGrabRotateTransformer twoHand;
+    [SerializeField] private GameManager gameManager;
 
 
     bool isHandle = false;
@@ -72,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
             if (isCheck)
             {
                 driveTime = 0;
-                gameManager.Play();
+                soundManager.Play();
             }
             if (drive.isDrive)
             {
@@ -106,11 +107,12 @@ public class PlayerMovement : MonoBehaviour
                 //완료 되었는가
                 if(drive.Action(driveTime))
                 {
-                    gameManager.DontPlay();
+                    soundManager.DontPlay();
 
                     if (roadQueue.Count <= 0)
                     {
                         Debug.Log("완료");
+                        gameManager.GoScene3();
                         return;
                     }
                     //완료 되면 바로 큐 비교 [물론 핸들 돌리는거 끝난 직후]
