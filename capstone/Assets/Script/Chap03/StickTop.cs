@@ -13,11 +13,9 @@ public class StickTop : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Shrimp")
-        {
-            other.GetComponent<BoxCollider>().isTrigger = true;
-            other.GetComponent<Rigidbody>().useGravity = false;
-            Debug.Log("새우가 충돌!! 통과!!");
-        }
+        //상단을 통해 들어왔을 때,
+        other.GetComponent<IngredientController>().setIsSticTop();
+        Debug.Log("상단과 충돌");
+        //상단을 통해 빠져 나갈때.
     }
 }
