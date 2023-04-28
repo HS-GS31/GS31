@@ -3,12 +3,10 @@ using Oculus.Interaction;
 
 public class IngredientController : MonoBehaviour
 {
-    private bool isStickTop = false;        //스틱의 꼭대기에서 들어온 음식인가 판단. 
-    private float constrainX = 0.3f;
-    private float constrainZ = 0.3f;
+    private bool isStickTop;                    //스틱의 꼭대기에서 들어온 음식인가 판단. 
     private Vector3 spawnPos;                   //처음위치
     private Quaternion spawnRot;
-    private GameObject warnText;
+    private GameObject gameManager;
     Rigidbody rigid;
     Collider coll;
 
@@ -17,11 +15,9 @@ public class IngredientController : MonoBehaviour
         spawnPos = transform.position;
         spawnRot = transform.rotation;
         rigid = gameObject.GetComponent<Rigidbody>();
-        warnText = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
-        if (this.gameObject.tag == "Shrimp" || this.gameObject.tag == "Meat")
-            coll = gameObject.GetComponent<BoxCollider>();
-        else
-            coll = gameObject.GetComponent<MeshCollider>();
+        gameManager = GameObject.Find("GameManager");
+        coll = gameObject.GetComponent<Collider>();
+        isStickTop = false;
     }
 
     private void Update()
@@ -34,22 +30,22 @@ public class IngredientController : MonoBehaviour
         }
 
         //음식이 꼬치에 꽂혀있으면..
-        if (transform.parent != null)
+        if (transform.parent.tag == "STICK")
             rigid.isKinematic = true;
         else
-            rigid.isKinematic = true;
+            rigid.isKinematic = false;
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "STICK")
+        if(other.gameObject.tag == "STICK" && isStickTop)
         {
             this.gameObject.transform.parent = other.gameObject.transform;
-            other.gameObject.GetComponent<MenuController>().push(this.gameObject);
         }
     }
+
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "STICK")
+        if (other.gameObject.tag == "STICK" && isStickTop)
         {
             this.gameObject.transform.parent = other.gameObject.transform;
             this.rigid.useGravity = false;
@@ -58,29 +54,28 @@ public class IngredientController : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        //꼬치에서 빠졌을 경우.
         if (other.gameObject.tag == "STICK")
         {
-            other.gameObject.GetComponent<MenuController>().pop();
             this.gameObject.transform.parent = null;
             isStickTop = false;
         }
     }
     public void warn()
-    {
+    {   
         //부모객체가 있는 상태에서 꼬치에 특정범위에서 꼬치가 빠지면.
-        if (this.gameObject.transform.parent != null)
+        if (this.gameObject.transform.parent.tag == "STICK")
         {
             float y = transform.localPosition.y;
-            if (transform.localPosition.x >= 0.025f || transform.localPosition.x <= -0.025f || transform.localPosition.z >= 0.025f || transform.localPosition.z <= -0.025f)
+            if (transform.localPosition.x >= 0.03f || transform.localPosition.x <= -0.03f || transform.localPosition.z >= 0.03f || transform.localPosition.z <= -0.03f)
             {
                 this.gameObject.GetComponent<Grabbable>().enabled = false;
                 this.gameObject.GetComponent<Grabbable>().enabled = true;
                 transform.localPosition = new Vector3(0, y, 0);
-
+                
                 //경고문구 띄우기.
-                warnText.GetComponent<WarnText>().setActive();
+                gameManager.GetComponent<GameManager>().Warn();
             }
-
         }
     }
 
@@ -95,6 +90,7 @@ public class IngredientController : MonoBehaviour
     //음식을 잡았을때
     public void Selete()
     {
+        transform.parent = null;
         rigid.useGravity = false;
         coll.isTrigger = true;
     }
@@ -103,10 +99,14 @@ public class IngredientController : MonoBehaviour
     public void UnSelect()
     {
         //음식을 놓았는데, 꼬치에 끼워진 상태라면.
-        if (transform.parent == null)
+        if (transform.parent.tag == "STICK")
         {
             rigid.useGravity = true;
             coll.isTrigger = false;
         }
+    }
+    public void setIsSticTop()
+    {
+        isStickTop = true;
     }
 }
