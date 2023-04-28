@@ -10,7 +10,6 @@ public class WarnText : MonoBehaviour
     {
         this.gameObject.SetActive(false);               //처음에는 문구 비활성화.   
     }
-
     public void setActive()
     {
         this.gameObject.SetActive(true);

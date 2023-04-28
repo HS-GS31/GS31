@@ -8,42 +8,39 @@ public class MenuController : MonoBehaviour
     Rigidbody rigid;
     Collider coll;
     private GameObject stickTop;
-    //ÇöÀç ²¿Ä¡ »óÅÂ.
     private string[] ingredients;
-    //²¿Ä¡ ½ºÅÃ ÀÎµ¦½º
     int top;
+    private Vector3 spawnPos;                 
+    private Quaternion spawnRot;
 
     private void Start()
     {
+        spawnPos = transform.position;
+        spawnRot = transform.rotation;
         rigid = gameObject.GetComponent<Rigidbody>();
         coll = gameObject.GetComponent<CapsuleCollider>();
         customerManager = GameObject.Find("CustomerManager");
-        stickTop = gameObject.transform.GetChild(0).gameObject;             //ÀÚ½ÄÀÇ 0¹øÂ°´Â sticktop
+        stickTop = gameObject.transform.GetChild(0).gameObject;           
         ingredients = new string[4];
         top = -1;
     }
-
-    public void push(GameObject ingredient)
+    private void Update()
     {
-        top++;
-        ingredients[top] = ingredient.tag;
-        Debug.Log("top :" + ingredients[top]);
-        if (top == 3)
+        if (transform.position.y < 1.1f)
         {
-            Debug.Log("²¿Ä¡µé:");
-            foreach(string obj in ingredients)
-            {
-                Debug.Log(obj);
-            }
+            ResPawnIngredient();
+        }
+
+        if (transform.childCount >= 6)
+        {
+            Debug.Log("ìì‹ì˜ ìˆ˜ : " + transform.childCount);
+            setIngredient();
+        }
+        else
+        {
+            setIngredientNull();
         }
     }
-
-    public void pop()
-    {
-        ingredients[top] = null;
-        top--;
-    }
-
     public string[] getMenu()
     {
         return ingredients;
@@ -54,10 +51,36 @@ public class MenuController : MonoBehaviour
         rigid.useGravity = false;
         coll.isTrigger = true;
     }
-    //À½½ÄÀ» ³õ¾ÒÀ»¶§
     public void UnSelect()
     {
         rigid.useGravity = true;
         coll.isTrigger = false;
+    }
+    private void setIngredient()
+    {
+        ingredients[0] = transform.GetChild(2).gameObject.tag;
+        ingredients[1] = transform.GetChild(3).gameObject.tag;
+        ingredients[2] = transform.GetChild(4).gameObject.tag;
+        ingredients[3] = transform.GetChild(5).gameObject.tag;
+        
+        for(int i = 0; i < 4; i++)
+        {
+            Debug.Log(i +" : "+ingredients[i]);
+        }
+    }
+    private void setIngredientNull()
+    {
+        ingredients[0] = "empty";
+        ingredients[1] = "empty";
+        ingredients[2] = "empty";
+        ingredients[3] = "empty";
+    }
+
+    private void ResPawnIngredient()
+    {
+        transform.position = spawnPos;
+        transform.rotation = spawnRot;
+        rigid.isKinematic = true;
+        rigid.isKinematic = false;
     }
 }
