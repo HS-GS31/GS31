@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 25.0f;
+    private float speed = 8.0f;
 
     [SerializeField] private SoundManager soundManager;
     [SerializeField] private Transform handle;
+    [SerializeField] private Transform navCamera;
 
     [SerializeField] private Transform[] before_transforms;
     [SerializeField] private OneGrabRotateTransformer oneHand;
@@ -63,6 +64,11 @@ public class PlayerMovement : MonoBehaviour
     #endif
         StartDrive();
         Driving();
+        navCamera.transform.position = new Vector3(
+            transform.position.x,
+            transform.position.y + 12,
+            transform.position.z
+        );
     }
 
     private void StartDrive()
@@ -178,14 +184,14 @@ public class PlayerMovement : MonoBehaviour
     {
         //회전
         transform.Rotate(0, Time.deltaTime * -30, 0);
-        transform.Translate(0,0, 25 * Time.deltaTime);
+        transform.Translate(0,0, speed * 0.65f * Time.deltaTime);
 
         //이동
     }
     void Handle_Right()
     {
         transform.Rotate(0, Time.deltaTime * 30, 0);
-        transform.Translate(0, 0, 15 * Time.deltaTime);
+        transform.Translate(0, 0, speed*2/5 * Time.deltaTime);
     }
 
     //핸들 안잡고 디버깅 하는 용도
