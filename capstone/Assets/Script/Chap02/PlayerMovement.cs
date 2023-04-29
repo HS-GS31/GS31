@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform[] before_transforms;
     [SerializeField] private OneGrabRotateTransformer oneHand;
     [SerializeField] private TwoGrabRotateTransformer twoHand;
-    [SerializeField] private GameManager gameManager;
+    [SerializeField] private LoaderScene loaderScene;
 
 
     bool isHandle = false;
@@ -112,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
                     if (roadQueue.Count <= 0)
                     {
                         Debug.Log("완료");
-                        gameManager.GoScene3();
+                        loaderScene.GoScene3();
                         return;
                     }
                     //완료 되면 바로 큐 비교 [물론 핸들 돌리는거 끝난 직후]
