@@ -5,21 +5,30 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] private AudioClip truck_sound;
-    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip bgm;
+    [SerializeField] private AudioSource sfxSource;
+    [SerializeField] private AudioSource bgmSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.clip = truck_sound;
+
+        bgmSource.clip = bgm;
+        bgmSource.Play();
+
+        sfxSource.clip = truck_sound;
     }
 
     public void Play()
     {
-        audioSource.Play();
+        sfxSource.Play();
     }
     public void DontPlay()
     {
-        audioSource.Pause();
+        sfxSource.Pause();
+    }
+    public void BGMDontPlay()
+    {
+        bgmSource.Pause();
     }
 }
