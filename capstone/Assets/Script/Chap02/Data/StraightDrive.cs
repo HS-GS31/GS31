@@ -15,7 +15,7 @@ public class StraightDrive : Drive
     {
         DuringTime = 2f;
         isDrive = false;
-        driveAble = true;
+        driveAble = false;
     }
     public bool StartDrive(bool isHandle, float rotateY)
     {
