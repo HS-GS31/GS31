@@ -10,26 +10,31 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private SoundManager soundManager;
     [SerializeField] private Transform handle;
     [SerializeField] private Transform navCamera;
+    [SerializeField] private GameObject chapterExplanation;
+    [SerializeField] private GameObject guideUI;
 
     [SerializeField] private Transform[] before_transforms;
     [SerializeField] private OneGrabRotateTransformer oneHand;
     [SerializeField] private TwoGrabRotateTransformer twoHand;
     [SerializeField] private LoaderScene loaderScene;
 
+    Queue<Route> roadQueue;
+    Drive[] drives = new Drive[2];
+
 
     bool isHandle = false;
-
-
     float driveTime = 0;
-    Queue<Route> roadQueue;
+    const float showChapterTime = 5.0f;
+    const float showGuideTime = 2.0f;
 
-    Drive[] drives = new Drive[2];
 
     //왼쪽은 false, 오른쪽은 true
 
     // Start is called before the first frame update
     void Start()
     {
+
+        //돌아오는 포인트 Queue에 넣기
         roadQueue = new Queue<Route>();
 
         StraightDrive straightDrive = new StraightDrive();
@@ -46,14 +51,16 @@ public class PlayerMovement : MonoBehaviour
             else {
                 isCheck = false;
             }
-            //Debug.Log("dd : " + before_transforms[i].position + " " + before_transforms[i].rotation.eulerAngles);
             roadQueue.Enqueue(new Route(isCheck,
                 before_transforms[i].position,
                 before_transforms[i].rotation.eulerAngles)
             );
-            //Debug.Log("아아 : " + i);
-
         }
+
+        //UI
+        chapterExplanation.SetActive(true);
+        guideUI.SetActive(false);
+        StartCoroutine(Show_UI_Chapter());
     }
 
     // Update is called once per frame
@@ -71,6 +78,8 @@ public class PlayerMovement : MonoBehaviour
         );
     }
 
+
+    #region DriveFunction
     private void StartDrive()
     {
         foreach (Drive drive in drives)
@@ -105,8 +114,7 @@ public class PlayerMovement : MonoBehaviour
                         Handle_Right();
                     }
                 }
-                else
-                {
+                else {
                     Drive_Straight();
                 }
 
@@ -117,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
 
                     if (roadQueue.Count <= 0)
                     {
-                        Debug.Log("완료");
+                        //Debug.Log("완료");
                         loaderScene.GoScene3();
                         return;
                     }
@@ -141,10 +149,12 @@ public class PlayerMovement : MonoBehaviour
                         {
                             transform.position = route.GetPosition();
                             transform.localRotation = Quaternion.Euler(route.GetRotation());
-                            drives[1].driveAble = true;
-                            handle.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
 
                             
+                            handle.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+
+                            //틀렸습니다 UI + 2초동안은 핸들 잡기 기능 X
+                            StartCoroutine(Show_UI_Guide());
                         }
                     }
                     else
@@ -171,11 +181,7 @@ public class PlayerMovement : MonoBehaviour
     public void setIsHandle(bool isHandle)
     {
         this.isHandle = isHandle;
-        if(!isHandle)
-        {
-            //자연스럽게 밑으로 내려가는
-            //handle.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
-        }
+       
     }
 
     //get으로 가져온 rotate의 값에서 -90을 넘거나 90을 넘으면 왼쪽 오른쪽으로 가짐
@@ -194,8 +200,9 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(0, 0, speed*2/5 * Time.deltaTime);
     }
 
+
     //핸들 안잡고 디버깅 하는 용도
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
     void Debug_Handle()
     {
         if (Input.GetKeyDown(KeyCode.W))
@@ -216,5 +223,36 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    #endif
+#endif
+    #endregion
+
+    #region UI
+    IEnumerator Show_UI_Chapter()
+    {
+        drives[0].driveAble = false; //핸들 잡아도 됨
+
+        //핸들 잡아도 안되는 기능
+        yield return new WaitForSeconds(showChapterTime);
+
+        chapterExplanation.SetActive(false);//UI 제거
+        drives[0].driveAble = true; //핸들 잡아도 됨
+
+        //
+    }
+    IEnumerator Show_UI_Guide()
+    {
+        //핸들 잡아도 안되는 기능
+
+        //Debug.Log("엄");
+        guideUI.SetActive(true);
+        yield return new WaitForSeconds(showGuideTime);
+
+        //UI 제거
+        guideUI.SetActive(false);
+        //핸들 잡아도 됨
+        drives[1].driveAble = true; //핸들 잡아도 됨
+
+    }
+
+    #endregion
 }
