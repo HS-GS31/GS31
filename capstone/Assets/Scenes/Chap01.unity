@@ -17118,7 +17118,7 @@ MonoBehaviour:
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 847273908}
-  _twoGrabTransformer: {fileID: 0}
+  _twoGrabTransformer: {fileID: 847273908}
   _maxGrabPoints: -1
 --- !u!54 &847273901
 Rigidbody:
@@ -17150,12 +17150,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   moveTime: 3.9
-  isGrab: 0
   player: {fileID: 1355635410}
   cart: {fileID: 1779435869}
   clipboard: {fileID: 1183594870}
   nextChapUI: {fileID: 1869497251}
   reTryText: {fileID: 1344645440}
+  hand: 0
 --- !u!114 &847273903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17246,26 +17246,6 @@ MonoBehaviour:
     MaxZ:
       Constrain: 1
       Value: 0
---- !u!114 &847273909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847273898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b053556d972eae24b947c1477538bff1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _constraints:
-    ConstraintsAreRelative: 1
-    MinScale:
-      Constrain: 1
-      Value: 1
-    MaxScale:
-      Constrain: 1
-      Value: 1
 --- !u!1 &848306083
 GameObject:
   m_ObjectHideFlags: 0
