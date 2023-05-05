@@ -19,6 +19,7 @@ public class CartMove : MonoBehaviour
     public TMP_Text reTryText; // 다시 고르라는 문구
     private int checkMove = 0; // 몇번 움직였는지 확인
 
+    private static int checkFood = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -63,7 +64,7 @@ public class CartMove : MonoBehaviour
                     StartCoroutine(MoveCoroutine());
                 }
 
-                else if(checkMove == 1)
+                else if(checkMove == 1 && checkFood != 3)
                 {
                     // 고기 & 생선 코너가 끝났을 경우 다음 씬으로 가는 UI 등장
                     GameObject.Find("GameManager").transform.Find("shopping cart").gameObject.SetActive(false);
@@ -94,7 +95,7 @@ public class CartMove : MonoBehaviour
 
     private bool checkCartMove()
     {
-        int checkFood = GameObject.Find("GameManager").GetComponent<FoodCheck>().getCheckFood();
+        checkFood = GameObject.Find("GameManager").GetComponent<FoodCheck>().getCheckFood();
         if (checkFood == 3 || checkFood == 6)
         {
             return true;

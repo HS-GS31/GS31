@@ -6,12 +6,14 @@ public class FirstSetting : MonoBehaviour
 {
     public GameObject vegetables;
     public GameObject meetandfish;
-
+    public GameObject chapIntroUI;
+    public GameObject nextchapUI;
 
     // Start is called before the first frame update
     void Start()
     {
         InCartFoodFalse();
+        ChapIntroduceUISettgin();
     }
 
     // Update is called once per frame
@@ -30,5 +32,12 @@ public class FirstSetting : MonoBehaviour
         {
             meetandfish.transform.GetChild(j).gameObject.SetActive(false);
         }
+        
+    }
+
+    private void ChapIntroduceUISettgin()
+    {
+        chapIntroUI.gameObject.SetActive(true);
+        nextchapUI.gameObject.SetActive(false);
     }
 }
