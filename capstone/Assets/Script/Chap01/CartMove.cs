@@ -64,12 +64,21 @@ public class CartMove : MonoBehaviour
                     StartCoroutine(MoveCoroutine());
                 }
 
-                else if(checkMove == 1 && checkFood != 3)
+                else if(checkMove == 1)
                 {
-                    // 고기 & 생선 코너가 끝났을 경우 다음 씬으로 가는 UI 등장
-                    GameObject.Find("GameManager").transform.Find("shopping cart").gameObject.SetActive(false);
-                    nextChapUI.transform.GetChild(0).gameObject.SetActive(true);
-                    Invoke("GoNextChap02", 5f);
+                    if(checkFood != 3)
+                    {
+                        // 고기 & 생선 코너가 끝났을 경우 다음 씬으로 가는 UI 등장
+                        GameObject.Find("GameManager").transform.Find("shopping cart").gameObject.SetActive(false);
+                        nextChapUI.transform.GetChild(0).gameObject.SetActive(true);
+                        Invoke("GoNextChap02", 5f);
+                    }
+                    
+                    if(checkFood == 3)
+                    {
+                        reTryText.text = "마저 골라주세요";
+                        Invoke("HideText", 3f);
+                    }
                 }
             }
 
