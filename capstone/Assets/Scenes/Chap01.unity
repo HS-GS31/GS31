@@ -24646,6 +24646,7 @@ GameObject:
   - component: {fileID: 1241860836}
   - component: {fileID: 1241860837}
   - component: {fileID: 1241860838}
+  - component: {fileID: 1241860839}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -24708,6 +24709,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkFood: 0
+--- !u!114 &1241860839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241860834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80bfba52208bb4a844ce02a7a2d506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vegetables: {fileID: 1844848358}
+  meetandfish: {fileID: 709334194}
 --- !u!1001 &1250115031
 PrefabInstance:
   m_ObjectHideFlags: 0
