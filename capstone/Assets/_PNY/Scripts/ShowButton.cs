@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ShowButton : MonoBehaviour
 {
+    public GameObject Menupan;
     public GameObject Sbutton;
     public GameObject Cbutton;
     public GameObject Ebutton;
@@ -21,6 +22,7 @@ public class ShowButton : MonoBehaviour
     }
     public void ButtonTrue()
     {
+        Menupan.SetActive(true);
         Sbutton.SetActive(true);
         Cbutton.SetActive(true);
         Ebutton.SetActive(true);
