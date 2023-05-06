@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 11cba7a9ba030124a9b3a8feabff3320, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -3726,10 +3726,10 @@ Transform:
   - {fileID: 861266450}
   - {fileID: 744146655}
   - {fileID: 1533247950}
-  - {fileID: 1324154802}
   - {fileID: 1197148518}
-  - {fileID: 894867659}
+  - {fileID: 1324154802}
   - {fileID: 1567643559}
+  - {fileID: 894867659}
   m_Father: {fileID: 1537330023}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
