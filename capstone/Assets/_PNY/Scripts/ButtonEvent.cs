@@ -39,6 +39,14 @@ public class ButtonEvent : MonoBehaviour
     {
         SceneManager.LoadScene("Chap01");
     }
+    public void GoChap2() //운전하기 씬으로 이동
+    {
+        SceneManager.LoadScene("Chap02");
+    }
+    public void GoChap3() //요리하기 씬으로 이동
+    {
+        SceneManager.LoadScene("Chapter03Scene");
+    }
     public void chap4GoMain()
     {
         SceneManager.LoadScene("Start");
