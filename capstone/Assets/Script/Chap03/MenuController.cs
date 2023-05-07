@@ -9,7 +9,7 @@ public class MenuController : MonoBehaviour
     Collider coll;
     private GameObject stickTop;
     private string[] ingredients;
-    int top;
+    private int hand_count;
     private Vector3 spawnPos;                 
     private Quaternion spawnRot;
 
@@ -22,7 +22,7 @@ public class MenuController : MonoBehaviour
         customerManager = GameObject.Find("CustomerManager");
         stickTop = gameObject.transform.GetChild(0).gameObject;           
         ingredients = new string[4];
-        top = -1;
+        hand_count = 0;
     }
     private void Update()
     {
@@ -50,11 +50,23 @@ public class MenuController : MonoBehaviour
     {
         rigid.useGravity = false;
         coll.isTrigger = true;
+        hand_count++;
+        Debug.Log("hand_count : " + hand_count);
     }
     public void UnSelect()
     {
-        rigid.useGravity = true;
-        coll.isTrigger = false;
+        //한손으로 잡고 놓은 상태
+        if (hand_count < 2)
+        {
+            rigid.useGravity = true;
+            coll.isTrigger = false;
+            hand_count--;
+        }
+        else    //두손으로 잡은 상태.
+        {
+            hand_count--;
+        }
+        Debug.Log("hand_count : " + hand_count);
     }
     private void setIngredient()
     {

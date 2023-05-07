@@ -17,9 +17,8 @@ public class Sender : MonoBehaviour
     {
         if(other.gameObject.tag == "STICK") { 
             string[] menus = other.GetComponent<MenuController>().getMenu();
-            Debug.Log("받은 메뉴 : " + menus);
+            //Debug.Log("받은 메뉴 : " + menus);
             int i = 0;
-        
             foreach(string obj in menus)
             {
                 Debug.Log(i + " : " + obj);
