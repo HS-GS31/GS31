@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 483746192}
   - component: {fileID: 8388296494832192776}
   - component: {fileID: 420915588}
+  - component: {fileID: 1547218770}
+  - component: {fileID: 720633910}
   m_Layer: 0
   m_Name: Shrimp
   m_TagString: Shrimp
@@ -33,7 +35,7 @@ Transform:
   m_GameObject: {fileID: 7879166663911572876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.181, y: 1.568, z: -1.652}
-  m_LocalScale: {x: 0.4, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.5, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -132,8 +134,8 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 1547218770}
+  _twoGrabTransformer: {fileID: 720633910}
   _maxGrabPoints: -1
 --- !u!114 &483746192
 MonoBehaviour:
@@ -246,3 +248,35 @@ MonoBehaviour:
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1547218770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879166663911572876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &720633910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879166663911572876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b053556d972eae24b947c1477538bff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _constraints:
+    ConstraintsAreRelative: 0
+    MinScale:
+      Constrain: 1
+      Value: 1
+    MaxScale:
+      Constrain: 1
+      Value: 1

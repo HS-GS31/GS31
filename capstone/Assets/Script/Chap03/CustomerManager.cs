@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CustomerManager : MonoBehaviour
 {
@@ -40,6 +41,16 @@ public class CustomerManager : MonoBehaviour
                     SpawnCustomer();
                     Debug.Log("¼Õ´Ô ¹ÞÀº ¼ö : " + cnt);
                 }
+                if(cnt >= 3)
+                {
+                    //Invoke("GoNextScene", 2);
+                    SceneManager.LoadScene("TestingScene");
+                    Debug.Log("meat : " + GameManager.count.meat);
+                    Debug.Log("shrimp : " + GameManager.count.shrimp);
+                    Debug.Log("vegetable : " + GameManager.count.vegetable);
+                    Debug.Log("mushroom : " + GameManager.count.mushroom);
+                    Debug.Log("sausage : " + GameManager.count.sausage);
+                }
             }
         }
     }
@@ -52,5 +63,9 @@ public class CustomerManager : MonoBehaviour
         customer.transform.position = spawnPoint[rndPos].transform.position;
         now_customer = customer;
         Debug.Log("¼Õ´Ô ¿Â´Ù");
+    }
+    private void GoNextScene()
+    {
+        SceneManager.LoadScene("TestingScene");
     }
 }
