@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_PNY/Scenes/Chap04.unity
     guid: c57deacec1b4a014e8d4e9bfc0ab70a7
+  - enabled: 1
+    path: Assets/_PNY/Scenes/Cartoon 1.unity
+    guid: 760b3a6f933796d4197ec0c474b80610
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 98d16a2e363d158469665e5077e91573, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2a5a8c1ba7b973a48bcc52ffbba24c5f, type: 2}

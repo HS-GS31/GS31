@@ -4590,7 +4590,7 @@ PrefabInstance:
       objectReference: {fileID: 1847620392}
     - target: {fileID: 5679596920333172257, guid: 68a611672d6081f47ad9bc314285b256, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoCartoon
+      value: RGoCartoon1
       objectReference: {fileID: 0}
     - target: {fileID: 5679596920466409956, guid: 68a611672d6081f47ad9bc314285b256, type: 3}
       propertyPath: m_Camera
