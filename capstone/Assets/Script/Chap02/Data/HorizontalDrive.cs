@@ -20,14 +20,14 @@ public class HorizontalDrive : Drive
     public bool StartDrive(bool isHandle, float rotateY)
     {
         
-        if (!isDrive && driveAble && isHandle && (rotateY <= -0.56 || 0.56 <= rotateY))
+        if (!isDrive && driveAble && isHandle && (rotateY <= -0.28 || 0.28 <= rotateY))
         {
             isDrive = true;
             driveAble = false;
             Debug.Log("삐약 : " + rotateY);
 
-            //핸들을 잡은 상태 + -70 / 70 범주를 넘어서면rotate
-            if (rotateY <= -0.56) {
+            //핸들을 잡은 상태 + - 35 / 35 범주를 넘어서면rotate
+            if (rotateY <= -0.28) {
                 isLeft = true;
             }
             else {
