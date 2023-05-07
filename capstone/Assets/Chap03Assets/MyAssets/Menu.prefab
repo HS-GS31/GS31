@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 4561680790130359277}
   - component: {fileID: 219979179}
   - component: {fileID: 1364253752}
+  - component: {fileID: 1672829968}
   m_Layer: 0
   m_Name: Menu
   m_TagString: STICK
@@ -196,7 +197,7 @@ MonoBehaviour:
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 1364253752}
-  _twoGrabTransformer: {fileID: 0}
+  _twoGrabTransformer: {fileID: 1672829968}
   _maxGrabPoints: -1
 --- !u!114 &4561680790130359276
 MonoBehaviour:
@@ -320,6 +321,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1672829968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4561680790130359281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b053556d972eae24b947c1477538bff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _constraints:
+    ConstraintsAreRelative: 1
+    MinScale:
+      Constrain: 1
+      Value: 1
+    MaxScale:
+      Constrain: 1
+      Value: 1
 --- !u!1 &4561680791778631769
 GameObject:
   m_ObjectHideFlags: 0
