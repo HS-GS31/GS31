@@ -31,6 +31,14 @@ public class ButtonEvent : MonoBehaviour
         conti.SetActive(false);
         //SceneManager.LoadScene("Start");
     }
+    public void RGoMain() //메인화면 씬으로 이동
+    {//카툰1에서 처음으로
+        SceneManager.LoadScene("Start");
+    }
+    public void RGoCartoon1() //이어하기의 만화씬으로 이동
+    {//반복가능
+        SceneManager.LoadScene("Cartoon 1");
+    }
     public void GoCartoon() //만화 씬으로 이동
     {
         SceneManager.LoadScene("Cartoon");

@@ -6,6 +6,7 @@ using TMPro;
 
 public class Cartoon : MonoBehaviour
 {
+
     public GameObject cut1;
     public GameObject cut2;
     public GameObject cut3;
@@ -33,19 +34,19 @@ public class Cartoon : MonoBehaviour
     }
     IEnumerator CartoonScene()
     {
-        Invoke("cut1false", 10f);//10ÃÊ µÚ¿¡ ÄÆ1 ²¨Áö±â
-        Invoke("cut2true", 10f);//10ÃÊ µÚ ÄÆ2 ÄÑÁö±â
-        Invoke("cut2false", 20f);
-        Invoke("cut3true", 20f);
-        Invoke("cut3false", 30f);
-        Invoke("cut4true", 30f);
-        Invoke("cut4false", 40f);
-        Invoke("OculusOn", 40f);
+        Invoke("cut1false", 13f);//10ÃÊ µÚ¿¡ ÄÆ1 ²¨Áö±â
+        Invoke("cut2true", 13f);//10ÃÊ µÚ ÄÆ2 ÄÑÁö±â
+        Invoke("cut2false", 26f);
+        Invoke("cut3true", 26f);
+        Invoke("cut3false", 39f);
+        Invoke("cut4true", 39f);
+        Invoke("cut4false", 52f);
+        Invoke("OculusOn", 52f);
 
         yield return null;
     }
 
-    public void cut1false()//ÄÆ1, ÀÚ¸·1 ²¨Áö±â
+     public void cut1false()//ÄÆ1, ÀÚ¸·1 ²¨Áö±â
     {
         cut1.SetActive(false);
         text1.SetActive(false);
