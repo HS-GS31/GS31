@@ -13,6 +13,9 @@ public class Chap4Btn : MonoBehaviour
     public GameObject btn3;
     public GameObject btn4;
 
+    //투명막
+    public GameObject mak;
+
     //나오는 창
     public GameObject odap;//오답
     public GameObject dap;//답
@@ -51,11 +54,14 @@ public class Chap4Btn : MonoBehaviour
     }
     public void dapOn()
     {
+        mak.SetActive(true);
         dap.SetActive(true);
         Invoke("dapfalse", 3f);
+        
     }
     public void dapfalse()
     {
+        mak.SetActive(false);
         dap.SetActive(false);
         food1.SetActive(false);
         food2.SetActive(false);
