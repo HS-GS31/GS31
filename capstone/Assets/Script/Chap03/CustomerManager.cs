@@ -44,12 +44,12 @@ public class CustomerManager : MonoBehaviour
                 if(cnt >= 3)
                 {
                     //Invoke("GoNextScene", 2);
-                    SceneManager.LoadScene("TestingScene");
-                    Debug.Log("meat : " + GameManager.count.meat);
-                    Debug.Log("shrimp : " + GameManager.count.shrimp);
-                    Debug.Log("vegetable : " + GameManager.count.vegetable);
-                    Debug.Log("mushroom : " + GameManager.count.mushroom);
-                    Debug.Log("sausage : " + GameManager.count.sausage);
+                    SceneManager.LoadScene("Chap04");
+                    Debug.Log("meat : " + GameManager.Count.meat);
+                    Debug.Log("shrimp : " + GameManager.Count.shrimp);
+                    Debug.Log("vegetable : " + GameManager.Count.vegetable);
+                    Debug.Log("mushroom : " + GameManager.Count.mushroom);
+                    Debug.Log("sausage : " + GameManager.Count.sausage);
                 }
             }
         }
