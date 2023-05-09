@@ -56,6 +56,5 @@ public class Sender : MonoBehaviour
         //반복문을 나왔다는 것을 4개의 요소가 모두 같다는 것을 의미한다.
         Debug.Log("성공!!");
         return true;
-       // return true;
     }
 }
