@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/_PNY/Scenes/Start.unity
     guid: 2efb4228c0e75354c8f79642322c0bb8
   - enabled: 1
-    path: Assets/_PNY/Scenes/Continue.unity
-    guid: 4c18099eea1968a46982ae2338ccd9f9
-  - enabled: 1
     path: Assets/_PNY/Scenes/Cartoon.unity
     guid: dd5cb06f08a43cc41831aa94793c6e46
   - enabled: 1
