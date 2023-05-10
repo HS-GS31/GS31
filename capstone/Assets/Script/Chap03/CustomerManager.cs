@@ -10,6 +10,7 @@ public class CustomerManager : MonoBehaviour
     Transform now_spawnPoint;
     public GameObject now_customer;     //현재 주문중인 사람.
     public GameObject[] customers;
+    private GameObject gameManager;
     bool ordering;
     // Update is called once per frame
     private void Start()
@@ -17,6 +18,7 @@ public class CustomerManager : MonoBehaviour
         spawnPoint[0].transform.position = new Vector3(-5, 0, -3.5f);
         spawnPoint[1].transform.position = new Vector3(-5, 0, 3);
         ordering = false;
+        gameManager = GameObject.Find("GameManager");
         SpawnCustomer();        //시작하마자 손님 한분 소환.
     }
 
@@ -41,15 +43,11 @@ public class CustomerManager : MonoBehaviour
                     SpawnCustomer();
                     Debug.Log("손님 받은 수 : " + cnt);
                 }
-                if(cnt >= 3)
+                if(cnt == 3)
                 {
-                    //Invoke("GoNextScene", 2);
-                    SceneManager.LoadScene("Chap04");
-                    Debug.Log("meat : " + GameManager.Count.meat);
-                    Debug.Log("shrimp : " + GameManager.Count.shrimp);
-                    Debug.Log("vegetable : " + GameManager.Count.vegetable);
-                    Debug.Log("mushroom : " + GameManager.Count.mushroom);
-                    Debug.Log("sausage : " + GameManager.Count.sausage);
+                    cnt++;      //중복 발생 방지용.
+                    gameManager.GetComponent<GameManager>().ChapOut();
+                    Invoke("GoNextScene", 5f);
                 }
             }
         }
@@ -66,6 +64,6 @@ public class CustomerManager : MonoBehaviour
     }
     private void GoNextScene()
     {
-        SceneManager.LoadScene("TestingScene");
+        SceneManager.LoadScene("Chap04");
     }
 }
