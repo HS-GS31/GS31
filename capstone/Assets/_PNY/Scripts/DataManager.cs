@@ -12,9 +12,16 @@ public class DataManager : MonoBehaviour
     public GameObject vegetableText;
     public GameObject sausageText;
     public GameObject shrimpText;
-    public GameObject btnText;
-    private int total;
 
+    public GameObject btnText;
+    public GameObject btnText1;
+    public GameObject btnText2;
+    public GameObject btnText4;
+
+    private int total;
+    private int total1;
+    private int total2;
+    private int total4;
     void calc()
     {
         total = 0;
@@ -23,17 +30,24 @@ public class DataManager : MonoBehaviour
         total += GameManager.Count.shrimp * 400;
         total += GameManager.Count.vegetable * 100;
         total += GameManager.Count.sausage * 500;
+
+        total1 = total + 1000;
+        total2 = total + 500;
+        total4 = total - 400;
     }
     // Start is called before the first frame update
     void Start()
     {
         calc();
-        mushText.GetComponent<TextMeshProUGUI>().text = GameManager.Count.mushroom + "°³ ÆÈ·È½À´Ï´Ù";
-        meatText.GetComponent<TextMeshProUGUI>().text = GameManager.Count.meat + "°³ ÆÈ·È½À´Ï´Ù";
-        vegetableText.GetComponent<TextMeshProUGUI>().text = GameManager.Count.vegetable + "°³ ÆÈ·È½À´Ï´Ù";
-        sausageText.GetComponent<TextMeshProUGUI>().text = GameManager.Count.sausage + "°³ ÆÈ·È½À´Ï´Ù";
-        shrimpText.GetComponent<TextMeshProUGUI>().text = GameManager.Count.shrimp + "°³ ÆÈ·È½À´Ï´Ù";
+        mushText.GetComponent<TextMeshProUGUI>().text = GameManager.Count.mushroom + "°³ ÆÇ¸Å";
+        meatText.GetComponent<TextMeshProUGUI>().text = GameManager.Count.meat + "°³ ÆÇ¸Å";
+        vegetableText.GetComponent<TextMeshProUGUI>().text = GameManager.Count.vegetable + "°³ ÆÇ¸Å";
+        sausageText.GetComponent<TextMeshProUGUI>().text = GameManager.Count.sausage + "°³ ÆÇ¸Å";
+        shrimpText.GetComponent<TextMeshProUGUI>().text = GameManager.Count.shrimp + "°³ ÆÇ¸Å";
 
         btnText.GetComponent<TextMeshProUGUI>().text = "3. " + total;
+        btnText1.GetComponent<TextMeshProUGUI>().text = "1. " + total1;
+        btnText2.GetComponent<TextMeshProUGUI>().text = "2. " + total2;
+        btnText4.GetComponent<TextMeshProUGUI>().text = "4. " + total4;
     }
 }
