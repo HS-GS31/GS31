@@ -5,29 +5,27 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     //정상하기용 구조체
-    public struct Count
+    public static class Count
     {
         //음식의 개수
-        public int sausage;
-        public int vegetable;
-        public int mushroom;
-        public int meat;
-        public int shrimp;
+        public static int sausage;
+        public static int vegetable;
+        public static int mushroom;
+        public static int meat;
+        public static int shrimp;
     }
 
     public GameObject WarningText;
     public GameObject ChapIntro;
-
-    public static Count count;
     
     private void Start()
     {
         WarningText = this.gameObject.transform.GetChild(0).gameObject;
-        count.sausage = 0;
-        count.vegetable = 0;
-        count.mushroom = 0;
-        count.meat = 0;
-        count.shrimp = 0;
+        Count.sausage = 0;
+        Count.vegetable = 0;
+        Count.mushroom = 0;
+        Count.meat = 0;
+        Count.shrimp = 0;
     }
 
     public void Warn()
@@ -38,31 +36,31 @@ public class GameManager : MonoBehaviour
     {
         if (menuCode == 0)
         {
-            count.meat += 3;
-            count.mushroom++;
+            Count.meat += 3;
+            Count.mushroom++;
         }
         else if (menuCode == 1)
         {
-            count.shrimp += 3;
-            count.vegetable++;
+            Count.shrimp += 3;
+            Count.vegetable++;
         }
         else if (menuCode == 2)
         {
-            count.meat++;
-            count.vegetable++;
-            count.mushroom++;
-            count.sausage++;
+            Count.meat++;
+            Count.vegetable++;
+            Count.mushroom++;
+            Count.sausage++;
         }
         else if (menuCode == 3)
         {
-            count.shrimp += 2;
-            count.sausage++;
-            count.mushroom++;
+            Count.shrimp += 2;
+            Count.sausage++;
+            Count.mushroom++;
         }
         else if (menuCode == 4)
         {
-            count.shrimp += 2;
-            count.meat += 2;
+            Count.shrimp += 2;
+            Count.meat += 2;
         }
         else
             return;
