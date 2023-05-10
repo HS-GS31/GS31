@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform navCamera;
     [SerializeField] private GameObject chapterExplanation;
     [SerializeField] private GameObject guideUI;
+    [SerializeField] private GameObject nextUI;
 
     [SerializeField] private Transform[] before_transforms;
     [SerializeField] private OneGrabRotateTransformer oneHand;
@@ -125,8 +126,9 @@ public class PlayerMovement : MonoBehaviour
 
                     if (roadQueue.Count <= 0)
                     {
+
                         //Debug.Log("완료");
-                        loaderScene.GoScene3();
+                        StartCoroutine(NextScene());
                         return;
                     }
                     //완료 되면 바로 큐 비교 [물론 핸들 돌리는거 끝난 직후]
@@ -229,7 +231,7 @@ public class PlayerMovement : MonoBehaviour
     #region UI
     IEnumerator Show_UI_Chapter()
     {
-        drives[0].driveAble = false; //핸들 잡아도 됨
+        drives[0].driveAble = false; //핸들 잡으면 안됨
 
         //핸들 잡아도 안되는 기능
         yield return new WaitForSeconds(showChapterTime);
@@ -253,6 +255,24 @@ public class PlayerMovement : MonoBehaviour
         drives[1].driveAble = true; //핸들 잡아도 됨
 
     }
+
+    IEnumerator NextScene()
+    {
+        //핸들 잡아도 안되는 기능
+        drives[1].driveAble = false; //핸들 잡으면 안됨
+        drives[0].driveAble = false; //핸들 잡으면 안됨
+
+        //Debug.Log("엄");
+        nextUI.SetActive(true);
+        yield return new WaitForSeconds(showChapterTime);
+
+        //UI 제거
+        nextUI.SetActive(false);
+
+        loaderScene.GoScene3();
+
+    }
+
 
     #endregion
 }
