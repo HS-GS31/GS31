@@ -2057,8 +2057,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -187, y: 0}
-  m_SizeDelta: {x: 2400, y: 550}
+  m_AnchoredPosition: {x: -175, y: 0}
+  m_SizeDelta: {x: 2400, y: 910}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &448835491
 MonoBehaviour:
@@ -2080,7 +2080,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4de1459c7d5951a47a18dec21f17c34a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a257df47bbfce8a4695d90fd7566287a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6280,7 +6280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3500086343649871676, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3500086343649871679, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
       propertyPath: m_RootOrder

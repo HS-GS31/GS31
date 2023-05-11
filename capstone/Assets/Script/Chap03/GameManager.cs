@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject WarningText;
     public GameObject ChapIntro;
-    
+    public GameObject ChapOutro;
+
     private void Start()
     {
         WarningText = this.gameObject.transform.GetChild(0).gameObject;
@@ -31,6 +32,11 @@ public class GameManager : MonoBehaviour
     public void Warn()
     {
         WarningText.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<WarnText>().setActive();
+    }
+
+    public void ChapOut()
+    {
+        ChapOutro.SetActive(true);
     }
     public void addCount(int menuCode)
     {
