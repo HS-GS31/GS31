@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         WarningText = this.gameObject.transform.GetChild(0).gameObject;
+        ChapOutro.SetActive(false);
         Count.sausage = 0;
         Count.vegetable = 0;
         Count.mushroom = 0;
