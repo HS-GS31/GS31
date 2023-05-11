@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class GrabClipboard : MonoBehaviour
 {
+    public GameObject clipboard;
+
     public void hideClipboard() // 카트 왼편에 있는 클립보드 가리기
     {
         Debug.Log("Hide Clipboard");
-        GameObject.Find("shopping cart").transform.Find("Clipboard").gameObject.SetActive(false);
+        clipboard.SetActive(false);
         showCenter(); // 가운데 클립보드 나오게
     }
 
@@ -16,7 +18,7 @@ public class GrabClipboard : MonoBehaviour
     {
         Debug.Log("Show Clipboard");
         GameObject.Find("GameManager").transform.Find("shopping cart").gameObject.SetActive(true);
-        GameObject.Find("shopping cart").transform.Find("Clipboard").gameObject.SetActive(true);
+        clipboard.SetActive(true);
     }
 
     public void showCenter() // 중앙에 나온 클립보드 보이게

@@ -10,11 +10,11 @@ public class ClipboardController : MonoBehaviour
     void Start()
     {
         GameObject.Find("GameManager").transform.Find("shopping cart").gameObject.SetActive(false);
-        Invoke("ShowClipboard", 1f); // 챕터 소개 UI 사라졌을 때 등장하게
+        Invoke("ShowClipboard", 7f); // 챕터 소개 UI 사라졌을 때 등장하게
         GetComponent<GrabClipboard>().cantGrab();
 
-        Invoke("HideClipboard", 2f); // 화면 앞에 보이던 클립보드 false 처리
-        Invoke("ShowShoppingCart", 2f);
+        Invoke("HideClipboard", 12f); // 화면 앞에 보이던 클립보드 false 처리
+        Invoke("ShowShoppingCart", 12f);
     }
 
     // 클립보드 보여지게 하기
