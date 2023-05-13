@@ -30,10 +30,8 @@ public class MenuController : MonoBehaviour
         {
             ResPawnIngredient();
         }
-
         if (transform.childCount >= 6)
         {
-            Debug.Log("자식의 수 : " + transform.childCount);
             setIngredient();
         }
         else
@@ -51,7 +49,6 @@ public class MenuController : MonoBehaviour
         rigid.useGravity = false;
         coll.isTrigger = true;
         hand_count++;
-        Debug.Log("hand_count : " + hand_count);
     }
     public void UnSelect()
     {
@@ -66,7 +63,6 @@ public class MenuController : MonoBehaviour
         {
             hand_count--;
         }
-        Debug.Log("hand_count : " + hand_count);
     }
     private void setIngredient()
     {
@@ -74,11 +70,6 @@ public class MenuController : MonoBehaviour
         ingredients[1] = transform.GetChild(3).gameObject.tag;
         ingredients[2] = transform.GetChild(4).gameObject.tag;
         ingredients[3] = transform.GetChild(5).gameObject.tag;
-        
-        for(int i = 0; i < 4; i++)
-        {
-            Debug.Log(i +" : "+ingredients[i]);
-        }
     }
     private void setIngredientNull()
     {
@@ -87,7 +78,6 @@ public class MenuController : MonoBehaviour
         ingredients[2] = "empty";
         ingredients[3] = "empty";
     }
-
     private void ResPawnIngredient()
     {
         transform.position = spawnPos;
