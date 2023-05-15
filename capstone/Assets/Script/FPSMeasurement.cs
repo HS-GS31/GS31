@@ -9,13 +9,13 @@ public class FPSMeasurement : MonoBehaviour
     [SerializeField, Range(0, 100)]
     private int size = 25;
 
-    private bool isShow = false;
+    private bool isShow = true;
 
 
     // Update is called once per frame
     void Update()
     {
-        deltaTime = (Time.unscaledDeltaTime - deltaTime)*0.1f;
+        deltaTime += (Time.unscaledDeltaTime - deltaTime)*0.1f;
 
         if(Input.GetKeyDown(KeyCode.F1))
         {
