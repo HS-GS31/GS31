@@ -55,6 +55,10 @@ public class ButtonEvent : MonoBehaviour
     {
         SceneManager.LoadScene("Chapter03Scene");
     }
+    public void GoChap4() //정산(값 정해진) 씬으로 이동
+    {
+        SceneManager.LoadScene("Chap04 1");
+    }
     public void chap4GoMain()
     {
         SceneManager.LoadScene("Start");
