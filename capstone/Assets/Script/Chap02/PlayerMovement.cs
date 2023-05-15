@@ -152,8 +152,8 @@ public class PlayerMovement : MonoBehaviour
                             transform.position = route.GetPosition();
                             transform.localRotation = Quaternion.Euler(route.GetRotation());
 
-                            
-                            handle.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+                            //핸들 초기화
+                            //handle.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
 
                             //틀렸습니다 UI + 2초동안은 핸들 잡기 기능 X
                             StartCoroutine(Show_UI_Guide());
