@@ -45,11 +45,11 @@
 - Library & Framework: 
 - Target : `VR`
 - etc : `Notion`
-    <br><br> 
+    <br><br>
     
-  ## ✨ 시스템 구조도
+## ✨ 시스템 구조도
   ![image](https://github.com/HS-GS31/GS31/assets/69100145/a18246e4-af08-4981-a5ad-cadfd52537f1)
-<br>
+<br><br>
     
   ## 💻 주요 화면
   <details>
