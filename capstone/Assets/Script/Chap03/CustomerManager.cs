@@ -60,7 +60,6 @@ public class CustomerManager : MonoBehaviour
         GameObject customer = Instantiate(customers[rndCus]);
         customer.transform.position = spawnPoint[rndPos].transform.position;
         now_customer = customer;
-        Debug.Log("¼Õ´Ô ¿Â´Ù");
     }
     private void GoNextScene()
     {

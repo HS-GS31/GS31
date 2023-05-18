@@ -5,12 +5,14 @@ using UnityEngine;
 public class Sender : MonoBehaviour
 {
     GameObject customerManager;
+    GameObject gameManager;
     private GameObject now_menu;
     public bool ordering;
     // Start is called before the first frame update
     void Start()
     {
         customerManager = GameObject.Find("CustomerManager");
+        gameManager = GameObject.Find("GameManager");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,8 +33,8 @@ public class Sender : MonoBehaviour
                 Debug.Log(i + " : " + obj);
             }
             bool res = checkMenu(menus, checking);
-            Debug.Log("Á¢½Ã¶û Ãæµ¹!!");
             customerManager.GetComponent<CustomerManager>().Take(other.gameObject, res);
+            //gameManager.GetComponent<GameManager>().setNullMenu();
         }
     }
 
@@ -44,7 +46,6 @@ public class Sender : MonoBehaviour
 
     private bool checkMenu(string[] menu, string[] checking)
     {
-
         for (int i = 0; i < 4; i++)
         {
             if (menu[i] != checking[i])
