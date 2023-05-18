@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FPSMeasurement : MonoBehaviour
 {
     private float deltaTime = 0f;
 
-    [SerializeField, Range(0, 100)]
-    private int size = 25;
+    [SerializeField]
+    private Text fpstext;
 
     private bool isShow = true;
 
@@ -27,18 +28,11 @@ public class FPSMeasurement : MonoBehaviour
     {
         if(isShow)
         {
-            GUIStyle style = new GUIStyle();
-
-            Rect rect = new Rect(30, 30, Screen.width, Screen.height);
-            style.alignment = TextAnchor.UpperLeft;
-            style.fontSize = size;
-            style.normal.textColor = Color.green;
-
             float ms = deltaTime * 1000f;
             float fps = 1.0f / deltaTime;
             string text = string.Format("{0:0.} FPS ({1:0.0}ms)", fps, ms);
 
-            GUI.Label(rect, text, style);
+            fpstext.text = text;
         }
 
     }
