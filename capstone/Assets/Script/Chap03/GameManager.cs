@@ -18,11 +18,15 @@ public class GameManager : MonoBehaviour
     public GameObject WarningText;
     public GameObject ChapIntro;
     public GameObject ChapOutro;
-
+    private GameObject selectedStick;
+    private GameObject nowMenu;
+    private int top;
     private void Start()
     {
-        WarningText = this.gameObject.transform.GetChild(0).gameObject;
-        ChapOutro.SetActive(false);
+        this.ChapOutro.SetActive(false);
+        this.selectedStick = null;
+        this.nowMenu = null;
+        this.top = 1;
         Count.sausage = 0;
         Count.vegetable = 0;
         Count.mushroom = 0;
@@ -34,10 +38,41 @@ public class GameManager : MonoBehaviour
     {
         WarningText.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<WarnText>().setActive();
     }
-
     public void ChapOut()
     {
         ChapOutro.SetActive(true);
+    }
+    //스틱이 선택된 상태인가?
+    public void setSelectedStick(GameObject stick)
+    {
+        selectedStick = stick;
+    }
+    public GameObject getSelectedStick()
+    {
+        return selectedStick;
+    }
+    public bool checkIngred(GameObject ingredient)
+    {
+        //현재 필요한 재료와 같다면
+        if (ingredient.tag == this.nowMenu.transform.GetChild(top).gameObject.tag)
+        {
+            Debug.Log("올바른 음식입니다!");
+            top++;
+            return true;
+        }
+        else
+        {
+            Debug.Log("옳지 않은 음식입니다!");
+            //텍스트 출력후 무시.
+            Warn();
+            return false;
+        }
+    }
+
+    public void setNowMenu(GameObject menu)
+    {
+        this.nowMenu = menu;
+        top = 1;
     }
     public void addCount(int menuCode)
     {

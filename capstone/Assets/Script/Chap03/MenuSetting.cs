@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class MenuSetting : MonoBehaviour
 {
+    GameObject gameManager;
     private string[] ingredients;
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = GameObject.Find("GameManager");
+
         ingredients = new string[4];
 
         Debug.Log("필요 요소 : ");
@@ -23,6 +26,9 @@ public class MenuSetting : MonoBehaviour
             Debug.Log(j+ ": "+obj);
             j++;
         }
+
+        //메뉴 세팅후 manager에게 보내기
+        gameManager.GetComponent<GameManager>().setNowMenu(this.gameObject);
     }
 
     public string[] getMenu()
