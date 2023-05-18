@@ -8,7 +8,7 @@ public class ChapIntroFalse : MonoBehaviour
     void Start()
     {
         StartCoroutine(UICoroutine());
-        Invoke("UIFalse", 10f);
+        Invoke("UIFalse", 7f);
     }
     IEnumerator UICoroutine()
     {
