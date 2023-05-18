@@ -523,9 +523,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 86
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -659,9 +663,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 87
+      value: 93
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1074,7 +1082,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 58
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1119,6 +1127,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -2661,7 +2673,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 69
+      value: 77
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2706,6 +2718,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -3664,7 +3680,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 67
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3709,6 +3725,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -5661,9 +5681,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 70
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6563,9 +6587,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 92
+      value: 94
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6696,6 +6724,14 @@ Transform:
   - {fileID: 487975917}
   - {fileID: 2112061527}
   - {fileID: 1490659762}
+  - {fileID: 1681510356}
+  - {fileID: 273480929}
+  - {fileID: 771313483}
+  - {fileID: 531569435}
+  - {fileID: 560807154}
+  - {fileID: 2056384877}
+  - {fileID: 1758156989}
+  - {fileID: 929237007}
   - {fileID: 2018876179}
   - {fileID: 1934178543}
   - {fileID: 1258659057}
@@ -6726,20 +6762,12 @@ Transform:
   - {fileID: 894867659}
   - {fileID: 1628364100}
   - {fileID: 358762340}
-  - {fileID: 1681510356}
-  - {fileID: 273480929}
   - {fileID: 22872613}
   - {fileID: 35546778}
-  - {fileID: 771313483}
-  - {fileID: 531569435}
-  - {fileID: 560807154}
-  - {fileID: 2056384877}
   - {fileID: 251246213}
   - {fileID: 1832749572}
   - {fileID: 1420700561}
-  - {fileID: 1758156989}
   - {fileID: 1967239889}
-  - {fileID: 929237007}
   - {fileID: 358954899}
   - {fileID: 931975326}
   m_Father: {fileID: 1537330023}
@@ -7284,7 +7312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_RootOrder
-      value: 85
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8600,7 +8628,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 59
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8645,6 +8673,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -9087,9 +9119,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 83
+      value: 91
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9148,6 +9184,10 @@ PrefabInstance:
     - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_Name
       value: Crossroads_3 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
@@ -11944,9 +11984,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 66
+      value: 74
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12817,6 +12861,7 @@ RectTransform:
   - {fileID: 2142842683}
   - {fileID: 846606867}
   - {fileID: 311463858}
+  - {fileID: 667108665}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
@@ -14275,7 +14320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_RootOrder
-      value: 89
+      value: 57
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14745,9 +14790,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 72
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15175,7 +15224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_RootOrder
-      value: 90
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17664,7 +17713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.012
+      value: 1.568
       objectReference: {fileID: 0}
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18266,7 +18315,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 71
+      value: 79
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18312,6 +18361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_4 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
 --- !u!4 &659637397 stripped
@@ -18353,6 +18406,86 @@ Transform:
   m_Father: {fileID: 1511793326}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &667108664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 667108665}
+  - component: {fileID: 667108667}
+  - component: {fileID: 667108666}
+  m_Layer: 5
+  m_Name: FPSTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &667108665
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667108664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 480543369}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 400, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &667108666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667108664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0.12919617, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 90
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 9
+    m_MaxSize: 90
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &667108667
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667108664}
+  m_CullTransparentMesh: 1
 --- !u!1 &667269703
 GameObject:
   m_ObjectHideFlags: 0
@@ -20350,7 +20483,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 61
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20395,6 +20528,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -20543,7 +20680,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 75
+      value: 83
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20588,6 +20725,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -20957,7 +21098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb071ab8a08c9644b99461824f5654f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 25
+  fpstext: {fileID: 667108666}
 --- !u!1001 &759850547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21405,7 +21546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_RootOrder
-      value: 88
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22411,7 +22552,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 60
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22456,6 +22597,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -23781,7 +23926,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 74
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23826,6 +23971,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -24753,9 +24902,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 81
+      value: 89
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25995,7 +26148,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.75734246, g: 0.80401534, b: 0.8773585, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -26009,7 +26162,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 100
   field of view: 60
   orthographic: 1
   orthographic size: 50
@@ -26263,7 +26416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_RootOrder
-      value: 97
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26509,6 +26662,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -30400,7 +30557,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 57
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30445,6 +30602,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -34375,7 +34536,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 77
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34420,6 +34581,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -36113,7 +36278,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 56
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36158,6 +36323,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -36804,7 +36973,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 62
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36849,6 +37018,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -37987,7 +38160,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 78
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38032,6 +38205,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -38928,9 +39105,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 63
+      value: 71
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40806,9 +40987,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 94
+      value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43068,7 +43253,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 65
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43113,6 +43298,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -45291,7 +45480,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 76
+      value: 84
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45336,6 +45525,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
@@ -46462,9 +46655,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 80
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49205,7 +49402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 82
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50473,7 +50670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_RootOrder
-      value: 84
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52784,9 +52981,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 73
+      value: 81
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53077,7 +53278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_RootOrder
-      value: 95
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55765,9 +55966,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 93
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58581,9 +58786,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 55
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59528,9 +59737,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 96
+      value: 97
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -61269,7 +61482,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 64
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -61315,6 +61528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_4 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
 --- !u!4 &2016608917 stripped
@@ -61333,9 +61550,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossroads_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2085069811198799901, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 54
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62544,7 +62765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_RootOrder
-      value: 91
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 3590631019628305927, guid: ec4ab5ea26aab7f49b7154b3987869ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -63643,7 +63864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_RootOrder
-      value: 79
+      value: 87
       objectReference: {fileID: 0}
     - target: {fileID: 2085069811198799902, guid: ec6f15e2a951f4b49b0570eacaf03a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64243,7 +64464,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_RootOrder
-      value: 68
+      value: 76
       objectReference: {fileID: 0}
     - target: {fileID: 4106542297346914488, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64288,6 +64509,10 @@ PrefabInstance:
     - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
       propertyPath: m_Name
       value: Crossroads_4 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106542297346914489, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c59dbc85501634ba10f873b9286c02, type: 3}

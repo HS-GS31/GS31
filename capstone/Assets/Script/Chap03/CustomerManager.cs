@@ -31,10 +31,8 @@ public class CustomerManager : MonoBehaviour
             if (res)            //올바른 음식을 받은경우.
             {
                 Destroy(menu);
-                Debug.Log("음식 받음!!");
 
                 now_customer.GetComponent<CustomerController>().setStat(3);
-                Debug.Log("올바른 음식을 받았다!!");
 
                 now_customer = null;                //현재 손님이 없는 상태로 변경.
                 cnt++;                              //손님 받은 카운트 증가.
