@@ -20,7 +20,7 @@ public class IngredientController : MonoBehaviour
 
     private void Update()
     {
-        if (this.gameObject.transform.parent.tag == "STICK")
+        if (this.gameObject.transform.parent != null && this.gameObject.transform.parent.tag == "STICK")
         {
             coll.isTrigger = true;
             rigid.isKinematic = true;
