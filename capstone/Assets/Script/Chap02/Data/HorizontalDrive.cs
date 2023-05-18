@@ -24,7 +24,7 @@ public class HorizontalDrive : Drive
         {
             isDrive = true;
             driveAble = false;
-            Debug.Log("삐약 : " + rotateY);
+            //Debug.Log("삐약 : " + rotateY);
 
             //핸들을 잡은 상태 + - 35 / 35 범주를 넘어서면rotate
             if (rotateY <= -0.28) {
