@@ -1454,11 +1454,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8446602445236260532, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &44818437 stripped
 Transform:
@@ -5267,7 +5272,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150810310}
-  m_Text: "\uC0C8"
+  m_Text: "\uC0C8\uC6B0"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -5340,7 +5345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8068661904331082218, guid: 10b46dbec9b4f434191a6e9c73a0fdfb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8068661904331082218, guid: 10b46dbec9b4f434191a6e9c73a0fdfb, type: 3}
       propertyPath: m_TagString
@@ -9308,11 +9313,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8446602445236260532, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &370901313 stripped
 Transform:
@@ -11146,7 +11156,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &472784141 stripped
 Transform:
@@ -12851,7 +12866,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &555294808 stripped
 Transform:
@@ -14878,7 +14898,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &600292243 stripped
 Transform:
@@ -22236,7 +22261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8044577438232577353, guid: 8ec1729601816234eab3ab2c440e1766, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8044577438232577353, guid: 8ec1729601816234eab3ab2c440e1766, type: 3}
       propertyPath: m_TagString
@@ -23359,7 +23384,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (17)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &864690631 stripped
 Transform:
@@ -23890,7 +23920,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (19)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &877861515 stripped
 Transform:
@@ -23964,11 +23999,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8446602445236260532, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &891359561 stripped
 Transform:
@@ -25680,7 +25720,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &933536668 stripped
 Transform:
@@ -26125,11 +26170,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8446602445236260532, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &947189822 stripped
 Transform:
@@ -33510,7 +33560,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &1266609087 stripped
 Transform:
@@ -39015,11 +39070,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8446602445236260532, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &1563134691 stripped
 Transform:
@@ -44725,11 +44785,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8446602445236260532, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &1772306848 stripped
 Transform:
@@ -44877,11 +44942,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8446602445236260532, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &1784487007 stripped
 Transform:
@@ -48338,7 +48408,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (20)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &1910423171 stripped
 Transform:
@@ -51263,11 +51338,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodCrate_Small (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8446602445236260532, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7055391637266593551, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d992a5831c155b4eaaff19b8d07e994, type: 3}
 --- !u!4 &2068409721 stripped
 Transform:
