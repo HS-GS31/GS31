@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 618652157}
   - component: {fileID: 618652159}
   - component: {fileID: 618652158}
-  - component: {fileID: 2083941339}
-  - component: {fileID: 2083941340}
   m_Layer: 0
   m_Name: StickTop
   m_TagString: StickTop
@@ -85,31 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2083941339
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618652156}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.6083121, y: 1.9406681, z: 1.6677326}
-  m_Center: {x: -0.016266108, y: 0.029693732, z: 0.032897387}
---- !u!114 &2083941340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618652156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1625a537eed1a849ba4bdb76c7eab3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4561680790130359281
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,7 +115,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4561680790130359281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.135, y: 1.652, z: -1.221}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -251,6 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea0594c68d6b0564ab0c47825eb14dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StickPos: {fileID: 0}
 --- !u!114 &219979179
 MonoBehaviour:
   m_ObjectHideFlags: 0
