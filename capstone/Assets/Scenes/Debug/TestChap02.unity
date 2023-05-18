@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 11cba7a9ba030124a9b3a8feabff3320, type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 6fe62b55cd0fd0a41a259ceaff0b74f7, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 19b66dfd92d6e3c40a62e652e22a0377, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -21056,7 +21056,7 @@ Transform:
   - {fileID: 1170830641}
   - {fileID: 1544095483}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &758810952
 MonoBehaviour:
@@ -34353,7 +34353,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -34377,7 +34377,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1192208511
 PrefabInstance:

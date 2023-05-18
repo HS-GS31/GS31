@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &7567354608888559601
 Transform:
@@ -600,6 +600,10 @@ MonoBehaviour:
   checkText: {fileID: 0}
   cart: {fileID: 0}
   checkIt: 1
+  vegetables: {fileID: 0}
+  meetandfish: {fileID: 0}
+  foodNum: 0
+  Target: {fileID: 0}
 --- !u!114 &6856406687445357759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -742,6 +746,10 @@ MonoBehaviour:
   checkText: {fileID: 0}
   cart: {fileID: 0}
   checkIt: 1
+  vegetables: {fileID: 0}
+  meetandfish: {fileID: 0}
+  foodNum: 0
+  Target: {fileID: 0}
 --- !u!114 &6856406687713267194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1076,6 +1084,10 @@ MonoBehaviour:
   checkText: {fileID: 0}
   cart: {fileID: 0}
   checkIt: 0
+  vegetables: {fileID: 0}
+  meetandfish: {fileID: 0}
+  foodNum: 0
+  Target: {fileID: 0}
 --- !u!1001 &6044943522087278338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1301,6 +1313,10 @@ MonoBehaviour:
   checkText: {fileID: 0}
   cart: {fileID: 0}
   checkIt: 1
+  vegetables: {fileID: 0}
+  meetandfish: {fileID: 0}
+  foodNum: 0
+  Target: {fileID: 0}
 --- !u!1001 &6441999588703907902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1417,6 +1433,10 @@ MonoBehaviour:
   checkText: {fileID: 0}
   cart: {fileID: 0}
   checkIt: 0
+  vegetables: {fileID: 0}
+  meetandfish: {fileID: 0}
+  foodNum: 0
+  Target: {fileID: 0}
 --- !u!114 &6856406688079432984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1655,6 +1675,10 @@ MonoBehaviour:
   checkText: {fileID: 0}
   cart: {fileID: 0}
   checkIt: 0
+  vegetables: {fileID: 0}
+  meetandfish: {fileID: 0}
+  foodNum: 0
+  Target: {fileID: 0}
 --- !u!114 &6856406687929171768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1921,6 +1945,10 @@ MonoBehaviour:
   checkText: {fileID: 0}
   cart: {fileID: 0}
   checkIt: 0
+  vegetables: {fileID: 0}
+  meetandfish: {fileID: 0}
+  foodNum: 0
+  Target: {fileID: 0}
 --- !u!114 &6856406688664263806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2155,6 +2183,10 @@ MonoBehaviour:
   checkText: {fileID: 0}
   cart: {fileID: 0}
   checkIt: 0
+  vegetables: {fileID: 0}
+  meetandfish: {fileID: 0}
+  foodNum: 0
+  Target: {fileID: 0}
 --- !u!114 &6856406687311448382
 MonoBehaviour:
   m_ObjectHideFlags: 0
