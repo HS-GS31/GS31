@@ -19,6 +19,7 @@ public class MenuManager : MonoBehaviour
 
         //게임메니저에게 랜덤 값 보내기
         gameManager.GetComponent<GameManager>().addCount(rnd);
+        gameManager.GetComponent<GameManager>().setNowMenu(order);
         return order;
     }
 }

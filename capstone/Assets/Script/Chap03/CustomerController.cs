@@ -10,7 +10,7 @@ public class CustomerController : MonoBehaviour
     private Vector3 truckPos;
     private Animator animator;
     private Vector3 desPos;
-    private GameObject sender;
+    //private GameObject sender;
     private GameObject order;
     public GameObject emoji_smile;
     public GameObject emoji_angry;
@@ -22,7 +22,7 @@ public class CustomerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         this.customerManager = GameObject.Find("CustomerManager");
-        this.sender = GameObject.Find("SenderPlate");
+        //this.sender = GameObject.Find("SenderPlate");
         this.truckPos = new Vector3(0, 0, 0);
         this.desPos = new Vector3(-2.8f, 0, 6);
         orderPos = new Vector3(-2.8f, 0, -1);
