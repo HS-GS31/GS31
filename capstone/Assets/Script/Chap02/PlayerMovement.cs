@@ -85,7 +85,8 @@ public class PlayerMovement : MonoBehaviour
     {
         foreach (Drive drive in drives)
         {
-            bool isCheck = drive.StartDrive(isHandle, handle.localRotation.y);
+            Vector3 vector3 = handle.localRotation.eulerAngles;
+            bool isCheck = drive.StartDrive(isHandle, vector3.y);
             if (isCheck)
             {
                 driveTime = 0;
@@ -232,6 +233,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator Show_UI_Chapter()
     {
         drives[0].driveAble = false; //핸들 잡으면 안됨
+        drives[1].driveAble = false; //핸들 잡으면 안됨
 
         //핸들 잡아도 안되는 기능
         yield return new WaitForSeconds(showChapterTime);
@@ -243,9 +245,6 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator Show_UI_Guide()
     {
-        //핸들 잡아도 안되는 기능
-
-        //Debug.Log("엄");
         guideUI.SetActive(true);
         yield return new WaitForSeconds(showGuideTime);
 
@@ -262,7 +261,6 @@ public class PlayerMovement : MonoBehaviour
         drives[1].driveAble = false; //핸들 잡으면 안됨
         drives[0].driveAble = false; //핸들 잡으면 안됨
 
-        //Debug.Log("엄");
         nextUI.SetActive(true);
         yield return new WaitForSeconds(showChapterTime);
 
