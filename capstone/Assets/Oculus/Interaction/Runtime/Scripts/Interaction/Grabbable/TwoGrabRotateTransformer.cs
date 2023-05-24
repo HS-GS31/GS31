@@ -89,6 +89,8 @@ namespace Oculus.Interaction
             float previousAngle = _constrainedRelativeAngle;
             _relativeAngle += angleDelta;
             _constrainedRelativeAngle = _relativeAngle;
+
+            //�Ӱ谪
             if (_constraints.MinAngle.Constrain)
             {
                 _constrainedRelativeAngle =

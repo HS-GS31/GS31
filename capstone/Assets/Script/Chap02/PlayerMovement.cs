@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform[] before_transforms;
     [SerializeField] private OneGrabRotateTransformer oneHand;
     [SerializeField] private TwoGrabRotateTransformer twoHand;
+    [SerializeField] private Grabbable grabbable;
     [SerializeField] private LoaderScene loaderScene;
 
     Queue<Route> roadQueue;
@@ -153,8 +154,14 @@ public class PlayerMovement : MonoBehaviour
                             transform.position = route.GetPosition();
                             transform.localRotation = Quaternion.Euler(route.GetRotation());
 
+                            //대신 able false,true
+                            grabbable.enabled = false;
+
                             //핸들 초기화
-                            //handle.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+                            handle.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+
+                            //able true
+                            //grabbable.enabled = true;
 
                             //틀렸습니다 UI + 2초동안은 핸들 잡기 기능 X
                             StartCoroutine(Show_UI_Guide());
@@ -240,6 +247,7 @@ public class PlayerMovement : MonoBehaviour
 
         chapterExplanation.SetActive(false);//UI 제거
         drives[0].driveAble = true; //핸들 잡아도 됨
+        grabbable.enabled = true;
 
         //
     }
@@ -251,6 +259,7 @@ public class PlayerMovement : MonoBehaviour
         //UI 제거
         guideUI.SetActive(false);
         //핸들 잡아도 됨
+        grabbable.enabled = true;
         drives[1].driveAble = true; //핸들 잡아도 됨
 
     }
