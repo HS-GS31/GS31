@@ -17531,7 +17531,7 @@ PrefabInstance:
       objectReference: {fileID: 646043880}
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_LocalScale.x
@@ -17547,15 +17547,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.66
+      value: -0.5699997
       objectReference: {fileID: 0}
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.39
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.881
+      value: 0.88100004
       objectReference: {fileID: 0}
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28369,15 +28369,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425742, guid: 047804308828c244f926d7a89b3d6e86, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 425742, guid: 047804308828c244f926d7a89b3d6e86, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 425742, guid: 047804308828c244f926d7a89b3d6e86, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 425742, guid: 047804308828c244f926d7a89b3d6e86, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -28461,7 +28461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5721807634533659555, guid: 047804308828c244f926d7a89b3d6e86, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5721807634533659555, guid: 047804308828c244f926d7a89b3d6e86, type: 3}
       propertyPath: m_LocalPosition.y
@@ -28541,6 +28541,8 @@ MonoBehaviour:
   soundManager: {fileID: 758810952}
   handle: {fileID: 1029042061}
   navCamera: {fileID: 921046495}
+  ovrCamera: {fileID: 2069338136}
+  cameraPos: {fileID: 0}
   chapterExplanation: {fileID: 2142842682}
   guideUI: {fileID: 311463857}
   nextUI: {fileID: 846606866}
@@ -62048,6 +62050,11 @@ Transform:
   m_Father: {fileID: 544185767}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2069338136 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
+  m_PrefabInstance: {fileID: 646043877}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2073618245
 PrefabInstance:
   m_ObjectHideFlags: 0

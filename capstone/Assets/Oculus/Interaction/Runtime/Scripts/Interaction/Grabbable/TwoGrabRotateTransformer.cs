@@ -39,19 +39,22 @@ namespace Oculus.Interaction
             Forward = 2
         }
 
+        //돌아가는 기준 축
         [SerializeField, Optional]
         private Transform _pivotTransform = null;
 
         private Transform PivotTransform =>
             _pivotTransform != null ? _pivotTransform : _grabbable.Transform;
 
+        //enum을 SerializeField로 만들면 드롭다운 된다.
         [SerializeField]
         private Axis _rotationAxis = Axis.Up;
 
+        //회전 임계치 각도
         [Serializable]
         public class TwoGrabRotateConstraints
         {
-            public FloatConstraint MinAngle;
+            public FloatConstraint MinAngle; //bool과 임계치
             public FloatConstraint MaxAngle;
         }
 
@@ -63,6 +66,7 @@ namespace Oculus.Interaction
 
         private IGrabbable _grabbable;
 
+        // 대충 첫번째 손과 두번째 손의 투영된 벡터 계산 값
         // vector from the hand at the first grab point to the hand on the second grab point,
         // projected onto the plane of the rotation.
         private Vector3 _previousHandsVectorOnPlane;
@@ -75,7 +79,9 @@ namespace Oculus.Interaction
         public void BeginTransform()
         {
             Vector3 rotationAxis = CalculateRotationAxisInWorldSpace();
+            Debug.Log("축 : " + rotationAxis);
             _previousHandsVectorOnPlane = CalculateHandsVectorOnPlane(rotationAxis);
+            Debug.Log("핸들 벡터 : " + _previousHandsVectorOnPlane);
             _relativeAngle = _constrainedRelativeAngle;
         }
 
@@ -113,6 +119,7 @@ namespace Oculus.Interaction
 
         public void EndTransform() { }
 
+        //회전축? [검토]
         private Vector3 CalculateRotationAxisInWorldSpace()
         {
             Vector3 worldAxis = Vector3.zero;
@@ -120,6 +127,7 @@ namespace Oculus.Interaction
             return PivotTransform.TransformDirection(worldAxis);
         }
 
+        //핸들 차이 계산 함수
         private Vector3 CalculateHandsVectorOnPlane(Vector3 planeNormal)
         {
             Vector3[] grabPointsOnPlane =
@@ -127,6 +135,7 @@ namespace Oculus.Interaction
                 Vector3.ProjectOnPlane(_grabbable.GrabPoints[0].position, planeNormal),
                 Vector3.ProjectOnPlane(_grabbable.GrabPoints[1].position, planeNormal),
             };
+            //둘중 하나가 임계값차이만큼 안바뀐 경우
 
             return grabPointsOnPlane[1] - grabPointsOnPlane[0];
         }
