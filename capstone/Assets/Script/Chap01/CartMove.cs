@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,6 +14,7 @@ public class CartMove : MonoBehaviour
 
     public GameObject player;
     public GameObject cart;
+    public GameObject clipboardCenter;
     public GameObject clipboard;
     public GameObject nextChapUI;
 
@@ -41,11 +43,11 @@ public class CartMove : MonoBehaviour
     IEnumerator MoveCoroutine()
     {
         float timer = 0f;
-        while(timer < moveTime)
+        while (timer < moveTime)
         {
             cart.transform.Translate(Vector3.right * speed * Time.deltaTime);
             player.transform.Translate(Vector3.forward * speed * Time.deltaTime);
-            clipboard.transform.Translate(Vector3.down * speed * Time.deltaTime);
+            clipboardCenter.transform.Translate(Vector3.down * speed * Time.deltaTime);
             timer += Time.deltaTime;
             yield return null;
         }
@@ -71,7 +73,11 @@ public class CartMove : MonoBehaviour
                 {
                     // 야채 코너가 끝났을 경우 카트 앞으로
                     checkMove++;
+                    //clipboard.GetComponent<MeshCollider>().enabled = false;
+                    //clipboard.SetActive(false);
                     StartCoroutine(MoveCoroutine());
+                    //clipboard.GetComponent<MeshCollider>().enabled = true;
+                    //clipboard.SetActive(true);
                 }
 
                 else if (checkMove == 1)
