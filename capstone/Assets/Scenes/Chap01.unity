@@ -29602,7 +29602,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1123419019
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1 &994066386 stripped
@@ -47372,7 +47372,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1123419019
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1728922581
@@ -55135,6 +55135,10 @@ PrefabInstance:
     - target: {fileID: 3500086343253743081, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
       propertyPath: m_PlaneDistance
       value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3500086343253743081, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1123419019
       objectReference: {fileID: 0}
     - target: {fileID: 3500086343253743084, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
       propertyPath: m_Pivot.x
