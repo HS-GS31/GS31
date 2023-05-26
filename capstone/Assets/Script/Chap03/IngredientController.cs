@@ -6,9 +6,10 @@ public class IngredientController : MonoBehaviour
     private Vector3 spawnPos;                  
     private Quaternion spawnRot;
     private GameObject gameManager;
+    public GameObject prefab;
     Rigidbody rigid;
     Collider coll;
-
+    
     void Start()
     {
         spawnPos = transform.position;
@@ -30,14 +31,6 @@ public class IngredientController : MonoBehaviour
             coll.isTrigger = false;
             rigid.isKinematic = false;
         }
-    }
-
-    private void ResPawnIngredient()
-    {
-        transform.position = spawnPos;
-        transform.rotation = spawnRot;
-        rigid.isKinematic = true;
-        rigid.isKinematic = false;
     }
 
     //음식을 잡았을때

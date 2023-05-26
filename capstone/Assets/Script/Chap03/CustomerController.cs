@@ -10,7 +10,6 @@ public class CustomerController : MonoBehaviour
     private Vector3 truckPos;
     private Animator animator;
     private Vector3 desPos;
-    //private GameObject sender;
     private GameObject order;
     public GameObject emoji_smile;
     public GameObject emoji_angry;
@@ -22,7 +21,6 @@ public class CustomerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         this.customerManager = GameObject.Find("CustomerManager");
-        //this.sender = GameObject.Find("SenderPlate");
         this.truckPos = new Vector3(0, 0, 0);
         this.desPos = new Vector3(-2.8f, 0, 6);
         orderPos = new Vector3(-2.8f, 0, -1);
@@ -98,7 +96,6 @@ public class CustomerController : MonoBehaviour
     {
         return state;
     }
-
     public void setEmoji(bool res)
     {
         this.order.SetActive(false);
@@ -119,7 +116,7 @@ public class CustomerController : MonoBehaviour
         this.emoji_smile.SetActive(false);          //이모지 다시 가리기
         this.emoji_angry.SetActive(false);          //이모지 다시 가리기
     }
-    private void hidEmoji()
+    private void hideEmoji()
     {
         this.emoji_smile.SetActive(false);
     }

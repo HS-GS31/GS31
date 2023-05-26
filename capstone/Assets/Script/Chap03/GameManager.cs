@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    //정상하기용 구조체
+    //정산하기용
     public static class Count
     {
         //음식의 개수
@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     }
 
     public GameObject WarningText;
+    public GameObject FullText;
     public GameObject ChapIntro;
     public GameObject ChapOutro;
     private GameObject selectedStick;
@@ -38,6 +39,12 @@ public class GameManager : MonoBehaviour
     {
         WarningText.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<WarnText>().setActive();
     }
+    public void FullStick()
+    {
+        WarningText.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<WarnText>().setActive();
+        Debug.Log("꼬치가 꽉찼습니다.");
+    
+    }
     public void ChapOut()
     {
         ChapOutro.SetActive(true);
@@ -53,16 +60,20 @@ public class GameManager : MonoBehaviour
     }
     public bool checkIngred(GameObject ingredient)
     {
+        //음식이 꽉찬경우.
+        if (top >= 5)
+        {
+            FullStick();
+            return false;
+        }
         //현재 필요한 재료와 같다면
         if (ingredient.tag == this.nowMenu.transform.GetChild(top).gameObject.tag)
         {
-            Debug.Log("올바른 음식입니다!");
             top++;
             return true;
         }
         else
         {
-            Debug.Log("옳지 않은 음식입니다!");
             //텍스트 출력후 무시.
             Warn();
             return false;

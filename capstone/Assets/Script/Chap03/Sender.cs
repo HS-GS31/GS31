@@ -19,29 +19,15 @@ public class Sender : MonoBehaviour
     {
         if(other.gameObject.tag == "STICK") { 
             string[] menus = other.GetComponent<MenuController>().getMenu();
-            //Debug.Log("받은 메뉴 : " + menus);
-            int i = 0;
-            foreach(string obj in menus)
-            {
-                Debug.Log(i + " : " + obj);
-                i++;
-            }
             string[] checking = now_menu.GetComponent<MenuSetting>().getMenu();
-            i = 0;
-            foreach (string obj in checking)
-            {
-                Debug.Log(i + " : " + obj);
-            }
             bool res = checkMenu(menus, checking);
             customerManager.GetComponent<CustomerManager>().Take(other.gameObject, res);
-            //gameManager.GetComponent<GameManager>().setNullMenu();
         }
     }
 
     public void setMenu(GameObject menu)
     {
         this.now_menu = menu;
-        Debug.Log("현재 메뉴는??? : " + now_menu);
     }
 
     private bool checkMenu(string[] menu, string[] checking)
@@ -50,12 +36,10 @@ public class Sender : MonoBehaviour
         {
             if (menu[i] != checking[i])
             {
-                Debug.Log("실패....");
                 return false;
             }
         }
         //반복문을 나왔다는 것을 4개의 요소가 모두 같다는 것을 의미한다.
-        Debug.Log("성공!!");
         return true;
     }
 }
