@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,8 +14,11 @@ public class CartMove : MonoBehaviour
 
     public GameObject player;
     public GameObject cart;
+    public GameObject clipboardCenter;
     public GameObject clipboard;
     public GameObject nextChapUI;
+
+    private bool isMoving = false;
 
     public TMP_Text reTryText; // 다시 고르라는 문구
     private int checkMove = 0; // 몇번 움직였는지 확인
@@ -41,15 +45,21 @@ public class CartMove : MonoBehaviour
     IEnumerator MoveCoroutine()
     {
         float timer = 0f;
-        while(timer < moveTime)
+        clipboard.GetComponent<BoxCollider>().enabled = false;
+        isMoving = true;
+        while (timer < moveTime)
         {
             cart.transform.Translate(Vector3.right * speed * Time.deltaTime);
             player.transform.Translate(Vector3.forward * speed * Time.deltaTime);
-            clipboard.transform.Translate(Vector3.down * speed * Time.deltaTime);
+            clipboardCenter.transform.Translate(Vector3.down * speed * Time.deltaTime);
             timer += Time.deltaTime;
             yield return null;
         }
+        isMoving = false;
+        clipboard.GetComponent<BoxCollider>().enabled = true;
     }
+
+
 
     public void GrabHandle()
     {
@@ -84,7 +94,7 @@ public class CartMove : MonoBehaviour
                         Invoke("GoNextChap02", 5f);
                     }
 
-                    if (checkFood == 3)
+                    if (checkFood == 3 && !isMoving)
                     {
                         reTryText.text = "마저 골라주세요";
                         Invoke("HideText", 3f);
@@ -94,8 +104,11 @@ public class CartMove : MonoBehaviour
 
             else
             {
-                reTryText.text = "마저 골라주세요";
-                Invoke("HideText", 3f);
+                if (!isMoving)
+                {
+                    reTryText.text = "마저 골라주세요";
+                    Invoke("HideText", 3f);
+                }
             }
 
         }
