@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     }
     public void FullStick()
     {
-        WarningText.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<WarnText>().setActive();
+        FullText.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<WarnText>().setActive();
         Debug.Log("²¿Ä¡°¡ ²ËÃ¡½À´Ï´Ù.");
     
     }
