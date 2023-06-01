@@ -6,6 +6,7 @@ public class IngredientController : MonoBehaviour
     private Vector3 spawnPos;                  
     private Quaternion spawnRot;
     private GameObject gameManager;
+    private Transform parent;
     public GameObject prefab;
     Rigidbody rigid;
     Collider coll;
@@ -17,6 +18,7 @@ public class IngredientController : MonoBehaviour
         rigid = gameObject.GetComponent<Rigidbody>();
         gameManager = GameObject.Find("GameManager");
         coll = gameObject.GetComponent<Collider>();
+        parent = transform.parent;
     }
 
     private void Update()
@@ -43,17 +45,21 @@ public class IngredientController : MonoBehaviour
         }
         else
         {
-            //만약 선택한 음식이 올바른 음식이 아니라면..
-            if (gameManager.GetComponent<GameManager>().checkIngred(this.gameObject))
+            //꼬치에 꽂혀있는 음식이 아닐때.
+            if(this.transform.parent.gameObject.tag != "STICK")
             {
-                //현재 선택된 스틱에 push.
-                gameManager.GetComponent<GameManager>().getSelectedStick().GetComponent<MenuController>().push(this.gameObject);
-                Invoke("SpawnObj", 0.7f); 
-            }
-            else
-            {
-                handOut(this.gameObject);
-                return;     //아니면 무시
+                //만약 선택한 음식이 올바른 음식이 아니라면..
+                if (gameManager.GetComponent<GameManager>().checkIngred(this.gameObject))
+                {
+                    //현재 선택된 스틱에 push.
+                    gameManager.GetComponent<GameManager>().getSelectedStick().GetComponent<MenuController>().push(this.gameObject);
+                    Invoke("SpawnObj", 0.7f);
+                }
+                else
+                {
+                    handOut(this.gameObject);
+                    return;     //아니면 무시
+                }
             }
         }
     }
@@ -75,5 +81,6 @@ public class IngredientController : MonoBehaviour
         GameObject instance = Instantiate(this.gameObject);
         instance.transform.position = spawnPos;
         instance.transform.rotation = spawnRot;
+        instance.transform.parent = this.parent;
     }
 }

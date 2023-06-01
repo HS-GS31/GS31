@@ -43,7 +43,6 @@ public class GameManager : MonoBehaviour
     {
         FullText.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<WarnText>().setActive();
         Debug.Log("²¿Ä¡°¡ ²ËÃ¡½À´Ï´Ù.");
-    
     }
     public void ChapOut()
     {
