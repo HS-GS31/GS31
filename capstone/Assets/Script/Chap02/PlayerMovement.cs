@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject chapterExplanation;
     [SerializeField] private GameObject guideUI;
     [SerializeField] private GameObject nextUI;
+    [SerializeField] private GameObject navUI;
 
     [SerializeField] private Transform[] before_transforms;
     [SerializeField] private OneGrabRotateTransformer oneHand;
@@ -62,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
         //UI
         chapterExplanation.SetActive(true);
         guideUI.SetActive(false);
+        navUI.SetActive(false);
         StartCoroutine(Show_UI_Chapter());
     }
 
@@ -247,9 +249,9 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(showChapterTime);
 
         chapterExplanation.SetActive(false);//UI 제거
+        navUI.SetActive(true);
         drives[0].driveAble = true; //핸들 잡아도 됨
         grabbable.enabled = true;
-
         //
     }
     IEnumerator Show_UI_Guide()
@@ -271,6 +273,7 @@ public class PlayerMovement : MonoBehaviour
         drives[1].driveAble = false; //핸들 잡으면 안됨
         drives[0].driveAble = false; //핸들 잡으면 안됨
 
+        navUI.SetActive(false);
         nextUI.SetActive(true);
         yield return new WaitForSeconds(showChapterTime);
 
