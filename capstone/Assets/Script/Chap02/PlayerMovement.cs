@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool isHandle = false;
     float driveTime = 0;
-    const float showChapterTime = 5.0f;
+    const float showChapterTime = 10.0f;
     const float showGuideTime = 2.0f;
 
 
@@ -78,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
             transform.position.y + 12,
             transform.position.z
         );
+
     }
 
 
