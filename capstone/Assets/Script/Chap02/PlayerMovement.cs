@@ -70,9 +70,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    #if UNITY_EDITOR
-        Debug_Handle();
-    #endif
         StartDrive();
         Driving();
         navCamera.transform.position = new Vector3(
@@ -143,12 +140,19 @@ public class PlayerMovement : MonoBehaviour
 
                         //경로 다 가면 씬 전환
                         Route route = roadQueue.Peek();
-                        
+
+                        //추가된 내용[2일]
+                        grabbable.enabled = false;
+
                         //방향이 맞다면
                         if (hd.GetIsLeft() == route.GetIsLeft())
                         {
                             roadQueue.Dequeue();
                             drives[0].driveAble = true;
+
+                            //추가된 내용[2일]
+                            handle.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+                            grabbable.enabled = true;
                         }
 
                         //방향이 틀리다면
@@ -158,7 +162,7 @@ public class PlayerMovement : MonoBehaviour
                             transform.localRotation = Quaternion.Euler(route.GetRotation());
 
                             //대신 able false,true
-                            grabbable.enabled = false;
+                            //grabbable.enabled = false;
 
                             //핸들 초기화
                             handle.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
@@ -214,8 +218,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    //핸들 안잡고 디버깅 하는 용도
-#if UNITY_EDITOR
+    //핸들 안잡고 디버깅 하는 용도 [안넣음]
     void Debug_Handle()
     {
         if (Input.GetKeyDown(KeyCode.W))
@@ -236,7 +239,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-#endif
     #endregion
 
     #region UI
