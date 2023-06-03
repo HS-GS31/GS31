@@ -3075,7 +3075,8 @@ PrefabInstance:
     - target: {fileID: 3500086342894252454, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
       propertyPath: m_text
       value: "\uC218\uACE0\uD558\uC168\uC2B5\uB2C8\uB2E4.\n5\uCD08\uB4A4\uC5D0 \uB2E4\uC74C
-        \uCC55\uD130\uB85C \uC774\uB3D9\uD569\uB2C8\uB2E4."
+        \uCC55\uD130\uB85C \uC774\uB3D9\uD569\uB2C8\uB2E4.\n<\uC7A5\uBE44\uB97C \uBE7C\uACE0
+        \uAE30\uB2E4\uB824\uC8FC\uC138\uC694>"
       objectReference: {fileID: 0}
     - target: {fileID: 3500086342894252454, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
       propertyPath: m_fontSize
@@ -22659,7 +22660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3500086342894252454, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 3500086342894252454, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
       propertyPath: m_fontStyle
@@ -22667,7 +22668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3500086342894252454, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
       propertyPath: m_fontSizeBase
-      value: 30
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 3500086342894252454, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
       propertyPath: m_VerticalAlignment
@@ -34048,11 +34049,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.516
+      value: -0.476
       objectReference: {fileID: 0}
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.652
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5550776016039436608, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34148,7 +34149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7192818547689909906, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: field of view
-      value: 26.991467
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7192818547689909906, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_FOVAxisMode
@@ -34156,7 +34157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7192818547689909906, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: far clip plane
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7192818547689909906, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
       propertyPath: m_OcclusionCulling
@@ -34244,7 +34245,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135105131}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1752c3abcbd26434ca45a6867a24b931, type: 3}
   m_Name: 

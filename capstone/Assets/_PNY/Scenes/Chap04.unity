@@ -6271,8 +6271,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3500086342894252454, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
       propertyPath: m_text
-      value: "\uAC01 \uC7AC\uB8CC\uB97C \uBA87 \uAC1C \uD314\uC558\uACE0, \uC5BC\uB9C8\uB97C
+      value: "\uAC01 \uC7AC\uB8CC\uB97C \uBA87 \uAC1C \uD314\uC558\uACE0 \n\uC5BC\uB9C8\uB97C
         \uBC8C\uC5C8\uB294\uC9C0 \uACC4\uC0B0\uD574\uBD05\uC2DC\uB2E4."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3500086342894252454, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3500086343649871676, guid: 001459238eed34642a0f3fda1da47d7c, type: 3}
       propertyPath: m_Name
