@@ -63,23 +63,32 @@
     <summary> 주요 화면 보기 </summary>
       
 - 메인 화면
-      
-   ![메인화면](https://github.com/HS-GS31/GS31/assets/99782442/1ef1a85c-0192-4b11-bb46-5678f95a14f3)
+ 
+   ![메인화면 최종](https://github.com/HS-GS31/GS31/assets/99782442/1a175bab-768e-4787-9231-4e940a620af4)
+
 - 시작하기(네컷 만화)
       
+  ![네컷만화](https://github.com/HS-GS31/GS31/assets/99782442/c86103e9-1942-4a68-b210-ef38e99573cc)
+ 
 - 이어하기(챕터 선택)
-      
-   ![이어하기](https://github.com/HS-GS31/GS31/assets/99782442/c2f8b0fc-0b93-48fb-b7ed-60f7d615a325)   
-      
+    
+  ![이어하기 최종](https://github.com/HS-GS31/GS31/assets/99782442/85f11571-44d8-4d0c-be5d-24e097ca9b5a)
+    
 - 장보기
       
+  ![장보기 최종2](https://github.com/HS-GS31/GS31/assets/99782442/e1684e6e-4a9f-4743-840a-8be68946cc5e)
+
 - 운전하기
       
+  ![운전하기 최종](https://github.com/HS-GS31/GS31/assets/99782442/b40b1aab-5b1e-4480-a0a3-c8ee6796537e)
+  
 - 요리하기
-      
+    
+  ![요리하기 최종](https://github.com/HS-GS31/GS31/assets/99782442/b1ab3d1c-71c1-4e4a-b126-6f08ab4b8c09)
+  
 - 정산하기    
       
-   ![정산하기](https://github.com/HS-GS31/GS31/assets/99782442/48917982-256b-4168-8982-2885702eff12)
+  ![정산하기 최종](https://github.com/HS-GS31/GS31/assets/99782442/33463899-1ae8-4e44-ba26-cb68be05e9d3)
    
 </details>
    <br>
