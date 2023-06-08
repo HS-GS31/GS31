@@ -49,7 +49,7 @@
   ## 🔧 기술 스택
 - Tool : `Unity`, `Oculus Quest2`, `Visual Studio`
 - Language : `C#`
-- Library & Framework: 
+- Library & Framework: `VR interaction plugin`
 - Target : `VR`
 - etc : `Notion`
     <br><br>
