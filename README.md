@@ -51,7 +51,7 @@
 - Language : `C#`
 - Library & Framework: `VR interaction plugin`
 - Target : `VR`
-- etc : `Notion`
+- etc : `Notion`, `Github`
     <br><br>
     
 ## ✨ 시스템 구조도
