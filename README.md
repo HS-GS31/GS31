@@ -55,7 +55,8 @@
     <br><br>
     
 ## ✨ 시스템 구조도
-  ![image](https://github.com/HS-GS31/GS31/assets/69100145/a18246e4-af08-4981-a5ad-cadfd52537f1)
+![image](https://github.com/HS-GS31/GS31/assets/69100145/d8555bfd-94e2-4c9b-9152-25739b493135)
+  <!--![image](https://github.com/HS-GS31/GS31/assets/69100145/a18246e4-af08-4981-a5ad-cadfd52537f1)-->
 <br><br>
     
   ## 💻 주요 화면
