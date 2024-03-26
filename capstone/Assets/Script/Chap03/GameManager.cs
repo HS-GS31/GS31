@@ -40,27 +40,23 @@ public class GameManager : MonoBehaviour
         WarningText.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<WarnText>().setActive();
     }
     public void FullStick()
-    {
-        FullText.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<WarnText>().setActive();
+    {        
         Debug.Log("꼬치가 꽉찼습니다.");
+        FullText.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<WarnText>().setActive();
     }
     public void ChapOut()
     {
         ChapOutro.SetActive(true);
     }
-    //스틱이 선택된 상태인가?
+    //스틱 선택 확인
     public void setSelectedStick(GameObject stick)
     {
         selectedStick = stick;
-    }
-    public GameObject getSelectedStick()
-    {
-        return selectedStick;
-    }
+    } 
     public bool checkIngred(GameObject ingredient)
     {
-        //음식이 꽉찬경우.
-        if (top >= 5)
+        //음식물이 꽉찬경우.
+        if (top > 4)
         {
             FullStick();
             return false;
@@ -73,12 +69,15 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            //텍스트 출력후 무시.
             Warn();
             return false;
         }
     }
-
+    public GameObject getSelectedStick()
+    {
+        return selectedStick;
+    }
+   
     public void setNowMenu(GameObject menu)
     {
         this.nowMenu = menu;

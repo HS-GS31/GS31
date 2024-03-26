@@ -217,7 +217,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4608289591593128807}
         m_TargetAssemblyTypeName: IngredientController, Assembly-CSharp
-        m_MethodName: Selete
+        m_MethodName: Select
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

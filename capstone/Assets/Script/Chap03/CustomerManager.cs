@@ -12,7 +12,7 @@ public class CustomerManager : MonoBehaviour
     public GameObject[] customers;
     private GameObject gameManager;
     bool ordering;
-    // Update is called once per frame
+
     private void Start()
     {
         spawnPoint[0].transform.position = new Vector3(-5, 0, -3.5f);
@@ -28,10 +28,10 @@ public class CustomerManager : MonoBehaviour
         if(now_customer.GetComponent<CustomerController>().getStat() == 2)
         {
             now_customer.GetComponent<CustomerController>().setEmoji(res);
-            if (res)            //올바른 음식을 받은경우.
+            if (res)            
             {
+                //올바른 음식을 받은경우.
                 Destroy(menu);
-
                 now_customer.GetComponent<CustomerController>().setStat(3);
 
                 now_customer = null;                //현재 손님이 없는 상태로 변경.
@@ -43,7 +43,8 @@ public class CustomerManager : MonoBehaviour
                 }
                 if(cnt == 3)
                 {
-                    cnt++;      //중복 발생 방지용.
+                    //중복 호출 발생 방지용.
+                    cnt++;      
                     gameManager.GetComponent<GameManager>().ChapOut();
                     Invoke("GoNextScene", 5f);
                 }

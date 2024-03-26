@@ -36,29 +36,29 @@ public class IngredientController : MonoBehaviour
     }
 
     //음식을 잡았을때
-    public void Selete()
+    public void Select()
     {
         //만약 선택된 스틱이 없다면...
         if(gameManager.GetComponent<GameManager>().getSelectedStick() == null)
         {
-            return;     //무시.
+            return;
         }
         else
         {
             //꼬치에 꽂혀있는 음식이 아닐때.
             if(this.transform.parent.gameObject.tag != "STICK")
             {
-                //만약 선택한 음식이 올바른 음식이 아니라면..
+                //만약 선택한 음식이 올바른 음식라면
                 if (gameManager.GetComponent<GameManager>().checkIngred(this.gameObject))
                 {
-                    //현재 선택된 스틱에 push.
+                    //현재 선택된 스틱에 넣기 push.
                     gameManager.GetComponent<GameManager>().getSelectedStick().GetComponent<MenuController>().push(this.gameObject);
                     Invoke("SpawnObj", 0.7f);
                 }
                 else
                 {
                     handOut(this.gameObject);
-                    return;     //아니면 무시
+                    return;
                 }
             }
         }
