@@ -2,19 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public static class FoodCount
+{
+    public static FoodCount Instance { get; private set; }
+
+    public static int sausage;
+    public static int vegetable;
+    public static int mushroom;
+    public static int meat;
+    public static int shrimp;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); 
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    private FoodCount()
+    {
+        sausage = 0;
+        vegetable = 0;
+        mushroom = 0;
+        shrimp = 0;
+        meat = 0;
+    }
+}
+
 public class GameManager : MonoBehaviour
 {
-    //정산하기용
-    public static class Count
-    {
-        //음식의 개수
-        public static int sausage;
-        public static int vegetable;
-        public static int mushroom;
-        public static int meat;
-        public static int shrimp;
-    }
-
     public GameObject WarningText;
     public GameObject FullText;
     public GameObject ChapIntro;
@@ -28,11 +49,6 @@ public class GameManager : MonoBehaviour
         this.selectedStick = null;
         this.nowMenu = null;
         this.top = 1;
-        Count.sausage = 0;
-        Count.vegetable = 0;
-        Count.mushroom = 0;
-        Count.meat = 0;
-        Count.shrimp = 0;
     }
 
     public void Warn()
@@ -40,28 +56,26 @@ public class GameManager : MonoBehaviour
         WarningText.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<WarnText>().setActive();
     }
     public void FullStick()
-    {        
-        Debug.Log("꼬치가 꽉찼습니다.");
+    {
         FullText.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<WarnText>().setActive();
     }
     public void ChapOut()
     {
         ChapOutro.SetActive(true);
     }
-    //스틱 선택 확인
+
     public void setSelectedStick(GameObject stick)
     {
         selectedStick = stick;
     } 
     public bool checkIngred(GameObject ingredient)
     {
-        //음식물이 꽉찬경우.
         if (top > 4)
         {
             FullStick();
             return false;
         }
-        //현재 필요한 재료와 같다면
+
         if (ingredient.tag == this.nowMenu.transform.GetChild(top).gameObject.tag)
         {
             top++;
@@ -85,35 +99,33 @@ public class GameManager : MonoBehaviour
     }
     public void addCount(int menuCode)
     {
-        if (menuCode == 0)
+        switch (menuCode)
         {
-            Count.meat += 3;
-            Count.mushroom++;
+            case 0:
+                FoodCount.Instance.meat += 3;
+                FoodCount.Instance.mushroom++;
+                break;
+            case 1:
+                FoodCount.Instance.shrimp += 3;
+                FoodCount.Instance.vegetable++;
+                break;
+            case 2:
+                FoodCount.Instance.meat++;
+                FoodCount.Instance.vegetable++;
+                FoodCount.Instance.mushroom++;
+                FoodCount.Instance.sausage++;
+                break;
+            case 3:
+                FoodCount.Instance.shrimp += 2;
+                FoodCount.Instance.sausage++;
+                FoodCount.Instance.mushroom++;
+                break;
+            case 4:
+                FoodCount.Instance.shrimp += 2;
+                FoodCount.Instance.meat += 2;
+                break;
+            default:
+                break;
         }
-        else if (menuCode == 1)
-        {
-            Count.shrimp += 3;
-            Count.vegetable++;
-        }
-        else if (menuCode == 2)
-        {
-            Count.meat++;
-            Count.vegetable++;
-            Count.mushroom++;
-            Count.sausage++;
-        }
-        else if (menuCode == 3)
-        {
-            Count.shrimp += 2;
-            Count.sausage++;
-            Count.mushroom++;
-        }
-        else if (menuCode == 4)
-        {
-            Count.shrimp += 2;
-            Count.meat += 2;
-        }
-        else
-            return;
     }
 }
